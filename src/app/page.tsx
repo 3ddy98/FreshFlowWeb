@@ -84,19 +84,19 @@ export default function Home() {
           </div>
           <div className="flex col-start-2 col-end-10 row-34 row-span-15 md:col-start-7 md:col-end-9 md:row-start-4 md:row-span-5 bg-linear-10 from-black to-purple-500">
             <div className="grid grid-cols-1 grid-rows-17 p-5 w-1/1 text-1xl md:text-2xl text-white">
-              <div className="row-2 m-auto"><p>Exterior Detailed Wheel Wash</p></div>
-              <div className="row-3 m-auto"><p>Exterior Tire Shine</p></div>
-              <div className="row-4 m-auto"><p>Exterior Plastic Revive</p></div>
-              <div className="row-5 m-auto"><p>Exterior Bug Elimination</p></div>
-              <div className="row-6 m-auto"><p>Exterior Paint Decontamination</p></div>
-              <div className="row-7 m-auto"><p>Exterior Wax</p></div>
-              <div className="row-8 m-auto"><p>Interior Detailed Vacuum</p></div>
-              <div className="row-9 m-auto"><p>Interior Plastic Shine</p></div>
-              <div className="row-10 m-auto"><p>Interior Seat Cleaning</p></div>
-              <div className="row-11 m-auto"><p>Interior Seat Stain Removal</p></div>
-              <div className="row-12 m-auto"><p>Interior Pet Hair Removal</p></div>
-              <div className="row-13 m-auto"><p>Detailed Panel Gaps Cleaning</p></div>
-              <div className="row-14 m-auto"><p>Interior Aroma</p></div>
+              <div className="row-1 m-auto"><p>Exterior Detailed Wheel Wash</p></div>
+              <div className="row-2 m-auto"><p>Exterior Tire Shine</p></div>
+              <div className="row-3 m-auto"><p>Exterior Plastic Revive</p></div>
+              <div className="row-4 m-auto"><p>Exterior Bug Elimination</p></div>
+              <div className="row-5 m-auto"><p>Exterior Paint Decontamination</p></div>
+              <div className="row-6 m-auto"><p>Exterior Wax</p></div>
+              <div className="row-7 m-auto"><p>Interior Detailed Vacuum</p></div>
+              <div className="row-8 m-auto"><p>Interior Plastic Shine</p></div>
+              <div className="row-9 m-auto"><p>Interior Seat Cleaning</p></div>
+              <div className="row-10 m-auto"><p>Interior Seat Stain Removal</p></div>
+              <div className="row-11 m-auto"><p>Interior Pet Hair Removal</p></div>
+              <div className="row-12 m-auto"><p>Detailed Panel Gaps Cleaning</p></div>
+              <div className="row-13 m-auto"><p>Interior Aroma</p></div>
             </div>
           </div>
           <div className="flex col-start-2 col-end-10 row-49 md:col-start-7 md:col-end-9 md:row-start-9 content-center justify-center bg-black text-purple-300">
