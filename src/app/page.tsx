@@ -23,7 +23,7 @@ export default function Home() {
       </div>
         
       <div className="col-start-1 col-end-8 row-4 justify-center content-center m-auto --font-montserrat">
-          <h1 className="text-center text-5xl ">Fresh Flow Car Wash</h1>
+          <h1 className="text-center text-5xl ">Fresh Flow Car Mobile Auto Spa</h1>
         </div>
         <div className="col-start-1 col-end-8 row-5 justify-center content-center">
           <h1 className="text-center text-2xl">Mobile Car Wash and Detailing</h1>
