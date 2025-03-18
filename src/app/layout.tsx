@@ -31,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>Fresh Flow Mobile Auto Spa</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased w-full`}

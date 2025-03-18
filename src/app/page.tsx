@@ -1,7 +1,13 @@
 import { Montserrat } from "next/font/google";
+import {Metadata} from 'next';
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagramSquare, faFacebookSquare, faYelp} from '@fortawesome/free-brands-svg-icons'
+
+export const metadata:Metadata = {
+  title:'Fresh Flow Mobile Auto Spa',
+  description:'Mobile Auto Detailing Service offering a full range of detailing services.'
+}
 
 export default function Home() {
   return (
@@ -94,7 +100,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex col-start-2 col-end-10 row-49 md:col-start-7 md:col-end-9 md:row-start-9 content-center justify-center bg-black text-purple-300">
-            <p className="text-3xl md:text-8xl m-auto">$200-$240</p>
+            <p className="text-3xl md:text-8xl m-auto">$200-$500</p>
           </div>
         </div>
       </div>
