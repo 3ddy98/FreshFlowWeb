@@ -6,7 +6,7 @@ import {faInstagramSquare, faFacebookSquare, faYelp} from '@fortawesome/free-bra
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="grid flex-row fixed w-[100%] grid-cols-3 grid-rows-1 min-h-20 max-h-30 text-black bg-white z-1">
+      <div className="grid flex-row fixed w-[100%] grid-cols-3 grid-rows-1 min-h-20 max-h-30 text-black bg-white z-1 ">
         <div className="col-1 m-auto max-w-20">
           <h1><a href="#home">Home</a></h1>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex col-start-2 col-end-10 row-31 md:col-start-5 md:col-end-7 md:row-start-9 content-center justify-center bg-[#F67721] text-white ">
-            <p className=" text-3xl md:text-8xl m-auto">$140</p>
+            <p className=" text-3xl md:text-8xl m-auto">$120-$180</p>
           </div>
           <div className="flex col-start-2 col-end-10 row-34 row-span-15 md:col-start-7 md:col-end-9 md:row-start-4 md:row-span-5 bg-linear-10 from-black to-purple-500">
             <div className="grid grid-cols-1 grid-rows-17 p-5 w-1/1 text-1xl md:text-2xl text-white">
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex col-start-2 col-end-10 row-49 md:col-start-7 md:col-end-9 md:row-start-9 content-center justify-center bg-black text-purple-300">
-            <p className="text-3xl md:text-8xl m-auto">$200</p>
+            <p className="text-3xl md:text-8xl m-auto">$200-$240</p>
           </div>
         </div>
       </div>
