@@ -35,7 +35,7 @@ export default function Home() {
       
       <div className="flex w-full @container">
         <div className="grid w-full h-500 md:h-500 grid-cols-10 grid-rows-50 md:grid-rows-10 bg-[url(./img/car-wash-1.jpg)]" id="packages">
-          <div className="flex col-start-2 col-end-10 row-2 justify-center content-center">
+          <div className="flex col-start-2 col-end-10 row-1 row-span-2 justify-center content-center">
             <h1 className="text-black  text-4xl md:text-8xl content-center text-center m-auto text-black">Packages</h1>
           </div>
           <div className="flex col-start-2 col-end-10 row-3 md:col-start-3  md:col-end-5 md:row-3 justify-center content-center bg-white ">
