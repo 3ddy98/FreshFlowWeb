@@ -23,8 +23,8 @@ export default function Home() {
           <img className="size-30 margin-auto h-50 w-50 md:h-50 md:w-50 m-auto" src="boy.png"></img>
         </div>
           
-        <div className="col-start-1 col-end-8 row-4 justify-center content-center m-auto --font-montserrat">
-            <h1 className="text-center text-3xl md:text-5xl">Fresh Flow Car Mobile Auto Spa</h1>
+        <div className="col-start-1 col-end-8 row-4 justify-center content-center m-auto --font-montserrat text-white">
+            <h1 className="text-center text-3xl md:text-5xl">Fresh Flow Mobile Auto Spa</h1>
           </div>
           <div className="col-start-1 col-end-8 row-5 justify-center content-center">
             <h1 className="text-center text-md md:text-2xl">Mobile Car Wash and Detailing</h1>
