@@ -6,7 +6,7 @@ import {faInstagramSquare, faFacebookSquare, faYelp} from '@fortawesome/free-bra
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="grid flex-row fixed w-[100%] grid-cols-3 grid-rows-1 min-h-20 max-h-30 text-black bg-white ">
+      <div className="grid flex-row fixed w-[100%] grid-cols-3 grid-rows-1 min-h-20 max-h-30 text-black bg-white z-1">
         <div className="col-1 m-auto max-w-20">
           <h1><a href="#home">Home</a></h1>
         </div>
