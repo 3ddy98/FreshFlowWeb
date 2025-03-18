@@ -7,8 +7,10 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const mont = Montserrat({
-  variable: "--font-montserrat"
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets:['latin'],
+  preload:true
 });
 
 const geistMono = Geist_Mono({
@@ -29,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${mont.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>
