@@ -40,18 +40,18 @@ export default function Home() {
       </div>
       
       <div className="flex w-full @container">
-        <div className="grid w-full h-500 md:h-500 grid-cols-10 grid-rows-50 md:grid-rows-10 bg-[url(./img/car-wash-1.jpg)]" id="packages">
+        <div className="grid w-full h-500 md:h-500 grid-cols-10 grid-rows-52 md:gap-x-5 md:grid-rows-10 bg-[url(./img/car-wash-1.jpg)]" id="packages">
           <div className="flex col-start-2 col-end-10 row-1 row-span-2 justify-center content-center">
-            <h1 className="text-black  text-4xl md:text-8xl content-center text-center m-auto text-black">Packages</h1>
+            <h1 className="text-black  text-4xl md:text-8xl content-center text-center m-auto text-black bg-white p-2 md:p-10">Packages</h1>
           </div>
           <div className="flex col-start-2 col-end-10 row-3 md:col-start-3  md:col-end-5 md:row-3 justify-center content-center bg-white ">
-            <h1 className="text-black text-3xl md:text-5xl content-center text-center">Basic</h1>
+            <h1 className="text-black text-3xl md:text-7xl content-center text-center">Basic</h1>
           </div>
           <div className="flex col-start-2 col-end-10 row-15 md:col-start-5  md:col-end-7  md:row-3 justify-center content-center bg-white ">
-            <h1 className="text-black text-3xl md:text-5xl content-center text-center">Premium</h1>
+            <h1 className="text-black text-3xl md:text-7xl content-center text-center">Premium</h1>
           </div>
           <div className="grid col-start-2 col-end-10 row-33 md:col-start-7 md:col-end-9 md:row-3 justify-center content-center bg-white ">
-            <h1 className="text-black text-3xl md:text-5xl content-center text-center">Deluxe</h1>
+            <h1 className="text-black text-3xl md:text-7xl content-center text-center">Deluxe</h1>
           </div>
 
           <div className="flex col-start-2 col-end-10 row-4 row-span-9 md:col-start-3  md:col-end-5 md:row-start-4 md:row-span-5 bg-linear-10 from-white to-gray-900">
@@ -101,6 +101,9 @@ export default function Home() {
           </div>
           <div className="flex col-start-2 col-end-10 row-49 md:col-start-7 md:col-end-9 md:row-start-9 content-center justify-center bg-black text-purple-300">
             <p className="text-3xl md:text-6xl m-auto">$200-$500</p>
+          </div>
+          <div className="flex col-start-2 col-end-10 row-51 md:row-10">
+            <p className="text-center m-auto md:text-4xl text-black bg-white md:p-10">Final Prices Upon Vehicle Inspection</p>
           </div>
         </div>
       </div>
