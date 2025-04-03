@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 import InstagramEmbed from "@/components/InstagramEmbed";
-
+import { Bebas_Neue } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import { Metadata } from 'next';
 import Image from "next/image";
@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: 'Fresh Flow Mobile Auto Spa | Jurupa Valley Mobile Car Detailing',
   description: 'Fresh Flow Mobile Auto Spa provides premium mobile car detailing in Jurupa Valley and surrounding cities including Corona, Riverside, and Ontario.'
 };
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bebas-neue"
+});
 
 export default function Home() {
   return (
@@ -70,13 +75,15 @@ export default function Home() {
         <Navbar />
         <h1 className="sr-only">Fresh Flow Mobile Auto Spa – Premium Mobile Detailing in Jurupa Valley, CA</h1>
         <section id="home" className="flex w-full @container mt-20">
-          <div className="grid w-full min-h-200 max-h-300 grid-cols-7 grid-rows-4 content-center bg-[url(./img/wheel-rag.jpg)] bg-center bg-cover">
+          <div className="grid w-full min-h-200 max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/wheel-rag.jpg)] bg-center bg-cover">
             <div className="col-start-2 col-end-7 md:col-start-4 md:col-end-5 row-start-2 justify-center content-center">
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
-            <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-3 justify-center content-center">
+            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-5 m-auto text-center text-3xl md:text-6xl backdrop-blur-sm bg-black/60 px-10 md:py-2`}><h1>Mobile Detailing Service</h1></div>
+            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-6 m-auto text-center md:text-2xl backdrop-blur-sm bg-black/60 px-10 py-2`}><h2>Dedicated to Excellence</h2></div>
+            <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
               <a href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
-                <button className="block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-10 text-4xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105">Book Now!</button>
+                <button className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-10 text-5xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now!</button>
               </a>
             </div>
           </div>
@@ -84,7 +91,7 @@ export default function Home() {
         
       <section id="packages" className="w-full @container">
         <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center">
-          <h2 className="text-4xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-4 mb-10 rounded-xl shadow-lg">Packages</h2>
+          <h2 className={`${bebasNeue.className} text-4xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-4 mb-10 rounded-xl shadow-lg`}>Packages</h2>
 
           <div className="flex flex-wrap justify-center gap-6 px-4 md:px-20 w-full max-w-screen-xl">
             <div className="w-full sm:w-[80%] md:w-[30%] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-b from-white to-gray-900 text-white p-8 flex flex-col justify-between">
@@ -155,7 +162,7 @@ export default function Home() {
 
       <section id="contact" className="w-full bg-[url(./img/porsche.jpg)] bg-cover bg-center py-20 px-6">
         <div className="backdrop-blur-sm bg-black/60 max-w-4xl mx-auto rounded-3xl p-10 shadow-2xl text-white text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">Contact Us</h2>
+          <h2 className={`${bebasNeue.className} text-4xl md:text-6xl font-bold mb-8`}>Contact Us</h2>
           <div className="space-y-4 text-xl md:text-2xl">
             <p>☎️ <a href="tel:+16263912351" className="hover:underline">(626) 391-2351</a></p>
             <p>📧 <a href="mailto:freshflowautospa@gmail.com" className="hover:underline text-sm md:text-2xl">freshflowautospa@gmail.com</a></p>
