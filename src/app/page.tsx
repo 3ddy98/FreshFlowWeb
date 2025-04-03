@@ -72,7 +72,7 @@ export default function Home() {
         
       <section id="packages" className="w-full @container">
         <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center">
-          <h2 className="text-4xl md:text-8xl text-white bg-black px-6 py-4 mb-10 rounded-xl shadow-lg">Packages</h2>
+          <h2 className="text-4xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-4 mb-10 rounded-xl shadow-lg">Packages</h2>
 
           <div className="flex flex-wrap justify-center gap-6 px-4 md:px-20 w-full max-w-screen-xl">
             <div className="w-full sm:w-[80%] md:w-[30%] rounded-3xl overflow-hidden shadow-xl bg-gradient-to-b from-white to-gray-900 text-white p-8 flex flex-col justify-between">
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-center text-white text-2xl md:text-4xl bg-black px-6 py-4 mt-14 rounded-xl shadow-lg">Final Prices Upon Vehicle Inspection</p>
+          <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">Final Prices Upon Vehicle Inspection</p>
         </div>
       </section>
 
@@ -146,7 +146,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-6xl font-bold mb-8">Contact Us</h2>
           <div className="space-y-4 text-xl md:text-2xl">
             <p>☎️ <a href="tel:+16263912351" className="hover:underline">(626) 391-2351</a></p>
-            <p>📧 <a href="mailto:freshflowautospa@gmail.com" className="hover:underline">freshflowautospa@gmail.com</a></p>
+            <p>📧 <a href="mailto:freshflowautospa@gmail.com" className="hover:underline text-sm md:text-2xl">freshflowautospa@gmail.com</a></p>
             <p>📍 Serving Jurupa Valley, Corona, Eastvale, Chino, Ontario, Fontana, Pomona, Riverside, San Bernardino, and nearby areas!</p>
           </div>
           <div className="flex justify-center gap-10 mt-8">
