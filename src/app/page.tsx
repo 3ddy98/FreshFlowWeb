@@ -53,6 +53,18 @@ export default function Home() {
           }
         `}
       </Script>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16936450849"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16936450849');
+        `}
+      </Script>
       <Script async src="https://www.instagram.com/embed.js"></Script>
       <main className="flex flex-col">
         <Navbar />

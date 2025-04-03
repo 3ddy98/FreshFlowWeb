@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from "react";
-import {Bebas_Neue} from "next/font/google"
 
 export default function InstagramEmbed() {
   useEffect(() => {
