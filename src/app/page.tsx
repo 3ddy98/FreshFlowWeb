@@ -75,7 +75,7 @@ export default function Home() {
         <Navbar />
         <h1 className="sr-only">Fresh Flow Mobile Auto Spa – Premium Mobile Detailing in Jurupa Valley, CA</h1>
         <section id="home" className="flex w-full @container mt-20">
-          <div className="grid w-full min-h-200 max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/porsche.jpg)] bg-center bg-cover">
+          <div className="grid w-full max-w-screen max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/porsche.jpg)] bg-center bg-cover">
             <div className="col-start-2 col-end-7 md:col-start-4 md:col-end-5 row-start-2 justify-center content-center">
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
@@ -86,6 +86,13 @@ export default function Home() {
                 <button className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-10 text-5xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now</button>
               </a>
             </div>
+            <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
+            <a href="#packages" className="animate-bounce bg-black/50 backdrop-blur-sm text-white rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </div>
           </div>
         </section>
         
