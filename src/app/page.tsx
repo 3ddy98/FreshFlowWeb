@@ -12,6 +12,9 @@ import Head from "next/head";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import ConversionLinkButton from '@/components/conversion_button';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export const metadata: Metadata = {
   title: 'Fresh Flow Mobile Auto Spa | Jurupa Valley Mobile Car Detailing',
@@ -34,7 +37,9 @@ export default function Home() {
         <meta property="og:url" content="https://www.freshflowmobilewash.com" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
+      <Analytics/>
+      <SpeedInsights/>
+      
       <Script id="ld-json" type="application/ld+json">
         {`
           {
