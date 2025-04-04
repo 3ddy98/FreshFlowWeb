@@ -75,7 +75,7 @@ export default function Home() {
         <Navbar />
         <h1 className="sr-only">Fresh Flow Mobile Auto Spa – Premium Mobile Detailing in Jurupa Valley, CA</h1>
         <section id="home" className="flex w-full @container mt-20">
-          <div className="grid w-full min-h-200 max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/wheel-rag.jpg)] bg-center bg-cover">
+          <div className="grid w-full min-h-200 max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/porsche.jpg)] bg-center bg-cover">
             <div className="col-start-2 col-end-7 md:col-start-4 md:col-end-5 row-start-2 justify-center content-center">
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
@@ -160,7 +160,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="w-full bg-[url(./img/porsche.jpg)] bg-cover bg-center py-20 px-6">
+      <section id="contact" className="w-full bg-[url(./img/wheel-rag.jpg)] bg-cover bg-center py-20 px-6">
         <div className="backdrop-blur-sm bg-black/60 max-w-4xl mx-auto rounded-3xl p-10 shadow-2xl text-white text-center">
           <h2 className={`${bebasNeue.className} text-4xl md:text-6xl font-bold mb-8`}>Contact Us</h2>
           <div className="space-y-4 text-xl md:text-2xl">
