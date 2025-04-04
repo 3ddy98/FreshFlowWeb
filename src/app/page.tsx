@@ -11,6 +11,7 @@ import { faInstagramSquare, faFacebookSquare, faYelp } from '@fortawesome/free-b
 import Head from "next/head";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
+import ConversionLinkButton from '@/components/conversion_button';
 
 export const metadata: Metadata = {
   title: 'Fresh Flow Mobile Auto Spa | Jurupa Valley Mobile Car Detailing',
@@ -83,7 +84,7 @@ export default function Home() {
             <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-6 m-auto text-center md:text-2xl backdrop-blur-sm bg-black/60 px-10 py-2 text-white`}><h2>We Bring Excellence Direclty to Your Home or Workplace.</h2></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
               <a href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
-                <button className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-10 text-5xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now</button>
+                <ConversionLinkButton url="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-10 text-5xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now</ConversionLinkButton>
               </a>
             </div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
@@ -110,9 +111,9 @@ export default function Home() {
                 <li>Interior Aroma</li>
               </ul>
               <div className="flex justify-center mt-8">
-                <a href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
+                <ConversionLinkButton url="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start">
                   <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold cursor-pointer transition duration-300 hover:scale-105">$60</p>
-                </a>
+                </ConversionLinkButton>
               </div>
             </div>
 
@@ -130,9 +131,9 @@ export default function Home() {
                 <li>Long Lasting Interior Aroma</li>
               </ul>
               <div className="flex justify-center mt-8">
-                <a href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
+                <ConversionLinkButton url="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start">
                   <p className="text-3xl md:text-4xl bg-[#F67721] px-6 py-3 rounded-full font-bold cursor-pointer transition duration-300 hover:scale-105">$120-$250</p>
-                </a>
+                </ConversionLinkButton>
               </div>
             </div>
 
@@ -156,9 +157,9 @@ export default function Home() {
                 <li>Leather Seat Protection</li>
               </ul>
               <div className="flex justify-center mt-8">
-                <a href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
+                <ConversionLinkButton href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
                   <p className="text-3xl md:text-5xl text-purple-300 px-6 py-3 rounded-full font-bold cursor-pointer bg-black transition duration-300 hover:scale-105">INQUIRE</p>
-                </a>
+                </ConversionLinkButton>
               </div>
             </div>
           </div>
