@@ -157,7 +157,7 @@ export default function Home() {
                 <li>Leather Seat Protection</li>
               </ul>
               <div className="flex justify-center mt-8">
-                <ConversionLinkButton href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
+                <ConversionLinkButton url="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start">
                   <p className="text-3xl md:text-5xl text-purple-300 px-6 py-3 rounded-full font-bold cursor-pointer bg-black transition duration-300 hover:scale-105">INQUIRE</p>
                 </ConversionLinkButton>
               </div>
