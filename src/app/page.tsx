@@ -111,7 +111,7 @@ export default function Home() {
               </ul>
               <div className="flex justify-center mt-8">
                 <a href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start" target="_blank" rel="noopener noreferrer">
-                  <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold cursor-pointer transition duration-300 hover:scale-105">$75</p>
+                  <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold cursor-pointer transition duration-300 hover:scale-105">$60</p>
                 </a>
               </div>
             </div>
