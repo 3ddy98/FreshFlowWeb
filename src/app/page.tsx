@@ -87,8 +87,8 @@ export default function Home() {
             <div className="col-start-2 col-end-7 md:col-start-4 md:col-end-5 row-start-2 justify-center content-center">
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
-            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-5 m-auto text-center text-2xl lg:text-4xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
-            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-6 m-auto text-center md:text-2xl backdrop-blur-sm bg-black/60 px-10 py-2 text-white`}><h2>We Bring Excellence Direclty to Wherever You Are.</h2></div>
+            <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-5 m-auto text-center text-2xl lg:text-4xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
+            <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-6 m-auto text-center md:text-2xl backdrop-blur-sm bg-black/60 px-10 py-2 text-white`}><h2>We Bring Excellence Direclty to Wherever You Are.</h2></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
               <a href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" target="_blank" rel="noopener noreferrer">
                 <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-5 text-3xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now</ConversionLinkButton>
