@@ -240,7 +240,7 @@ export default function Home() {
                   <li>✅ Wax Touch-Up (If Waxed)</li>
                   <li>✅ Graphene Detail Spray Application</li>
                 </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 30%!</p>
+                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 25%!</p>
               </div>
               <p className="text-2xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">From $150/mo</p>
             </div>
