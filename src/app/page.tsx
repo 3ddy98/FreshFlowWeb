@@ -236,6 +236,7 @@ export default function Home() {
                   <li>✔️ Tire Dressing</li>
                   <li>✔️ Streak Free Window Cleaning</li>
                   <li>✅ Dash & Console Detail</li>
+                  <li>✅ Floor Matt Cleaning</li>
                   <li>✅ Wax Touch-Up (If Waxed)</li>
                   <li>✅ Graphene Detail Spray Application</li>
                 </ul>
