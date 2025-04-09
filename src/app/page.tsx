@@ -11,6 +11,7 @@ import { faInstagramSquare, faFacebookSquare, faYelp } from '@fortawesome/free-b
 import Head from "next/head";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer"
 import ConversionLinkButton from '@/components/conversion_button';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -41,7 +42,6 @@ export default function Home() {
       </Head>
       <Analytics/>
       <SpeedInsights/>
-      
       <Script id="ld-json" type="application/ld+json">
         {`
           {
@@ -90,9 +90,7 @@ export default function Home() {
             <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-5 m-auto text-center text-2xl lg:text-4xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
             <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-6 m-auto text-center md:text-2xl backdrop-blur-sm bg-black/60 px-10 py-2 text-white`}><h2>We Bring Excellence Direclty to Wherever You Are.</h2></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
-              <a href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" target="_blank" rel="noopener noreferrer">
                 <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-5 text-3xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now</ConversionLinkButton>
-              </a>
             </div>
             <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-r from-black to-purple-500 px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call For More Info: (626) 391-2351</h2></a></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
@@ -175,12 +173,12 @@ export default function Home() {
           </div>
         </section>
 
-      <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/interior.jpg)]">
+      <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/interior.jpg)] bg-cover">
         <div className="max-w-7xl mx-auto text-center">
           <div className='bg-black/75 p-2 mb-10'>
             <h2 className="text-5xl md:text-6xl font-bold mb-6">Keep it Fresh!</h2>
             <p className="text-xl md:text-2xl mb-10">
-              Our exclusive maintenance program keeps your ride looking flawless — inside and out — on your schedule.
+              Our exclusive maintenance program keeps your vehicle looking fresh and ensures your paint stays protected—no more damage from harsh automatic tunnel car washes!
             </p>
           </div>
         </div>
@@ -268,9 +266,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <InstagramEmbed />
       </section>
     </main>
     </>
   );
 }
+

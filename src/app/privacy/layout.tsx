@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono,Montserrat } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { Main, NextScript } from "next/document";
 import Script from "next/script";
 import {GoogleAnalytics} from '@next/third-parties/google'
 import Head from 'next/head';
-import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
   description: "Mobile Auto Detailing Servicing Jurupa Valley and Surrounding Areas",
 };
 
-export default function RootLayout({
+export default function PrivacyLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -53,7 +52,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased w-full`}
       >
         {children}
-        <Footer/>
       </body>
     </html>
   );
