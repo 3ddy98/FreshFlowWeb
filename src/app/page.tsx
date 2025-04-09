@@ -11,7 +11,7 @@ import { faInstagramSquare, faFacebookSquare, faYelp } from '@fortawesome/free-b
 import Head from "next/head";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/footer"
+import Footer from "@/components/Footer"
 import ConversionLinkButton from '@/components/conversion_button';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
