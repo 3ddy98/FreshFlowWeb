@@ -114,6 +114,10 @@ export default function Home() {
             </div>
 
             <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-10">
+            <div className="bg-white text-black rounded-xl p-6 shadow-xl backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                <p className="text-xl italic mb-4">"Skeptic to try them since they have no reviews and they're pretty new but I'm so satisfied and happy with their work! Did 2 cars and both have the same level of cleanliness. Pricing is very reasonable! recommended! I'll definitely do biz with them again!"</p>
+                <p className="font-bold text-lg">— Kimberly C. • Rowland Heights, CA</p>
+              </div>
               {/* Testimonial Card 1 */}
               <div className="bg-white text-black rounded-xl p-6 shadow-xl backdrop-blur-md hover:scale-105 transition-transform duration-300">
                 <p className="text-xl italic mb-4">"They did a great job deep cleaning my car inside out. Appreciate their hard work in ensuring the car was sparkling, and they took their time cleaning."</p>
