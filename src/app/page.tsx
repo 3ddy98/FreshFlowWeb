@@ -88,11 +88,10 @@ export default function Home() {
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
             <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-5 m-auto text-center text-2xl lg:text-4xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
-            <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-6 m-auto text-center md:text-2xl backdrop-blur-sm bg-black/60 px-10 py-2 text-white`}><h2>We Bring Excellence Direclty to Wherever You Are.</h2></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
                 <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-5 text-3xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now</ConversionLinkButton>
             </div>
-            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-r from-black to-purple-500 px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call For More Info: (626) 391-2351</h2></a></div>
+            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-b to-cyan-500 from-black px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call For More Info: (626) 391-2351</h2></a></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
               <a href="#packages" className="animate-bounce bg-black/50 backdrop-blur-sm text-white rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -247,7 +246,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="w-full bg-[url(./img/wheel-rag.jpg)] bg-cover bg-center py-20 px-6">
-        <div className="backdrop-blur-sm bg-black/60 max-w-4xl mx-auto  p-10 shadow-2xl text-white text-center">
+        <div className="flex flex-col min-h-175 backdrop-blur-sm bg-black/60 max-w-4xl mx-auto  p-10 shadow-2xl text-white text-center">
           <h2 className={`${bebasNeue.className} text-4xl md:text-6xl font-bold mb-8`}>Contact Us</h2>
           <div className="space-y-4 text-xl md:text-2xl">
             <p>☎️ <a href="tel:+16263912351" className="hover:underline">(626) 391-2351</a></p>
@@ -265,7 +264,11 @@ export default function Home() {
               <FontAwesomeIcon icon={faFacebookSquare} className="text-5xl hover:scale-110 transition-transform" />
             </a>
           </div>
+          <div className='h-10 md:h-20 flex justify-center  m-auto flex-row justify-center content-center row-6 m-auto text-center text-2xl lg:text-4xl px-10 md:py-2 text-white justify-center'>
+            <div className='justify-center m-auto mr-10'><h1 className={`${bebasNeue.className} text-1xl md:text-4xl text-center`}>Perfect 5 Stars on Yelp!</h1></div>
+            <img src="yelp-stars.png"></img></div>
         </div>
+
       </section>
     </main>
     </>
