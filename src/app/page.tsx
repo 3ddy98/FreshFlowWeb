@@ -102,10 +102,58 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section id="testimonials" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/interior.jpg)] bg-cover bg-center">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 backdrop-blur-sm bg-black/50 py-4 rounded-xl">
+              What Customers Say on <span className="text-red-500">Yelp</span>
+            </h2>
+            <div className="flex justify-center items-center mb-6">
+              <img src="/Yelp.png" alt="Yelp Logo" className="h-10 mr-4" />
+              <img src="/yelp-stars.png" alt="Yelp Stars" className="h-10" />
+            </div>
+
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-10">
+              {/* Testimonial Card 1 */}
+              <div className="bg-white text-black rounded-xl p-6 shadow-xl backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                <p className="text-xl italic mb-4">"They did a great job deep cleaning my car inside out. Appreciate their hard work in ensuring the car was sparkling, and they took their time cleaning."</p>
+                <p className="font-bold text-lg">— Aya H. • Fountain Valley, CA</p>
+              </div>
+
+              {/* Testimonial Card 2 */}
+              <div className="bg-white text-black rounded-xl p-6 shadow-xl backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                <p className="text-xl italic mb-4">"My man showed up at the crack of dawn at my request. Did an excellent job on three cars. Very hard worker. The cars look great."</p>
+                <p className="font-bold text-lg">— Robert G. • Rancho Cucamonga, CA</p>
+              </div>
+
+              {/* Testimonial Card 3 */}
+              <div className="bg-white text-black rounded-xl p-6 shadow-xl backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                <p className="text-xl italic mb-4">"Exceeded my expectations! Edward and his partner were able to get all the stains out of my seats and roof that my kids had left. My car looks brand new. Definitely recommend!"</p>
+                <p className="font-bold text-lg">— Debbie S. • Jurupa Valley, CA</p>
+              </div>
+
+              <div className="bg-white text-black rounded-xl p-6 shadow-xl backdrop-blur-md hover:scale-105 transition-transform duration-300">
+                <p className="text-xl italic mb-4">"Not going to lie I was a little skeptical at first since it was my first time trying them but man !! !!! I'm extremely pleasantly surprised !!!! These guys are awesome and I've tried different mobile guys and these guy pale them in comparison!! Highly highly recommended!!!!"</p>
+                <p className="font-bold text-lg">— Walter C. • Jurupa Valley, CA</p>
+              </div>
+            </div>
+
+            <div className="mt-12">
+              <a
+                href="https://www.yelp.com/biz/fresh-flow-mobile-auto-spa-mira-loma-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-red-500 text-white text-xl px-8 py-4 rounded-full font-bold shadow-lg hover:bg-red-600 transition"
+              >
+                See All Yelp Reviews
+              </a>
+            </div>
+          </div>
+        </section>
         
         <section id="packages" className="w-full @container">
-          <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center">
-            <h2 className={`${bebasNeue.className} text-2xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-2 mb-10 shadow-lg`}>
+          <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-cente p-6">
+            <h2 className={`${bebasNeue.className} text-4xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-2 mb-10 shadow-lg`}>
               One-Time Packages
             </h2>
 
