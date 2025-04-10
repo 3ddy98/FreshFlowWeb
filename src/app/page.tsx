@@ -83,14 +83,14 @@ export default function Home() {
         <Navbar />
         <h1 className="sr-only">Fresh Flow Mobile Auto Spa – Premium Mobile Detailing in Jurupa Valley, CA</h1>
         <section id="home" className="flex w-full @container mt-20">
-          <div className="grid w-full max-w-screen max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/porsche.jpg)] bg-center bg-cover">
+          <div className="grid w-full max-w-screen max-h-200 grid-cols-7 grid-rows-11 content-center bg-[url(./img/m.jpg)] bg-center bg-cover">
             <div className="col-start-2 col-end-7 md:col-start-4 md:col-end-5 row-start-2 justify-center content-center">
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
             <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-5 m-auto text-center text-3xl md:text-3xl lg:text-5xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
             <div className="col-start-1 col-end-8 md:col-start-1 md:col-end-8 justify-center content-center row-6 m-auto text-center text-1xl md:text-1xl lg:text-2xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto"><h1>Professional mobile detailing – we come to you!</h1></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
-                <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-r from-black to-purple-500 m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Now - Limited Slots!</ConversionLinkButton>
+                <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-b to-cyan-500 from-black m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Today!</ConversionLinkButton>
             </div>
             <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-b to-cyan-500 from-black px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call For More Info: (626) 391-2351</h2></a></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
