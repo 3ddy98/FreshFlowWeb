@@ -225,7 +225,7 @@ export default function Home() {
           </div>
         </section>
 
-      <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/interior.jpg)] bg-cover">
+      <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/ford.jpg)] bg-cover">
         <div className="max-w-7xl mx-auto text-center">
           <div className='bg-black/75 p-2 mb-10'>
             <h2 className="text-5xl md:text-6xl font-bold mb-6">Keep it Fresh!</h2>
