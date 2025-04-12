@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
       <Analytics/>
       <SpeedInsights/>
-      <Script id="ld-json" type="application/ld+json">
+      <Script id="ld-json" type="Application/ld+json">
         {`
           {
             "@context": "https://schema.org",
@@ -187,7 +187,7 @@ export default function Home() {
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The Golden Standard </p>
                   <ul className="space-y-2 text-lg">
                     <li>Scratch Free Hand Wash</li>
-                    <li>Silicon Sealant Wheel Applciation</li>
+                    <li>Silicon Sealant Wheel Application</li>
                     <li>Tires and Plastics Dressing</li>
                     <li>Exterior Bug and Sap Elimination</li>
                     <li>Door Jam Cleaning</li>
@@ -215,7 +215,7 @@ export default function Home() {
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The pinnacle of excellence.</p>
                   <ul className="space-y-2 text-lg">
                     <li>Scratch Free Hand Wash</li>
-                    <li>Silicon Sealant Wheel Applciation</li>
+                    <li>Silicon Sealant Wheel Application</li>
                     <li>Tires and Plastics Dressing</li>
                     <li>Exterior Bug and Sap Elimination</li>
                     <li>Door Jam Cleaning</li>
