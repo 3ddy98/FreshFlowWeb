@@ -184,7 +184,7 @@ export default function Home() {
               <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 flex flex-col relative min-h-[900px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Factory Reset</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The Golden Standard </p>
+                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The Full Detail Experience!</p>
                   <ul className="space-y-2 text-lg">
                     <li>Scratch Free Hand Wash</li>
                     <li>Silicon Sealant Wheel Application</li>
