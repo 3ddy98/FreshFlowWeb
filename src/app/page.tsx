@@ -92,7 +92,7 @@ export default function Home() {
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
                 <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-b to-cyan-500 from-black m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Today!</ConversionLinkButton>
             </div>
-            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-b to-cyan-500 from-black px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call For More Info: (626) 391-2351</h2></a></div>
+            <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-b to-cyan-500 from-black px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call or Text For More Info: (626) 391-2351</h2></a></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
               <a href="#packages" className="animate-bounce bg-black/50 backdrop-blur-sm text-white rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
