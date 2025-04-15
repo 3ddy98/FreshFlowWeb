@@ -235,11 +235,6 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <div className='flex flex-row w-[75%] backdrop-blur-sm bg-black/60 h-40'>
-                <div><img src=""></img></div>
-              </div>
-
-
             </div>
 
             <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
