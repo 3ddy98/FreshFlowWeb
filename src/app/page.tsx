@@ -183,7 +183,7 @@ export default function Home() {
 
               {/* Factory Reset */}
               <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-2 md:p-15 flex flex-col relative min-h-[1100px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1100px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Factory Reset</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The Traditional Detail Experience!</p>
                   <ul className="space-y-2 md:text-2xl pt-10">
@@ -344,10 +344,10 @@ export default function Home() {
             <img src="yelp-stars.png"></img></div>
         </div>
       </section>
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 block md:hidden">
+      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 block md:hidden w-full bg-white justify-center">
         <a
           href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services"
-          className="bg-gradient-to-r from-black to-purple-500 text-white text-xl px-6 py-3 rounded-full shadow-lg animate-pulse"
+          className="flex h-20 text-center bg-gradient-to-r from-black to-purple-500 text-white text-2xl px-6 py-3 shadow-lg m-auto justify-center"
         >
           Book Now
         </a>
