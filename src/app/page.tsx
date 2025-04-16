@@ -90,7 +90,7 @@ export default function Home() {
             <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-5 m-auto text-center text-3xl md:text-3xl lg:text-5xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
             <div className="col-start-1 col-end-8 md:col-start-1 md:col-end-8 justify-center content-center row-6 m-auto text-center text-1xl md:text-1xl lg:text-2xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto"><h1>Why look anywhere else? Just go with the Flow!</h1></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
-                <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-b to-cyan-500 from-black m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Click Here To Book!</ConversionLinkButton>
+                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-b to-cyan-500 from-black m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Click Here To Book!</ConversionLinkButton>
             </div>
             <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-b to-cyan-500 from-black px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call or Text: (626) 391-2351</h2></a></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
@@ -156,7 +156,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-6 w-full">
 
               {/* Quick Wash */}
-              <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="w-full sm:w-[80%] md:w-[30%] group">
+              <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1100px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Vehicle Refresh</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>A Breath of fresh air!</p>
@@ -182,7 +182,7 @@ export default function Home() {
               </Link>
 
               {/* Factory Reset */}
-              <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="w-full sm:w-[80%] md:w-[30%] group">
+              <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[1100px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Factory Reset</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The Traditional Detail Experience!</p>
@@ -208,7 +208,7 @@ export default function Home() {
               </Link>
 
               {/* Showroom */}
-              <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="w-full sm:w-[80%] md:w-[30%] group">
+              <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[1100px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">M.V.P</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The pinnacle of excellence.</p>
@@ -236,7 +236,6 @@ export default function Home() {
               </Link>
               
             </div>
-            <Script src='https://square.site/appointments/buyer/widget/huuxb13bg1wbt4/LEEDGNVTD70K2.js' strategy="afterInteractive"></Script>
             <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
               Final Prices Upon Vehicle Inspection
             </p>
