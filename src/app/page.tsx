@@ -88,9 +88,9 @@ export default function Home() {
               <Image src="/boy.png" alt="Fresh Flow Auto Spa Logo" width={200} height={200} className="m-auto" />
             </div>
             <div className={`${bebasNeue.className} col-start-1 col-end-8 md:col-start-2 md:col-end-7 justify-center content-center row-5 m-auto text-center text-3xl md:text-3xl lg:text-5xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto`}><h1>The Best Mobile Detailing Service in the Inland Empire</h1></div>
-            <div className="col-start-1 col-end-8 md:col-start-1 md:col-end-8 justify-center content-center row-6 m-auto text-center text-1xl md:text-1xl lg:text-2xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto"><h1>Professional mobile detailing – we come to you!</h1></div>
+            <div className="col-start-1 col-end-8 md:col-start-1 md:col-end-8 justify-center content-center row-6 m-auto text-center text-1xl md:text-1xl lg:text-2xl backdrop-blur-sm bg-black/60 px-10 md:py-2 text-white justify-center m-auto"><h1>Why look anywhere else? Just go with the Flow!</h1></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-7 justify-center content-center">
-                <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-b to-cyan-500 from-black m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Book Today - Limited Slots!</ConversionLinkButton>
+                <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services" className={`${bebasNeue.className} block w-full bg-gradient-to-b to-cyan-500 from-black m-auto p-5 text-2xl text-white cursor-pointer z-1 transition duration-300 hover:scale-105`}>Click Here To Book!</ConversionLinkButton>
             </div>
             <div className={`${bebasNeue.className} col-start-2 col-end-7 justify-center content-center row-8 m-auto text-center md:text-2xl bg-gradient-to-b to-cyan-500 from-black px-10 py-2 text-white transition duration-300 hover:scale-105`}><a href="tel:+16263912351"><h2>Call or Text: (626) 391-2351</h2></a></div>
             <div className="col-start-2 md:col-start-3 col-end-7 md:col-end-6 row-10 flex justify-center content-center z-2">
@@ -198,7 +198,6 @@ export default function Home() {
                     <li>✅ Plastics and Vent Cleaning</li>
                     <li>✅ Long Lasting Interior Aroma Application</li>
                     <li>✅ Floor Mat Cleaning</li>
-                    <li>✅ Engine Bay Cleaning</li>
                     <li className='font-bold'>✅ Clay Exterior Decontamination</li>
                     <li className='font-bold'>✅ Carnauba Wax Application</li>
                   </ul>
@@ -235,8 +234,9 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+              
             </div>
-
+            <Script src='https://square.site/appointments/buyer/widget/huuxb13bg1wbt4/LEEDGNVTD70K2.js' strategy="afterInteractive"></Script>
             <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
               Final Prices Upon Vehicle Inspection
             </p>
