@@ -253,7 +253,7 @@ export default function Home() {
               <div className="flex flex-wrap justify-center gap-6 w-full">
               {/* Quick Wash */}
               <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1200px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[750px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Quick Wash</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>We come to you with our own water!</p>
                   <ul className="space-y-2 md:text-lg pt-10">
@@ -271,7 +271,7 @@ export default function Home() {
 
               {/* Factory Reset */}
               <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[1300px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[800px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Interior Clean-Up</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Just need to tidy up the inside?</p>
                   <ul className="space-y-2 md:text-lg pt-10">
@@ -291,7 +291,7 @@ export default function Home() {
               
               {/* Showroom */}
               <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/AG44KA3CIGXRHNVAWJRZW2TSS" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[1200px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                   <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">In-N-Out</h3>
                   <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                   <ul className="space-y-2 md:text-lg pt-10">
