@@ -43,7 +43,7 @@ export default function Navbar() {
       </div>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-4 px-6 pb-4">
-          <a href="/#packages" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>One-Time Packages</a>
+          <a href="/#packages" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Packages</a>
           <a href="/#plans" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Plans</a>
           <a href="/#contact" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a>
           <a

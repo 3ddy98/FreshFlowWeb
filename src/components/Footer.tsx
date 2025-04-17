@@ -23,7 +23,7 @@ export default function Footer() {
                 <h1 className={`${bebasNeue.className} text-4xl mb-5`}>Quick Links</h1>
                 <ul>
                     <a href="/#home"><li>Home</li></a>
-                    <a href="/#packages"><li>One-Time Packages</li></a>
+                    <a href="/#packages"><li>Packages</li></a>
                     <a href="/#plans"><li>Plans</li></a>
                     <a href="/#contact"><li>Contact Us</li></a>
                     <a href="/privacy"><li>Privacy Policy</li></a>
