@@ -227,8 +227,8 @@ export default function Home() {
               {/* Quick Wash */}
               <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1100px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                  <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Basic</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Best for Older Daily Drivers!</p>
+                  <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Basic Detail</h3>
+                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Want your car to shine in the sunlight again?</p>
                   <ul className="space-y-2 md:text-lg pt-10">
                   <h1 className='text-2xl font-bold'>Exterior</h1>
                     <li>✅ Scratch Free Hand Wash</li>
@@ -254,8 +254,8 @@ export default function Home() {
               {/* Factory Reset */}
               <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                  <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Premium</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Best for Keeping your Daily Driver Like New!</p>
+                  <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Premium Detail</h3>
+                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Your car will look like it just drove off the lot!</p>
                   <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Exterior</h1>
                     <li>✅ Scratch Free Hand Wash</li>
@@ -285,8 +285,8 @@ export default function Home() {
               {/* Showroom */}
               <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="w-full sm:w-[80%] md:w-[30%] group">
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[1150px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                  <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">Deluxe</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Best for Paint Damage Prevention on Newer Vehicles</p>
+                  <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">Deluxe Detail</h3>
+                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The best way to protect your investment long-term!</p>
                   <ul className="space-y-2 md:text-lg pt-10">
                   <h1 className='text-2xl font-bold'>Exterior</h1>
                     <li>✅ Scratch Free Hand Wash</li>
