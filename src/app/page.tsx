@@ -170,7 +170,7 @@ export default function Home() {
                       <li>✅ Exterior Bug and Sap Elimination</li>
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">Starts at $50</p>
+                      <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
                     </div>
                   </div>
                 </Link>
@@ -189,7 +189,7 @@ export default function Home() {
                       <li>✅Dash and Console Wipe Down</li>
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">Starts at $50</p>
+                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
                     </div>
                   </div>
                 </Link>
@@ -215,7 +215,7 @@ export default function Home() {
 
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">Starts at $80</p>
+                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$80*</p>
                     </div>
                   </div>
                 </Link>
@@ -246,7 +246,7 @@ export default function Home() {
                     <li className='font-bold'>✅ Spray on Ceramic Finish (4-5 Months)</li>
                   </ul>
                   <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                    <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">Starts at $149</p>
+                    <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$149*</p>
                   </div>
                 </div>
               </Link>
@@ -276,7 +276,7 @@ export default function Home() {
 
                   </ul>
                   <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                    <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">Starts at $399</p>
+                    <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$399*</p>
                   </div>
                 </div>
               </Link>
@@ -308,14 +308,14 @@ export default function Home() {
 
                   </ul>
                   <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                    <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">Starts at $599</p>
+                    <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$599*</p>
                   </div>
                 </div>
               </Link>
             </div>
             </div>
             <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
-              Final Prices Upon Vehicle Inspection
+              * Final Prices Upon Vehicle Inspection
             </p>
           </div>
         </section>
