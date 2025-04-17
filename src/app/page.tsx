@@ -201,7 +201,7 @@ export default function Home() {
                     <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">Basic In-N-Out</h3>
                     <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
-                    <h1 className='text-2xl font-bold'>Exterior</h1>
+                      <h1 className='text-2xl font-bold'>Exterior</h1>
                       <li>✅ Scratch Free Hand Wash</li>
                       <li>✅ Silicon Sealant Wheel Application</li>
                       <li>✅ Tire Dressing</li>
@@ -332,19 +332,22 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left min-h-[700px]">
           {/* Monthly Plan */}
           <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="block group">
-            <div className="bg-gradient-to-b from-gray-900 to-white p-6 shadow-xl flex flex-col relative min-h-[800px] md:min-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+            <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative min-h-[800px] md:min-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Monthly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>1 Visit Per Month</p>
                 <ul className="space-y-2 text-lg p-10">
-                <li>✔️ Exterior Non-Scratch Hand Wash</li>
-                  <li>✔️ Interior Wipe Down & Vacuum</li>
-                  <li>✔️ Tire Dressing</li>
-                  <li>✔️ Streak Free Window Cleaning</li>
-                  <li>✅ Dash & Console Detail</li>
-                  <li>✅ Floor Matt Cleaning</li>
-                  <li>✅ Wax Touch-Up (If Waxed)</li>
-                  <li>✅ Ceramic Detail Spray Application</li>
+                  <h1 className='text-2xl font-bold'>Exterior</h1>
+                  <li>✅ Scratch Free Hand Wash</li>
+                  <li>✅ Silicon Sealant Wheel Application</li>
+                  <li>✅ Tire Dressing</li>
+                  <li>✅ Exterior Bug and Sap Elimination</li>
+                  <h1 className='text-2xl font-bold'>Interior</h1>
+                  <li>✅ Door Jam Cleaning</li>
+                  <li>✅ Streak Free Window Cleaning</li>
+                  <li>✅ Full Interior Vacuum</li>
+                  <li>✅ Floor Matts Air Pressure Blow Down</li>
+                  <li>✅Dash and Console Wipe Down</li>
                 </ul>
               </div>
               <p className="text-4xl font-bold mt-6 text-center text-black absolute bottom-8 left-0 w-full flex justify-center font-bold">$80/mo</p>
@@ -353,21 +356,24 @@ export default function Home() {
 
           {/* Biweekly Plan */}
           <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="block group">
-            <div className="bg-gradient-to-b to-cyan-500 from-black p-6 shadow-xl flex flex-col relative min-h-[800px] md:min-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+            <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative min-h-[850px] md:min-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Bi-weekly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>2 Visits Per Month</p>
                 <ul className="space-y-2 text-lg p-10">
-                <li>✔️ Exterior Non-Scratch Hand Wash</li>
-                  <li>✔️ Interior Wipe Down & Vacuum</li>
-                  <li>✔️ Tire Dressing</li>
-                  <li>✔️ Streak Free Window Cleaning</li>
-                  <li>✅ Dash & Console Detail</li>
-                  <li>✅ Floor Matt Cleaning</li>
-                  <li>✅ Wax Touch-Up (If Waxed)</li>
-                  <li>✅ Ceramic Detail Spray Application</li>
+                <h1 className='text-2xl font-bold'>Exterior</h1>
+                  <li>✅ Scratch Free Hand Wash</li>
+                  <li>✅ Silicon Sealant Wheel Application</li>
+                  <li>✅ Tire Dressing</li>
+                  <li>✅ Exterior Bug and Sap Elimination</li>
+                  <h1 className='text-2xl font-bold'>Interior</h1>
+                  <li>✅ Door Jam Cleaning</li>
+                  <li>✅ Streak Free Window Cleaning</li>
+                  <li>✅ Full Interior Vacuum</li>
+                  <li>✅ Floor Matts Air Pressure Blow Down</li>
+                  <li>✅Dash and Console Wipe Down</li>
                 </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-25 left-0 flex justify-center'>Save 10%!</p>
+                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 10%!</p>
               </div>
               <p className="text-4xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$144/mo</p>
             </div>
@@ -375,21 +381,24 @@ export default function Home() {
 
           {/* Weekly Plan */}
           <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="block group">
-            <div className="bg-gradient-to-b from-black to-purple-500 p-6 shadow-xl flex flex-col relative min-h-[800px] md:min-h-[700px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+            <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative min-h-[850px] md:min-h-[700px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Weekly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>4 Visits Per Month</p>
                 <ul className="space-y-2 text-lg p-10">
-                  <li>✔️ Exterior Non-Scratch Hand Wash</li>
-                  <li>✔️ Interior Wipe Down & Vacuum</li>
-                  <li>✔️ Tire Dressing</li>
-                  <li>✔️ Streak Free Window Cleaning</li>
-                  <li>✅ Dash & Console Detail</li>
-                  <li>✅ Floor Matt Cleaning</li>
-                  <li>✅ Wax Touch-Up (If Waxed)</li>
-                  <li>✅ Ceramic Detail Spray Application</li>
+                <h1 className='text-2xl font-bold'>Exterior</h1>
+                  <li>✅ Scratch Free Hand Wash</li>
+                  <li>✅ Silicon Sealant Wheel Application</li>
+                  <li>✅ Tire Dressing</li>
+                  <li>✅ Exterior Bug and Sap Elimination</li>
+                  <h1 className='text-2xl font-bold'>Interior</h1>
+                  <li>✅ Door Jam Cleaning</li>
+                  <li>✅ Streak Free Window Cleaning</li>
+                  <li>✅ Full Interior Vacuum</li>
+                  <li>✅ Floor Matts Air Pressure Blow Down</li>
+                  <li>✅Dash and Console Wipe Down</li>
                 </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-25 left-0 flex justify-center'>Save 25%!</p>
+                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 25%!</p>
               </div>
               <p className="text-2xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$240/mo</p>
             </div>
