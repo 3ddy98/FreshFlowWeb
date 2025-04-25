@@ -191,7 +191,7 @@ export default function Home() {
                 
                 {/* Showroom */}
                 <Link href="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[900 px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[900px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Basic In-N-Out</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
