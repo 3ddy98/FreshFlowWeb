@@ -152,7 +152,7 @@ export default function Home() {
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 {/* Quick Wash */}
                 <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[900px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Exterior</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Protect your paint with a gentle hand wash.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -170,7 +170,7 @@ export default function Home() {
 
                 {/* Factory Reset */}
                 <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[900px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Interior</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Keep your interior new and free of smells.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -191,7 +191,7 @@ export default function Home() {
                 
                 {/* Showroom */}
                 <Link href="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[900 px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Basic In-N-Out</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
