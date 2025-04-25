@@ -147,25 +147,19 @@ export default function Home() {
         </section>
         
         <section id="packages" className="w-full @container">
-          <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-cente p-6">
-
-            
-
-              <h2 className={`${bebasNeue.className} text-4xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-2 mb-10 shadow-lg`}>
-              Basic Wash Packages
-              </h2>
-              
-              <div className="flex flex-wrap justify-center gap-6 w-full">
+          <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center p-6">
+            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black w-[100%]`}>Basic Wash Packages</h2>
+              <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 {/* Quick Wash */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="w-full sm:w-[80%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[650px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                    <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Basic Wash</h3>
-                    <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Beats any automatic tunnel wash!</p>
+                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Exterior</h3>
+                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Protect your paint with a gentle hand wash.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Exterior</h1>
+                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
                       <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Silicon Sealant Wheel Application</li>
-                      <li>✅ Tire Dressing</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
                       <li>✅ Exterior Bug and Sap Elimination</li>
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
@@ -175,17 +169,18 @@ export default function Home() {
                 </Link>
 
                 {/* Factory Reset */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="w-full sm:w-[80%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[750px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                    <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Basic Interior</h3>
-                    <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>More than just a vacuum!</p>
+                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Interior</h3>
+                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Keep your interior new and free of smells.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Interior</h1>
                       <li>✅ Door Jam Cleaning</li>
                       <li>✅ Streak Free Window Cleaning</li>
                       <li>✅ Full Interior Vacuum</li>
                       <li>✅ Floor Matts Air Pressure Blow Down</li>
-                      <li>✅Dash and Console Wipe Down</li>
+                      <li>✅ Dash and Console Wipe Down</li>
+                      <li>✅ Aroma Application </li>
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
                       <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
@@ -195,15 +190,15 @@ export default function Home() {
 
                 
                 {/* Showroom */}
-                <Link href="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="w-full sm:w-[80%] md:w-[30%] group">
+                <Link href="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
                   <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[850px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                    <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">Basic In-N-Out</h3>
-                    <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Basic In-N-Out</h3>
+                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                       <h1 className='text-2xl font-bold'>Exterior</h1>
+                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
                       <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Silicon Sealant Wheel Application</li>
-                      <li>✅ Tire Dressing</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
                       <li>✅ Exterior Bug and Sap Elimination</li>
                       <h1 className='text-2xl font-bold'>Interior</h1>
                       <li>✅ Door Jam Cleaning</li>
@@ -218,106 +213,105 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
-
-                <h2 className={`${bebasNeue.className} text-4xl md:text-8xl text-white backdrop-blur-sm bg-black/60 px-6 py-2 mb-10 shadow-lg`}>
-              Detail Packages
-            </h2>
-            <div className="flex flex-wrap justify-center gap-6 w-full mb-10">
-              {/* Quick Wash */}
-              <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1100px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                  <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Basic Detail</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Want your car to shine in the sunlight again?</p>
-                  <ul className="space-y-2 md:text-lg pt-10">
-                  <h1 className='text-2xl font-bold'>Exterior</h1>
-                    <li>✅ Scratch Free Hand Wash</li>
-                    <li>✅ Silicon Sealant Wheel Application</li>
-                    <li>✅ Tire Dressing</li>
-                    <li>✅ Exterior Bug and Sap Elimination</li>
-                    <h1 className='text-2xl font-bold'>Interior</h1>
-                    <li>✅ Door Jam Cleaning</li>
-                    <li>✅ Streak Free Window Cleaning</li>
-                    <li>✅ Full Interior Vacuum</li>
-                    <li>✅ Interior Plastic UV-Protection Layer Application</li>
-                    <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
-                    <li>✅ Long Lasting Interior Aroma Application</li>
-                    <li>✅ Floor Matt Shampoo and Steam Clean</li>
-                    <li className='font-bold'>✅ Spray on Ceramic Finish (4-5 Months)</li>
-                  </ul>
-                  <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                    <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$149*</p>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Factory Reset */}
-              <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                  <h3 className="text-6xl md:text-5xl font-bold text-center mb-10">Premium Detail</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>Your car will look like it just drove off the lot!</p>
-                  <ul className="space-y-2 md:text-lg pt-10">
+              </div>
+            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white px-6 py-2 mb-10 shadow-lg bg-black w-[100%]`}>Detail Packages</h2>
+            <div className='w-[100%]'>
+              <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
+                {/* Quick Wash */}
+                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                    <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 1</h3>
+                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>New interior, clean exterior!</p>
+                    <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Exterior</h1>
-                    <li>✅ Scratch Free Hand Wash</li>
-                    <li>✅ Silicon Sealant Wheel Application</li>
-                    <li>✅ Tires and Plastics Dressing</li>
-                    <li>✅ Exterior Bug and Sap Elimination</li>
-                    <li className='font-bold'>✅ Clay Exterior Decontamination</li>
-                    <li className='font-bold'>✅ Buff and One-Step Polish</li>
-                    <li className='font-bold'>✅ Carnauba Wax Application</li>
-                    <h1 className='text-2xl font-bold'>Interior</h1>
-                    <li>✅ Door Jam Cleaning</li>
-                    <li>✅ Streak Free Window Cleaning</li>
-                    <li>✅ Full Interior Vacuum</li>
-                    <li>✅ Interior Plastic UV-Protection Layer Application</li>
-                    <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
-                    <li>✅ Long Lasting Interior Aroma Application</li>
-                    <li>✅ Carpet, Matt, and Seat Shampoo and Steam</li>
-
-                  </ul>
-                  <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                    <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$399*</p>
+                    <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ Scratch Free Hand Wash</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
+                      <li>✅ Exterior Bug and Sap Elimination</li>
+                      <h1 className='text-2xl font-bold'>Interior</h1>
+                      <li>✅ Door Jam Cleaning</li>
+                      <li>✅ Streak Free Window Cleaning</li>
+                      <li>✅ Full Interior Vacuum</li>
+                      <li>✅ Interior Plastic UV-Protection Layer Application</li>
+                      <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
+                      <li>✅ Long Lasting Interior Aroma Application</li>
+                      <li>✅ Floor Matt Shampoo and Steam Clean</li>
+                      <li className='font-bold'>✅ Spray on Ceramic Finish (4-5 Months)</li>
+                    </ul>
+                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
+                      <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$199*</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
 
-              
-              {/* Showroom */}
-              <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="w-full sm:w-[80%] md:w-[30%] group">
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[1150px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-                  <h3 className="text-3xl md:text-5xl font-bold text-center mb-6">Deluxe Detail</h3>
-                  <p className={`${bebasNeue.className} text-center text-4xl bg-black p-2`}>The best way to protect your investment long-term!</p>
-                  <ul className="space-y-2 md:text-lg pt-10">
-                  <h1 className='text-2xl font-bold'>Exterior</h1>
-                    <li>✅ Scratch Free Hand Wash</li>
-                    <li>✅ Silicon Sealant Wheel Application</li>
-                    <li>✅ Tires and Plastics Dressing</li>
-                    <li>✅ Exterior Bug and Sap Elimination</li>
-                    <li className='font-bold'>✅ Engine Bay Cleaning</li>
-                    <li className='font-bold'>✅ Clay Exterior Decontamination</li>
-                    <li className='font-bold'>✅ Buff and One-Step Polish</li>
-                    <li className='font-bold'>✅ 9+ Years of Protection Advanced Ceramic</li>
-                    <h1 className='text-2xl font-bold'>Interior</h1>
-                    <li>✅ Door Jam Cleaning</li>
-                    <li>✅ Streak Free Window Cleaning</li>
-                    <li>✅ Full Interior Vacuum</li>
-                    <li>✅ Interior Plastic UV-Protection Layer Application</li>
-                    <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
-                    <li>✅ Long Lasting Interior Aroma Application</li>
-                    <li>✅ Carpet, Matt, and Seat Shampoo and Steam</li>
+                {/* Factory Reset */}
+                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                    <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 2</h3>
+                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>If you want a mirror like polish and wax, try this.</p>
+                    <ul className="space-y-2 md:text-lg pt-10">
+                      <h1 className='text-2xl font-bold'>Exterior</h1>
+                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ Scratch Free Hand Wash</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
+                      <li>✅ Exterior Bug and Sap Elimination</li>
+                      <li className='font-bold'>✅ Clay Exterior Decontamination</li>
+                      <li className='font-bold'>✅ Buff and One-Step Polish</li>
+                      <li className='font-bold'>✅ Carnauba Wax Application</li>
+                      <h1 className='text-2xl font-bold'>Interior</h1>
+                      <li>✅ Door Jam Cleaning</li>
+                      <li>✅ Streak Free Window Cleaning</li>
+                      <li>✅ Full Interior Vacuum</li>
+                      <li>✅ Interior Plastic UV-Protection Layer Application</li>
+                      <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
+                      <li>✅ Long Lasting Interior Aroma Application</li>
+                      <li>✅ Carpet, Matt, and Seat Shampoo and Steam</li>
 
-                  </ul>
-                  <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                    <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$599*</p>
+                    </ul>
+                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
+                      <p className="text-3xl md:text-6xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$399*</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+
+                
+                {/* Showroom */}
+                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Stage 3</h3>
+                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>If you're going to do it, do it right!</p>
+                    <ul className="space-y-2 md:text-lg pt-10">
+                    <h1 className='text-2xl font-bold'>Exterior</h1>
+                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ Scratch Free Hand Wash</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
+                      <li>✅ Exterior Bug and Sap Elimination</li>
+                      <li className='font-bold'>✅ Engine Bay Cleaning</li>
+                      <li className='font-bold'>✅ Clay Exterior Decontamination</li>
+                      <li className='font-bold'>✅ Buff and One-Step Polish</li>
+                      <li className='font-bold'>✅ 9+ Years of Protection Advanced Ceramic</li>
+                      <h1 className='text-2xl font-bold'>Interior</h1>
+                      <li>✅ Door Jam Cleaning</li>
+                      <li>✅ Streak Free Window Cleaning</li>
+                      <li>✅ Full Interior Vacuum</li>
+                      <li>✅ Interior Plastic UV-Protection Layer Application</li>
+                      <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
+                      <li>✅ Long Lasting Interior Aroma Application</li>
+                      <li>✅ Carpet, Matt, and Seat Shampoo and Steam</li>
+
+                    </ul>
+                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
+                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$599*</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+                <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
+                * Final Prices Upon Vehicle Inspection
+              </p>
             </div>
-            </div>
-            <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
-              * Final Prices Upon Vehicle Inspection
-            </p>
           </div>
-        </section>
+      </section>
 
       <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/ford.jpg)] bg-cover">
         <div className="max-w-7xl mx-auto text-center">
