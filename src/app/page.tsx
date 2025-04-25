@@ -148,7 +148,7 @@ export default function Home() {
         
         <section id="packages" className="w-full @container">
           <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center p-6">
-            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black w-[100%]`}>Basic Wash Packages</h2>
+            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Basic Wash Packages</h2>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 {/* Quick Wash */}
                 <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
@@ -214,7 +214,7 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
-            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white px-6 py-2 mb-10 shadow-lg bg-black w-[100%]`}>Detail Packages</h2>
+            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Detail Packages</h2>
             <div className='w-[100%]'>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 {/* Quick Wash */}
@@ -314,7 +314,7 @@ export default function Home() {
       </section>
 
       <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/ford.jpg)] bg-cover">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className=" mx-auto text-center">
           <div className='bg-black/75 p-2 mb-10'>
             <h2 className="text-5xl md:text-6xl font-bold mb-6">Keep it Fresh!</h2>
             <p className="text-xl md:text-2xl mb-10">
@@ -322,43 +322,19 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left min-h-[700px]">
+        <div className="flex overflow-x-auto gap-30 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth w-[100%] whitespace-nowrap">
           {/* Monthly Plan */}
-          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="block group">
-            <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative min-h-[800px] md:min-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-              <div>
+          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group w-[400px] shrink-0 snap-center">
+            <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative h-[700px] md:min-h-[500px] md:max-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6">
+              <div className='min-h-[1000px]'>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Monthly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>1 Visit Per Month</p>
-                <ul className="space-y-2 text-lg p-10">
+                <ul className="space-y-2 md:text-lg p-2">
                   <h1 className='text-2xl font-bold'>Exterior</h1>
-                  <li>✅ Scratch Free Hand Wash</li>
-                  <li>✅ Silicon Sealant Wheel Application</li>
-                  <li>✅ Tire Dressing</li>
-                  <li>✅ Exterior Bug and Sap Elimination</li>
-                  <h1 className='text-2xl font-bold'>Interior</h1>
-                  <li>✅ Door Jam Cleaning</li>
-                  <li>✅ Streak Free Window Cleaning</li>
-                  <li>✅ Full Interior Vacuum</li>
-                  <li>✅ Floor Matts Air Pressure Blow Down</li>
-                  <li>✅Dash and Console Wipe Down</li>
-                </ul>
-              </div>
-              <p className="text-4xl font-bold mt-6 text-center text-black absolute bottom-8 left-0 w-full flex justify-center font-bold">$80/mo</p>
-            </div>
-          </Link>
-
-          {/* Biweekly Plan */}
-          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="block group">
-            <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative min-h-[850px] md:min-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
-              <div>
-                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Bi-weekly</h3>
-                <p className='text-center text-2xl bg-black mb-4'>2 Visits Per Month</p>
-                <ul className="space-y-2 text-lg p-10">
-                <h1 className='text-2xl font-bold'>Exterior</h1>
-                  <li>✅ Scratch Free Hand Wash</li>
-                  <li>✅ Silicon Sealant Wheel Application</li>
-                  <li>✅ Tire Dressing</li>
-                  <li>✅ Exterior Bug and Sap Elimination</li>
+                  <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ Scratch Free Hand Wash</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
+                      <li>✅ Exterior Bug and Sap Elimination</li>
                   <h1 className='text-2xl font-bold'>Interior</h1>
                   <li>✅ Door Jam Cleaning</li>
                   <li>✅ Streak Free Window Cleaning</li>
@@ -368,22 +344,22 @@ export default function Home() {
                 </ul>
                 <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 10%!</p>
               </div>
-              <p className="text-4xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$144/mo</p>
+              <p className="text-2xl mt-6 text-center text-black absolute bottom-8 left-0 w-full flex justify-center font-bold">$72/mo</p>
             </div>
           </Link>
 
-          {/* Weekly Plan */}
-          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="block group">
-            <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative min-h-[850px] md:min-h-[700px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+          {/* Biweekly Plan */}
+          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group w-[400px] shrink-0 snap-center">
+            <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative h-[700px] md:min-h-[500px] md:max-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6">
               <div>
-                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Weekly</h3>
-                <p className='text-center text-2xl bg-black mb-4'>4 Visits Per Month</p>
-                <ul className="space-y-2 text-lg p-10">
+                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Bi-weekly</h3>
+                <p className='text-center text-2xl bg-black mb-4'>2 Visits Per Month</p>
+                <ul className="space-y-2 md:text-lg p-2">
                 <h1 className='text-2xl font-bold'>Exterior</h1>
-                  <li>✅ Scratch Free Hand Wash</li>
-                  <li>✅ Silicon Sealant Wheel Application</li>
-                  <li>✅ Tire Dressing</li>
-                  <li>✅ Exterior Bug and Sap Elimination</li>
+                <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ Scratch Free Hand Wash</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
+                      <li>✅ Exterior Bug and Sap Elimination</li>
                   <h1 className='text-2xl font-bold'>Interior</h1>
                   <li>✅ Door Jam Cleaning</li>
                   <li>✅ Streak Free Window Cleaning</li>
@@ -391,9 +367,34 @@ export default function Home() {
                   <li>✅ Floor Matts Air Pressure Blow Down</li>
                   <li>✅Dash and Console Wipe Down</li>
                 </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 25%!</p>
+                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 15%!</p>
               </div>
-              <p className="text-2xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$240/mo</p>
+              <p className="text-2xl mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$136/mo</p>
+            </div>
+          </Link>
+
+          {/* Weekly Plan */}
+          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group w-[400px] shrink-0 snap-center">
+            <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative h-[700px] md:min-h-[500px] md:max-h-[700px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6">
+              <div>
+                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Weekly</h3>
+                <p className='text-center text-2xl bg-black mb-4'>4 Visits Per Month</p>
+                <ul className="space-y-2 text-lg p-2">
+                <h1 className='text-2xl font-bold'>Exterior</h1>
+                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ Scratch Free Hand Wash</li>
+                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
+                      <li>✅ Exterior Bug and Sap Elimination</li>
+                  <h1 className='text-2xl font-bold'>Interior</h1>
+                  <li>✅ Door Jam Cleaning</li>
+                  <li>✅ Streak Free Window Cleaning</li>
+                  <li>✅ Full Interior Vacuum</li>
+                  <li>✅ Floor Matts Air Pressure Blow Down</li>
+                  <li>✅Dash and Console Wipe Down</li>
+                </ul>
+                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center font-bold'>Save 25%!</p>
+              </div>
+              <p className="text-4xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$224/mo</p>
             </div>
           </Link>
         </div>
