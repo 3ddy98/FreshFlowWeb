@@ -151,8 +151,8 @@ export default function Home() {
             <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Basic Wash Packages</h2>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 {/* Quick Wash */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[900px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[200px]">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Exterior</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Protect your paint with a gentle hand wash.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -166,11 +166,11 @@ export default function Home() {
                       <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
                     </div>
                   </div>
-                </Link>
+                </ConversionLinkButton>
 
                 {/* Factory Reset */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[900px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="snap-start shrink-0 group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Interior</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Keep your interior new and free of smells.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -186,12 +186,12 @@ export default function Home() {
                       <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
                     </div>
                   </div>
-                </Link>
+                </ConversionLinkButton>
 
                 
                 {/* Showroom */}
-                <Link href="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[900px] md:min-h-[800px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <ConversionLinkButton url="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Basic In-N-Out</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -212,14 +212,14 @@ export default function Home() {
                       <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$80*</p>
                     </div>
                   </div>
-                </Link>
+                </ConversionLinkButton>
               </div>
             <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Detail Packages</h2>
             <div className='w-[100%]'>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 {/* Quick Wash */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[500px] h-[500px] md:h-[1200px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 1</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>New interior, clean exterior!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -239,14 +239,14 @@ export default function Home() {
                       <li className='font-bold'>✅ Spray on Ceramic Finish (4-5 Months)</li>
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$199*</p>
+                      <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$199*</p>
                     </div>
                   </div>
-                </Link>
+                </ConversionLinkButton>
 
                 {/* Factory Reset */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="snap-start shrink-0 group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[500px] md:h-[1200px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 2</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>If you want a mirror like polish and wax, try this.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -269,15 +269,15 @@ export default function Home() {
 
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-6xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$399*</p>
+                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$399*</p>
                     </div>
                   </div>
-                </Link>
+                </ConversionLinkButton>
 
                 
                 {/* Showroom */}
-                <Link href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="snap-start shrink-0 w-[85%] sm:w-[70%] md:w-[30%] group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative min-h-[1250px] md:min-h-[1000px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl">
+                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="snap-start shrink-0 group">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] w-[300px] md:w-[500px] md:min-h-[900px] md:h-[1200px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Stage 3</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>If you're going to do it, do it right!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -304,7 +304,7 @@ export default function Home() {
                       <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$599*</p>
                     </div>
                   </div>
-                </Link>
+                </ConversionLinkButton>
               </div>
                 <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
                 * Final Prices Upon Vehicle Inspection
@@ -322,10 +322,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex overflow-x-auto gap-30 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth w-[100%] whitespace-nowrap">
+        <div className="flex overflow-x-auto gap-10 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth w-[100%] whitespace-nowrap">
           {/* Monthly Plan */}
-          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group w-[400px] shrink-0 snap-center">
-            <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative h-[700px] md:min-h-[500px] md:max-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6">
+          <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group shrink-0 snap-center">
+            <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative  mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
               <div className='min-h-[1000px]'>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Monthly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>1 Visit Per Month</p>
@@ -346,11 +346,11 @@ export default function Home() {
               </div>
               <p className="text-2xl mt-6 text-center text-black absolute bottom-8 left-0 w-full flex justify-center font-bold">$72/mo</p>
             </div>
-          </Link>
+          </ConversionLinkButton>
 
           {/* Biweekly Plan */}
-          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group w-[400px] shrink-0 snap-center">
-            <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative h-[700px] md:min-h-[500px] md:max-h-[700px] mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6">
+          <ConversionLinkButton href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center">
+            <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative  mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Bi-weekly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>2 Visits Per Month</p>
@@ -371,11 +371,11 @@ export default function Home() {
               </div>
               <p className="text-2xl mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$136/mo</p>
             </div>
-          </Link>
+          </ConversionLinkButton>
 
           {/* Weekly Plan */}
-          <Link href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group w-[400px] shrink-0 snap-center">
-            <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative h-[700px] md:min-h-[500px] md:max-h-[700px] cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6">
+          <ConversionLinkButton href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center">
+            <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Weekly</h3>
                 <p className='text-center text-2xl bg-black mb-4'>4 Visits Per Month</p>
@@ -396,7 +396,7 @@ export default function Home() {
               </div>
               <p className="text-4xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$224/mo</p>
             </div>
-          </Link>
+          </ConversionLinkButton>
         </div>
       </section>
 
@@ -424,13 +424,13 @@ export default function Home() {
             <img src="yelp-stars.png"></img></div>
         </div>
       </section>
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 block md:hidden w-full bg-white justify-center">
-        <a
-          href="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
+      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 block md:hidden h-20 text-center bg-gradient-to-r from-black to-purple-500 text-white text-2xl px-6 py-3 shadow-lg m-auto justify-center w-full">
+        <ConversionLinkButton
+          url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
           className="flex h-20 text-center bg-gradient-to-r from-black to-purple-500 text-white text-2xl px-6 py-3 shadow-lg m-auto justify-center"
         >
           Book Now
-        </a>
+        </ConversionLinkButton>
       </div>
     </main>
     </>

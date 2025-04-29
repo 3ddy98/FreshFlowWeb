@@ -26,7 +26,7 @@ export default function ConversionLinkButton({ url, children, className }: Conve
 
   return (
     <a href={url} onClick={handleClick}>
-      <button className={className}>{children}</button>
+      {children}
     </a>
   );
 }
