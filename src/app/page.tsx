@@ -148,7 +148,7 @@ export default function Home() {
         
         <section id="packages" className="w-full @container">
           <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center p-6">
-            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Basic Wash Packages</h2>
+            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Express Packages</h2>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
                 <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
                   <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
@@ -165,10 +165,13 @@ export default function Home() {
                     <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
                   </div>
                 </div>
+                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-yellow-200 to-yellow-900 text-whitep-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[200px] text-white justify-center">
+                  <h1 className={`${bebasNeue.className} text-center text-7xl`}>Express Packages</h1>
+                </div>
                 {/* Quick Wash */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[200px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Exterior</h3>
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[200px]">
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Express Exterior</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Protect your paint with a gentle hand wash.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Exterior</h1>
@@ -185,8 +188,8 @@ export default function Home() {
 
                 {/* Factory Reset */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Basic Interior</h3>
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[300px]">
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Express Interior</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Keep your interior new and free of smells.</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Interior</h1>
@@ -206,8 +209,8 @@ export default function Home() {
                 
                 {/* Showroom */}
                 <ConversionLinkButton url="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Basic In-N-Out</h3>
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[300px]">
+                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Express Full Service</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                       <h1 className='text-2xl font-bold'>Exterior</h1>
@@ -247,9 +250,13 @@ export default function Home() {
                     <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
                   </div>
                 </div>
+
+                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-yellow-200 to-yellow-900 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] h-[500px] md:h-[1300px] min-w-[300px] justify-center">
+                  <h1 className={`${bebasNeue.className} text-center text-7xl`}>Full Service Packages</h1>
+                </div>
                 {/* Quick Wash */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[500px] h-[500px] md:h-[1200px] min-w-[300px]">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] h-[500px] md:h-[1300px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 1</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>New interior, clean exterior!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -278,7 +285,7 @@ export default function Home() {
 
                 {/* Factory Reset */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[500px] md:h-[1200px] min-w-[300px]">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] md:h-[1300px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 2</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>The detail experience you will never forget!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -309,7 +316,7 @@ export default function Home() {
                 
                 {/* Showroom */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] w-[300px] md:w-[500px] md:min-h-[900px] md:h-[1200px] min-w-[300px]">
+                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] w-[300px] md:w-[400px] md:min-h-[1000px] md:h-[1300px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Stage 3</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>The Ultimate Result and Protection</p>
                     <ul className="space-y-2 md:text-lg pt-10">
@@ -338,7 +345,9 @@ export default function Home() {
                   </div>
                 </ConversionLinkButton>
               </div>
-                <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
+
+              
+              <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
                 * Final Prices Upon Vehicle Inspection
               </p>
             </div>
