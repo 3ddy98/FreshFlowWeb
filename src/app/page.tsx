@@ -224,10 +224,11 @@ export default function Home() {
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>New interior, clean exterior!</p>
                     <ul className="space-y-2 md:text-lg pt-10">
                     <h1 className='text-2xl font-bold'>Exterior</h1>
-                    <li>✅ pH Neutral Soap Cannon Spray Down</li>
+                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
                       <li>✅ Scratch Free Hand Wash</li>
                       <li>✅ Premium HVLP Spray On Tire Dressing</li>
                       <li>✅ Exterior Bug and Sap Elimination</li>
+                      <li>✅ Clay Bar Decontamination</li>
                       <h1 className='text-2xl font-bold'>Interior</h1>
                       <li>✅ Door Jam Cleaning</li>
                       <li>✅ Streak Free Window Cleaning</li>
@@ -236,10 +237,11 @@ export default function Home() {
                       <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
                       <li>✅ Long Lasting Interior Aroma Application</li>
                       <li>✅ Floor Matt Shampoo and Steam Clean</li>
-                      <li className='font-bold'>✅ Spray on Ceramic Finish (4-5 Months)</li>
+                      <li className='font-bold'>✅ Spot Polish</li>
+                      <li className='font-bold'>✅ Carnauba Wax Application</li>
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$199*</p>
+                      <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$275*</p>
                     </div>
                   </div>
                 </ConversionLinkButton>
@@ -255,8 +257,8 @@ export default function Home() {
                       <li>✅ Scratch Free Hand Wash</li>
                       <li>✅ Premium HVLP Spray On Tire Dressing</li>
                       <li>✅ Exterior Bug and Sap Elimination</li>
-                      <li className='font-bold'>✅ Clay Exterior Decontamination</li>
-                      <li className='font-bold'>✅ Buff and One-Step Polish</li>
+                      <li className='font-bold'>✅ Clay Bar Decontamination</li>
+                      <li className='font-bold'>✅ FULL VEHICLE One-Step Polish</li>
                       <li className='font-bold'>✅ Carnauba Wax Application</li>
                       <h1 className='text-2xl font-bold'>Interior</h1>
                       <li>✅ Door Jam Cleaning</li>
@@ -269,7 +271,7 @@ export default function Home() {
 
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$399*</p>
+                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$449*</p>
                     </div>
                   </div>
                 </ConversionLinkButton>
@@ -288,8 +290,8 @@ export default function Home() {
                       <li>✅ Exterior Bug and Sap Elimination</li>
                       <li className='font-bold'>✅ Engine Bay Cleaning</li>
                       <li className='font-bold'>✅ Clay Exterior Decontamination</li>
-                      <li className='font-bold'>✅ Buff and One-Step Polish</li>
-                      <li className='font-bold'>✅ 9+ Years of Protection Advanced Ceramic</li>
+                      <li className='font-bold'>✅ Two-Step Polish</li>
+                      <li className='font-bold'>✅ 9+ Years Protection Advanced Ceramic</li>
                       <h1 className='text-2xl font-bold'>Interior</h1>
                       <li>✅ Door Jam Cleaning</li>
                       <li>✅ Streak Free Window Cleaning</li>
@@ -301,7 +303,7 @@ export default function Home() {
 
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$599*</p>
+                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$749*</p>
                     </div>
                   </div>
                 </ConversionLinkButton>
