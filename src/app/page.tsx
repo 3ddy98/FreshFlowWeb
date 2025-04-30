@@ -349,7 +349,7 @@ export default function Home() {
           </ConversionLinkButton>
 
           {/* Biweekly Plan */}
-          <ConversionLinkButton href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center">
+          <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center">
             <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative  mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Bi-weekly</h3>
@@ -374,7 +374,7 @@ export default function Home() {
           </ConversionLinkButton>
 
           {/* Weekly Plan */}
-          <ConversionLinkButton href="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center">
+          <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center">
             <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
               <div>
                 <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Weekly</h3>
