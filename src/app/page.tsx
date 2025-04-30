@@ -150,6 +150,21 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center p-6">
             <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Basic Wash Packages</h2>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
+                <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
+                  <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      style={{ animation: 'swipeX 1.2s ease-in-out infinite' }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
+                    </svg>
+                    <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
+                  </div>
+                </div>
                 {/* Quick Wash */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 group">
                   <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] w-[300px] md:w-[500px] min-w-[200px]">
@@ -217,6 +232,21 @@ export default function Home() {
             <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Detail Packages</h2>
             <div className='w-[100%]'>
               <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
+              <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
+                  <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      style={{ animation: 'swipeX 1.2s ease-in-out infinite' }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
+                    </svg>
+                    <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
+                  </div>
+                </div>
                 {/* Quick Wash */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 group">
                   <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[500px] h-[500px] md:h-[1200px] min-w-[300px]">
@@ -325,6 +355,21 @@ export default function Home() {
           </div>
         </div>
         <div className="flex overflow-x-auto gap-10 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth w-[100%] whitespace-nowrap">
+        <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
+        <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            style={{ animation: 'swipeX 1.2s ease-in-out infinite' }}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
+          </svg>
+          <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
+        </div>
+      </div>
           {/* Monthly Plan */}
           <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group shrink-0 snap-center">
             <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative  mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
