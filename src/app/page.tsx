@@ -166,7 +166,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b from-yellow-200 to-yellow-900 text-whitep-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[200px] text-white justify-center">
-                  <h1 className={`${bebasNeue.className} text-center text-7xl`}>Express Packages</h1>
+                  <h1 className={`${bebasNeue.className} text-center text-5xl md:text-7xl`}>Express Packages</h1>
                 </div>
                 {/* Quick Wash */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 group">
@@ -252,7 +252,7 @@ export default function Home() {
                 </div>
 
                 <div className="overflow-hidden shadow-xl bg-gradient-to-b from-yellow-200 to-yellow-900 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] h-[500px] md:h-[1300px] min-w-[300px] justify-center">
-                  <h1 className={`${bebasNeue.className} text-center text-7xl`}>Full Service Packages</h1>
+                  <h1 className={`${bebasNeue.className} text-center text-5xl md:text-7xl`}>Full Service Packages</h1>
                 </div>
                 {/* Quick Wash */}
                 <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 group">
