@@ -208,7 +208,7 @@ export default function Home() {
 
                 
                 {/* Showroom */}
-                <ConversionLinkButton url="hhttps://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 group">
+                <ConversionLinkButton url="https://app.squareup.com/dashboard/items/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 group">
                   <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[300px]">
                     <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Express Full Service</h3>
                     <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
