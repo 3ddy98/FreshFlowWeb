@@ -340,7 +340,7 @@ export default function Home() {
 
                     </ul>
                     <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$849*</p>
+                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$649*</p>
                     </div>
                   </div>
                 </ConversionLinkButton>
