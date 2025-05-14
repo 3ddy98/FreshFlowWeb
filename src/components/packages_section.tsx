@@ -164,7 +164,7 @@ const expressPackages = [
     return (
       <div
         className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative ${
-          open ? 'min-h-[50rem]' : 'h-70'
+          open ? 'min-h-[55rem] md:min-h-[48rem]' : 'h-70'
         }`}
         style={{
           backgroundImage: !open ? `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${pkg.bgImage})` : undefined,
