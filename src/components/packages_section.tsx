@@ -17,12 +17,13 @@ const expressPackages = [
       description: 'Protect your paint with a gentle hand wash.',
       price: '$50*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ',
-      features: [
+      features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
       ],
+      features_interior: [],
       gradient: 'from-gray-900 to-white',
       bgImage: 'headlight-wash.jpg',
     },
@@ -33,7 +34,8 @@ const expressPackages = [
       description: 'Keep your interior new and free of smells.',
       price: '$50*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB',
-      features: [
+      features_exterior: [],
+      features_interior: [
         'Door Jam Cleaning',
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
@@ -51,11 +53,13 @@ const expressPackages = [
       description: "Want a detail but don't have time? This is for you!",
       price: '$80*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/AG44KA3CIGXRHNVAWJRZW2TS',
-      features: [
+      features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
+      ],
+      features_interior: [
         'Door Jam Cleaning',
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
@@ -75,14 +79,15 @@ const expressPackages = [
       description: 'New interior, clean exterior!',
       price: '$249*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
-      features: [
+      features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
         'Clay Bar Decontamination',
-        'Spot Polish',
         'Carnauba Wax Application',
+      ],
+      features_interior: [
         'Door Jam Cleaning',
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
@@ -101,7 +106,7 @@ const expressPackages = [
       description: 'The real deal.',
       price: '$449*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT',
-      features: [
+      features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
@@ -109,6 +114,8 @@ const expressPackages = [
         'Clay Bar Decontamination',
         'Premium One‑Step Polish',
         'Carnauba Wax Application',
+      ],
+      features_interior: [
         'Door Jam Cleaning',
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
@@ -127,7 +134,7 @@ const expressPackages = [
       description: 'The Ultimate Result and Protection',
       price: '$649*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
-      features: [
+      features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
@@ -136,6 +143,8 @@ const expressPackages = [
         'Clay Exterior Decontamination',
         'Two‑Step Polish',
         '9+ Years Protection Advanced Ceramic',
+      ],
+      features_interior: [
         'Door Jam Cleaning',
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
@@ -155,7 +164,7 @@ const expressPackages = [
     return (
       <div
         className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative ${
-          open ? 'min-h-[40rem]' : 'h-60'
+          open ? 'min-h-[50rem]' : 'h-70'
         }`}
         style={{
           backgroundImage: !open ? `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${pkg.bgImage})` : undefined,
@@ -181,18 +190,41 @@ const expressPackages = [
             <div className="px-6 py-4 border-b border-white/20">
               <p className="text-lg">{pkg.description}</p>
             </div>
-            <ul className="mt-4 space-y-2 px-6 text-sm pb-24">
-              {pkg.features.map((f: string, i: number) => (
-                <li key={i} className="flex items-center">
-                  <span className="mr-2">✅</span> {f}
-                </li>
-              ))}
-            </ul>
-            <div className="absolute bottom-0 left-0 right-0 px-6 py-4 flex items-center justify-between gap-4 bg-gradient-to-t">
-              <p className="text-xl font-bold bg-white text-black px-4 py-2 rounded-full whitespace-nowrap">Only {pkg.price}!</p>
-              <ConversionLinkButton url={pkg.url}>
-                <span className="px-4 py-2 bg-black bg-opacity-75 rounded-full whitespace-nowrap text-2xl bg-yellow-500 font-bold">Book Now!</span>
-              </ConversionLinkButton>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-6 py-4">
+              <div>
+                <h4 className="text-xl font-bold mb-2">Exterior</h4>
+                <ul className="space-y-2 text-sm">
+                  {pkg.features_exterior.map((f: string, i: number) => (
+                    <li key={i} className="flex items-center">
+                      <span className="mr-2">✅</span> {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-2">Interior</h4>
+                <ul className="space-y-2 text-sm">
+                  {pkg.features_interior.map((f: string, i: number) => (
+                    <li key={i} className="flex items-center">
+                      <span className="mr-2">✅</span> {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 px-6 py-4 flex flex-col gap-4 bg-gradient-to-t from-black/90 to-transparent">
+              <div className="flex items-center justify-between">
+                <div className="flex flex-col">
+                  <span className="text-sm opacity-80">Starting at</span>
+                  <p className="text-3xl font-bold text-white">{pkg.price}</p>
+                </div>
+                <ConversionLinkButton url={pkg.url}>
+                  <span className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 text-black rounded-full whitespace-nowrap text-xl font-bold hover:from-yellow-400 hover:to-yellow-300 transition-all duration-300 shadow-lg hover:shadow-yellow-500/25">Book Now!</span>
+                </ConversionLinkButton>
+              </div>
+              <div className="text-sm text-white/80 text-center">
+                *Price may vary based on vehicle size
+              </div>
             </div>
           </>
         )}
@@ -221,10 +253,10 @@ const expressPackages = [
             <button
               key={t.key}
               onClick={() => setActiveTab(t.key)}
-              className={`px-4 py-2 rounded-full transition ${
+              className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-semibold ${
                 activeTab === t.key
-                  ? 'bg-white text-black'
-                  : 'bg-black bg-opacity-50 text-white'
+                  ? 'bg-gradient-to-r from-black to-purple-500bg-gradient-to-r from-black to-purple-500 text-white font-bold shadow-lg scale-105'
+                  : 'bg-black/50 text-white hover:bg-black/70'
               }`}
             >
               {t.label}
