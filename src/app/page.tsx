@@ -16,6 +16,7 @@ import ConversionLinkButton from '@/components/conversion_button';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Link from 'next/link';
+import PackagesSection from '@/components/packages_section';
 
 
 
@@ -28,6 +29,7 @@ const bebasNeue = Bebas_Neue({
   weight: "400",
   variable: "--font-bebas-neue"
 });
+
 
 export default function Home() {
   return (
@@ -146,213 +148,8 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="packages" className="w-full @container">
-          <div className="flex flex-col items-center justify-center w-full py-20 bg-[url(./img/car-wash-1.jpg)] bg-cover bg-center p-6">
-            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white  px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Express Packages</h2>
-              <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
-                <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
-                  <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      style={{ animation: 'swipeX 1.2s ease-in-out infinite' }}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
-                    </svg>
-                    <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
-                  </div>
-                </div>
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-yellow-200 to-yellow-900 text-whitep-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[200px] text-white justify-center">
-                  <h1 className={`${bebasNeue.className} text-center text-5xl md:text-7xl`}>Express Packages</h1>
-                </div>
-                {/* Quick Wash */}
-                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-10 flex flex-col relative  cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[200px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Express Exterior</h3>
-                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Protect your paint with a gentle hand wash.</p>
-                    <ul className="space-y-2 md:text-lg pt-10">
-                    <h1 className='text-2xl font-bold'>Exterior</h1>
-                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                    </ul>
-                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-3xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
-                    </div>
-                  </div>
-                </ConversionLinkButton>
-
-                {/* Factory Reset */}
-                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-10">Express Interior</h3>
-                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>Keep your interior new and free of smells.</p>
-                    <ul className="space-y-2 md:text-lg pt-10">
-                    <h1 className='text-2xl font-bold'>Interior</h1>
-                      <li>✅ Door Jam Cleaning</li>
-                      <li>✅ Streak Free Window Cleaning</li>
-                      <li>✅ Full Interior Vacuum</li>
-                      <li>✅ Floor Matts Air Pressure Blow Down</li>
-                      <li>✅ Dash and Console Wipe Down</li>
-                      <li>✅ Aroma Application </li>
-                    </ul>
-                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$50*</p>
-                    </div>
-                  </div>
-                </ConversionLinkButton>
-
-                
-                {/* Showroom */}
-                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/AG44KA3CIGXRHNVAWJRZW2TS" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[850px] md:min-h-[900px] md:h-[1100px] w-[300px] md:w-[400px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Express Full Service</h3>
-                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>It's Basically a Detail but Faster!</p>
-                    <ul className="space-y-2 md:text-lg pt-10">
-                      <h1 className='text-2xl font-bold'>Exterior</h1>
-                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                      <h1 className='text-2xl font-bold'>Interior</h1>
-                      <li>✅ Door Jam Cleaning</li>
-                      <li>✅ Streak Free Window Cleaning</li>
-                      <li>✅ Full Interior Vacuum</li>
-                      <li>✅ Floor Matts Air Pressure Blow Down</li>
-                      <li>✅Dash and Console Wipe Down</li>
-
-                    </ul>
-                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$80*</p>
-                    </div>
-                  </div>
-                </ConversionLinkButton>
-              </div>
-            <h2 className={`${bebasNeue.className} mt-10 text-4xl md:text-8xl text-white px-6 py-2 mb-10 shadow-lg bg-black/75 w-[100%]`}>Detail Packages</h2>
-            <div className='w-[100%]'>
-              <div className="flex overflow-x-auto gap-6 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth">
-              <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
-                  <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      style={{ animation: 'swipeX 1.2s ease-in-out infinite' }}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
-                    </svg>
-                    <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
-                  </div>
-                </div>
-
-                <div className="overflow-hidden shadow-xl bg-gradient-to-b from-yellow-200 to-yellow-900 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] h-[500px] md:h-[1300px] min-w-[300px] justify-center">
-                  <h1 className={`${bebasNeue.className} text-center text-5xl md:text-7xl`}>Full Service Packages</h1>
-                </div>
-                {/* Quick Wash */}
-                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-gray-900 to-white text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] h-[500px] md:h-[1300px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 1</h3>
-                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>New interior, clean exterior!</p>
-                    <ul className="space-y-2 md:text-lg pt-10">
-                    <h1 className='text-2xl font-bold'>Exterior</h1>
-                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                      <li className='font-bold'>✅ Clay Bar Decontamination</li>
-                      <li className='font-bold'>✅ Spot Polish</li>
-                      <li className='font-bold'>✅ Carnauba Wax Application</li>
-                      <h1 className='text-2xl font-bold'>Interior</h1>
-                      <li>✅ Door Jam Cleaning</li>
-                      <li>✅ Streak Free Window Cleaning</li>
-                      <li>✅ Full Interior Vacuum</li>
-                      <li>✅ Interior Plastic UV-Protection Layer Application</li>
-                      <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
-                      <li>✅ Long Lasting Interior Aroma Application</li>
-                      <li>✅ Floor Matt Shampoo and Steam Clean</li>
-                    </ul>
-                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-black bg-white px-6 py-3 rounded-full font-bold transition duration-300">$249*</p>
-                    </div>
-                  </div>
-                </ConversionLinkButton>
-
-                {/* Factory Reset */}
-                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b to-cyan-500 from-black text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] md:min-h-[900px] w-[300px] md:w-[400px] md:h-[1300px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl md:text-5xl font-bold text-center mb-10">Stage 2</h3>
-                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>The detail experience you will never forget!</p>
-                    <ul className="space-y-2 md:text-lg pt-10">
-                      <h1 className='text-2xl font-bold'>Exterior</h1>
-                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                      <li className='font-bold'>✅ Clay Bar Decontamination</li>
-                      <li className='font-bold'>✅ Premium Full Vehicle One-Step Polish</li>
-                      <li className='font-bold'>✅ Carnauba Wax Application</li>
-                      <h1 className='text-2xl font-bold'>Interior</h1>
-                      <li>✅ Door Jam Cleaning</li>
-                      <li>✅ Streak Free Window Cleaning</li>
-                      <li>✅ Full Interior Vacuum</li>
-                      <li>✅ Interior Plastic UV-Protection Layer Application</li>
-                      <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
-                      <li>✅ Long Lasting Interior Aroma Application</li>
-                      <li>✅ Carpet, Matt, and Seat Shampoo and Steam</li>
-
-                    </ul>
-                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl bg-cyan-500 px-6 py-3 rounded-full font-bold transition duration-300">$449*</p>
-                    </div>
-                  </div>
-                </ConversionLinkButton>
-
-                
-                {/* Showroom */}
-                <ConversionLinkButton url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS" className="snap-start shrink-0 group">
-                  <div className="overflow-hidden shadow-xl bg-gradient-to-b from-black to-purple-500 text-white p-8 md:p-15 flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl min-h-[1200px] w-[300px] md:w-[400px] md:min-h-[1000px] md:h-[1300px] min-w-[300px]">
-                    <h3 className="text-3xl md:text-6xl font-bold text-center mb-6">Stage 3</h3>
-                    <p className={`${bebasNeue.className} text-center text-2xl md:text-4xl bg-black p-2`}>The Ultimate Result and Protection</p>
-                    <ul className="space-y-2 md:text-lg pt-10">
-                    <h1 className='text-2xl font-bold'>Exterior</h1>
-                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                      <li className='font-bold'>✅ Engine Bay Cleaning</li>
-                      <li className='font-bold'>✅ Clay Exterior Decontamination</li>
-                      <li className='font-bold'>✅ Two-Step Polish</li>
-                      <li className='font-bold'>✅ 9+ Years Protection Advanced Ceramic</li>
-                      <h1 className='text-2xl font-bold'>Interior</h1>
-                      <li>✅ Door Jam Cleaning</li>
-                      <li>✅ Streak Free Window Cleaning</li>
-                      <li>✅ Full Interior Vacuum</li>
-                      <li>✅ Interior Plastic UV-Protection Layer Application</li>
-                      <li>✅ Doors, Seat Rails, Console, Dash and Vent Cleaning</li>
-                      <li>✅ Long Lasting Interior Aroma Application</li>
-                      <li>✅ Carpet, Matt, and Seat Shampoo and Steam</li>
-
-                    </ul>
-                    <div className="absolute bottom-8 left-0 w-full flex justify-center">
-                      <p className="text-3xl md:text-4xl text-purple-300 px-6 py-3 rounded-full font-bold bg-black transition duration-300">$649*</p>
-                    </div>
-                  </div>
-                </ConversionLinkButton>
-              </div>
-
-              
-              <p className="text-center text-white text-2xl md:text-4xl backdrop-blur-sm bg-black/60 px-6 py-4 mt-14 rounded-xl shadow-lg">
-                * Final Prices Upon Vehicle Inspection
-              </p>
-            </div>
-          </div>
-      </section>
+      <PackagesSection >
+      </PackagesSection>
 
       <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/ford.jpg)] bg-cover">
         <div className=" mx-auto text-center">
