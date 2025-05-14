@@ -223,7 +223,7 @@ const expressPackages = [
                 </ConversionLinkButton>
               </div>
               <div className="text-sm text-white/80 text-center">
-                *Price may vary based on vehicle size
+                *Price may vary based on vehicle condition
               </div>
             </div>
           </>
