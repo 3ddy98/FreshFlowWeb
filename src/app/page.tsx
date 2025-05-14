@@ -151,132 +151,258 @@ export default function Home() {
       <PackagesSection >
       </PackagesSection>
 
-      <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/ford.jpg)] bg-cover">
-        <div className=" mx-auto text-center">
-          <div className='bg-black/75 p-2 mb-10'>
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">Keep it Fresh!</h2>
-            <p className="text-xl md:text-2xl mb-10">
+      <section id="plans" className="w-full bg-black text-white py-20 px-6 bg-[url(./img/ford.jpg)] bg-cover bg-fixed">
+        <div className="max-w-7xl mx-auto">
+          <div className='bg-black/75 p-8 rounded-2xl mb-12 text-center'>
+            <h2 className={`${bebasNeue.className} text-5xl md:text-6xl font-bold mb-6`}>Keep it Fresh!</h2>
+            <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto">
               Our exclusive maintenance program keeps your vehicle looking fresh and ensures your paint stays protected—no more damage from harsh automatic tunnel car washes!
             </p>
+            <div className="flex flex-col md:flex-row  justify-center gap-4 mt-6">
+              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Flexible Scheduling</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Cancel Anytime</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Premium Service</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex overflow-x-auto gap-10 w-full scrollbar-hide px-4 md:flex-wrap md:justify-center snap-x snap-mandatory scroll-smooth w-[100%] whitespace-nowrap">
-        <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
-        <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            style={{ animation: 'swipeX 1.2s ease-in-out infinite' }}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
-          </svg>
-          <span className='text-2xl bg-white rounded-full text-black px-3'>Swipe</span>
-        </div>
-      </div>
-          {/* Monthly Plan */}
-          <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group shrink-0 snap-center">
-            <div className="bg-gradient-to-b from-gray-900 to-white md:p-6 shadow-xl flex flex-col relative  mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
-              <div className='min-h-[1000px]'>
-                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Monthly</h3>
-                <p className='text-center text-2xl bg-black mb-4'>1 Visit Per Month</p>
-                <ul className="space-y-2 md:text-lg p-2">
-                  <h1 className='text-2xl font-bold'>Exterior</h1>
-                  <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                  <h1 className='text-2xl font-bold'>Interior</h1>
-                  <li>✅ Door Jam Cleaning</li>
-                  <li>✅ Streak Free Window Cleaning</li>
-                  <li>✅ Full Interior Vacuum</li>
-                  <li>✅ Floor Matts Air Pressure Blow Down</li>
-                  <li>✅Dash and Console Wipe Down</li>
-                </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 10%!</p>
-              </div>
-              <p className="text-2xl mt-6 text-center text-black absolute bottom-8 left-0 w-full flex justify-center font-bold">$72/mo</p>
-            </div>
-          </ConversionLinkButton>
 
-          {/* Biweekly Plan */}
-          <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center">
-            <div className="bg-gradient-to-b to-cyan-500 from-black md:p-6 shadow-xl flex flex-col relative  mb-10 cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
+          {/* Common Features Section */}
+          <div className="bg-black/75 rounded-2xl p-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Bi-weekly</h3>
-                <p className='text-center text-2xl bg-black mb-4'>2 Visits Per Month</p>
-                <ul className="space-y-2 md:text-lg p-2">
-                <h1 className='text-2xl font-bold'>Exterior</h1>
-                <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                  <h1 className='text-2xl font-bold'>Interior</h1>
-                  <li>✅ Door Jam Cleaning</li>
-                  <li>✅ Streak Free Window Cleaning</li>
-                  <li>✅ Full Interior Vacuum</li>
-                  <li>✅ Floor Matts Air Pressure Blow Down</li>
-                  <li>✅Dash and Console Wipe Down</li>
+                <h4 className="text-2xl font-bold mb-4 text-center md:text-left">Included Exterior Services</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    pH Neutral Soap Cannon Spray Down
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Scratch Free Hand Wash
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Premium HVLP Spray On Tire Dressing
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Exterior Bug and Sap Elimination
+                  </li>
                 </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center'>Save 15%!</p>
               </div>
-              <p className="text-2xl mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$136/mo</p>
+              <div>
+                <h4 className="text-2xl font-bold mb-4 text-center md:text-left">Included Interior Services</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Door Jam Cleaning
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Streak Free Window Cleaning
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Full Interior Vacuum
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Floor Matts Air Pressure Blow Down
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Dash and Console Wipe Down
+                  </li>
+                </ul>
+              </div>
             </div>
-          </ConversionLinkButton>
+          </div>
 
-          {/* Weekly Plan */}
-          <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center">
-            <div className="bg-gradient-to-b from-black to-purple-500 md:p-6 shadow-xl flex flex-col relative cursor-pointer transform transition-transform duration-200 group-hover:scale-105 group-hover:shadow-2xl p-6 h-[700px] min-h-[200px] md:min-h-[900px] min-w-[300px]">
-              <div>
-                <h3 className={`${bebasNeue.className} text-3xl font-bold mb-4 text-center`}>Weekly</h3>
-                <p className='text-center text-2xl bg-black mb-4'>4 Visits Per Month</p>
-                <ul className="space-y-2 text-lg p-2">
-                <h1 className='text-2xl font-bold'>Exterior</h1>
-                      <li>✅ pH Neutral Soap Cannon Spray Down</li>
-                      <li>✅ Scratch Free Hand Wash</li>
-                      <li>✅ Premium HVLP Spray On Tire Dressing</li>
-                      <li>✅ Exterior Bug and Sap Elimination</li>
-                  <h1 className='text-2xl font-bold'>Interior</h1>
-                  <li>✅ Door Jam Cleaning</li>
-                  <li>✅ Streak Free Window Cleaning</li>
-                  <li>✅ Full Interior Vacuum</li>
-                  <li>✅ Floor Matts Air Pressure Blow Down</li>
-                  <li>✅Dash and Console Wipe Down</li>
-                </ul>
-                <p className='text-white text-2xl text-center mt-10 bg-cyan-500 absolute p-2 w-full bottom-20 left-0 flex justify-center font-bold'>Save 25%!</p>
+          {/* Plan Cards */}
+          <div className="flex flex-col md:flex-row justify-center gap-4 mt-6 px-4">
+            <div className="md:hidden flex justify-center mt-4 mb-2 w-full">
+              <div className="flex items-center gap-2 text-white text-sm opacity-80 animate-pulse">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4" />
+                </svg>
               </div>
-              <p className="text-4xl font-bold mt-6 text-center absolute bottom-8 left-0 w-full flex justify-center">$224/mo</p>
             </div>
-          </ConversionLinkButton>
+
+            {/* Monthly Plan */}
+            <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group shrink-0 snap-center w-full md:w-auto">
+              <div className="bg-gradient-to-b from-gray-900 to-white rounded-2xl shadow-xl flex flex-col relative mb-10 cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 w-full md:min-w-[400px] min-h-[400px] justify-center">
+                <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-cyan-500 text-white px-6 py-2 rounded-full font-bold shadow-lg">
+                  Save 10%
+                </div>
+                <h3 className={`${bebasNeue.className} text-4xl font-bold mb-2 text-center`}>Monthly</h3>
+                <p className='text-center text-xl text-gray-600 mb-6'>1 Visit Per Month</p>
+                <div className="text-4xl font-bold text-center mb-8">
+                  <span className="text-5xl">$72</span>
+                  <span className="text-xl text-gray-600">/mo</span>
+                </div>
+                <div className="text-center text-gray-600">
+                  <p className="text-sm">Flexible scheduling</p>
+                  <p className="text-sm">Cancel anytime</p>
+                  <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-xl md:text-2xl w-full max-w-[280px] text-center font-bold justify-center"><p>Click to Join Now!</p></div>
+                </div>
+              </div>
+            </ConversionLinkButton>
+
+            {/* Biweekly Plan */}
+            <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center w-full md:w-auto">
+              <div className="bg-gradient-to-b to-cyan-500 from-black rounded-2xl shadow-xl flex flex-col relative mb-10 cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 w-full md:min-w-[400px] min-h-[400px] justify-center">
+                <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-6 py-2 rounded-full font-bold shadow-lg">
+                  Save 15%
+                </div>
+                <h3 className={`${bebasNeue.className} text-4xl font-bold mb-2 text-center`}>Bi-weekly</h3>
+                <p className='text-center text-xl text-white/80 mb-6'>2 Visits Per Month</p>
+                <div className="text-4xl font-bold text-center mb-8">
+                  <span className="text-5xl">$136</span>
+                  <span className="text-xl text-white/80">/mo</span>
+                </div>
+                <div className="text-center text-white/80">
+                  <p className="text-sm">Flexible scheduling</p>
+                  <p className="text-sm">Cancel anytime</p>
+                  <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-xl md:text-2xl w-full max-w-[280px] text-center font-bold justify-center"><p>Click to Join Now!</p></div>
+                </div>
+              </div>
+            </ConversionLinkButton>
+
+            {/* Weekly Plan */}
+            <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center w-full md:w-auto">
+              <div className="bg-gradient-to-b from-black to-purple-500 rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
+                <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-purple-500 text-white px-6 py-2 rounded-full font-bold shadow-lg">
+                  Save 25%
+                </div>
+                <h3 className={`${bebasNeue.className} text-4xl font-bold mb-2 text-center`}>Weekly</h3>
+                <p className='text-center text-xl text-white/80 mb-6'>4 Visits Per Month</p>
+                <div className="text-4xl font-bold text-center mb-8">
+                  <span className="text-5xl">$224</span>
+                  <span className="text-xl text-white/80">/mo</span>
+                </div>
+                <div className="text-center text-white/80">
+                  <p className="text-sm">Flexible scheduling</p>
+                  <p className="text-sm">Cancel anytime</p>
+                  <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-xl md:text-2xl w-full max-w-[280px] text-center font-bold justify-center"><p>Click to Join Now!</p></div>
+                </div>
+              </div>
+            </ConversionLinkButton>
+          </div>
         </div>
       </section>
 
-      <section id="contact" className="w-full bg-[url(./img/wheel-rag.jpg)] bg-cover bg-center py-20 px-6">
-        <div className="flex flex-col min-h-175 backdrop-blur-sm bg-black/60 max-w-4xl mx-auto  p-10 shadow-2xl text-white text-center">
-          <h2 className={`${bebasNeue.className} text-4xl md:text-6xl font-bold mb-8`}>Contact Us</h2>
-          <div className="space-y-4 text-xl md:text-2xl">
-            <p>📍 Serving Jurupa Valley, Corona, Eastvale, Chino, Ontario, Fontana, Pomona, Riverside, San Bernardino, and nearby areas!</p>
-            <p>📧 <a href="mailto:freshflowautospa@gmail.com" className="hover:underline text-sm md:text-2xl">freshflowautospa@gmail.com</a></p>
-            <p>☎️ <a href="tel:+16263912351" className="hover:underline">(626) 391-2351</a></p>
+      <section id="contact" className="w-full bg-[url(./img/wheel-rag.jpg)] bg-cover bg-center py-20 px-4 md:px-6 relative">
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <div className="bg-gradient-to-br from-black/80 to-gray-900/80 rounded-2xl p-8 md:p-12 shadow-2xl backdrop-blur-sm">
+            <h2 className={`${bebasNeue.className} text-4xl md:text-6xl font-bold mb-8 text-center text-white`}>Contact Us</h2>
+            
+            {/* Service Area */}
+            <div className="mb-8 text-center">
+              <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-2xl text-white">Service Area</span>
+              </div>
+              <p className="text-lg md:text-xl text-white/90">
+                Serving Jurupa Valley, Corona, Eastvale, Chino, Ontario, Fontana, Pomona, Riverside, San Bernardino, and nearby areas!
+              </p>
+            </div>
+
+            {/* Contact Methods */}
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <a href="mailto:freshflowautospa@gmail.com" 
+                 className="flex items-center gap-3 bg-white/10 hover:bg-white/20 transition-colors p-4 rounded-xl group">
+                <div className="bg-cyan-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm text-white/70">Email Us</p>
+                  <p className="text-white font-medium">freshflowautospa@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="tel:+16263912351" 
+                 className="flex items-center gap-3 bg-white/10 hover:bg-white/20 transition-colors p-4 rounded-xl group">
+                <div className="bg-green-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm text-white/70">Call or Text</p>
+                  <p className="text-white font-medium">(626) 391-2351</p>
+                </div>
+              </a>
+            </div>
+
+            {/* Social Media & Reviews */}
+            <div className="space-y-6">
+              <div className="flex justify-center gap-6">
+                <a href="https://www.yelp.com/biz/fresh-flow-mobile-auto-spa-mira-loma-3" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="bg-red-500 hover:bg-red-600 p-3 rounded-full transition-colors group">
+                  <FontAwesomeIcon icon={faYelp} className="text-2xl text-white group-hover:scale-110 transition-transform" />
+                </a>
+                <a href="https://www.instagram.com/freshflowmobileautospa/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="bg-gradient-to-br from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 p-3 rounded-full transition-colors group">
+                  <FontAwesomeIcon icon={faInstagramSquare} className="text-2xl text-white group-hover:scale-110 transition-transform" />
+                </a>
+                <a href="https://www.facebook.com/freshflowmobileautospa" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors group">
+                  <FontAwesomeIcon icon={faFacebookSquare} className="text-2xl text-white group-hover:scale-110 transition-transform" />
+                </a>
+              </div>
+
+              <div className="flex flex-col items-center gap-2">
+                <div className={`${bebasNeue.className} text-2xl md:text-3xl text-white`}>Perfect 5 Stars on Yelp!</div>
+                <img src="/yelp-stars.png" alt="Yelp 5 Star Rating" className="h-8 md:h-10" />
+              </div>
+            </div>
           </div>
-          <div className="flex justify-center gap-10 mt-8">
-            <a href="https://www.yelp.com/biz/fresh-flow-mobile-auto-spa-mira-loma-3" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faYelp} className="text-5xl hover:scale-110 transition-transform" />
-            </a>
-            <a href="https://www.instagram.com/freshflowmobileautospa/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagramSquare} className="text-5xl hover:scale-110 transition-transform" />
-            </a>
-            <a href="https://www.facebook.com/freshflowmobileautospa" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebookSquare} className="text-5xl hover:scale-110 transition-transform" />
-            </a>
-          </div>
-          <div className='h-10 md:h-20 flex justify-center  m-auto flex-row justify-center content-center row-6 m-auto text-center text-2xl lg:text-4xl px-10 md:py-2 text-white justify-center'>
-            <div className='justify-center m-auto mr-10'><h1 className={`${bebasNeue.className} text-1xl md:text-4xl text-center`}>Perfect 5 Stars on Yelp!</h1></div>
-            <img src="yelp-stars.png"></img></div>
         </div>
       </section>
+      
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 block md:hidden h-20 text-center bg-gradient-to-r from-black to-purple-500 text-white text-2xl px-6 py-3 shadow-lg m-auto justify-center w-full">
         <ConversionLinkButton
           url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
