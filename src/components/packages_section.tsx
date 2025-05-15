@@ -163,7 +163,7 @@ const expressPackages = [
     const [open, setOpen] = useState(false);
     return (
       <div
-        className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative ${
+        className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative cursor-pointer ${
           open ? 'min-h-[55rem] md:min-h-[48rem]' : 'h-70'
         }`}
         style={{
@@ -171,10 +171,10 @@ const expressPackages = [
           backgroundSize: !open ? 'cover' : undefined,
           backgroundPosition: !open ? 'center' : undefined,
         }}
+        onClick={() => setOpen(!open)}
       >
         <div
-          className="flex justify-between items-center px-6 py-4 cursor-pointer"
-          onClick={() => setOpen(!open)}
+          className="flex justify-between items-center px-6 py-4"
         >
           <div>
             <h3 className="text-2xl font-bold">{pkg.title}</h3>
