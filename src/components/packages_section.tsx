@@ -76,7 +76,7 @@ const expressPackages = [
       id: 'stage1',
       title: 'Stage 1 : Vehicle Reset',
       subtitle: 'Essential Care',
-      description: 'New interior, clean exterior!',
+      description: 'Reset your vehicle\'s interior to its original condition!',
       price: '$249*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
       features_exterior: [
@@ -101,9 +101,9 @@ const expressPackages = [
     },
     {
       id: 'stage2',
-      title: 'Stage 2: Full Polish',
+      title: 'Stage 2: One Step Polish',
       subtitle: 'Premium Care',
-      description: 'The real deal.',
+      description: 'Eliminate those swirls and scratches with a single step polish and wax.',
       price: '$449*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT',
       features_exterior: [
@@ -131,7 +131,7 @@ const expressPackages = [
       id: 'stage3',
       title: 'Stage 3: Ceramic',
       subtitle: 'Ultimate Care',
-      description: 'The Ultimate Result and Protection',
+      description: 'Mirror like shine and 9+ years of protection. You WILL turn heads.',
       price: '$649*',
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
       features_exterior: [
