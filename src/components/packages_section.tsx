@@ -1,7 +1,8 @@
 'use client'
-import { use, useState } from 'react';
+import { use, useState, useEffect, Suspense } from 'react';
 import { Bebas_Neue } from "next/font/google";
 import ConversionLinkButton from './conversion_button';
+import { useSearchParams } from 'next/navigation';
 
 const bebasNeue = Bebas_Neue({
     subsets: ["latin"],
@@ -161,6 +162,25 @@ const expressPackages = [
   
   function CollapsibleCard({ pkg }: { pkg: any }) {
     const [open, setOpen] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(false);
+
+    // Check if we're on desktop on mount and when window resizes
+    useEffect(() => {
+      const checkDesktop = () => {
+        setIsDesktop(window.innerWidth >= 768); // 768px is the md breakpoint
+      };
+      
+      checkDesktop();
+      window.addEventListener('resize', checkDesktop);
+      
+      return () => window.removeEventListener('resize', checkDesktop);
+    }, []);
+
+    // Set initial state based on screen size
+    useEffect(() => {
+      setOpen(isDesktop);
+    }, [isDesktop]);
+
     return (
       <div
         className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative cursor-pointer ${
@@ -233,11 +253,28 @@ const expressPackages = [
   }
   
   export default function PackagesSection() {
+    return (
+      <Suspense fallback={<div className="py-12 text-center text-white">Loading packages...</div>}>
+        <PackagesSectionContent />
+      </Suspense>
+    );
+  }
+  
+  function PackagesSectionContent() {
     const tabs = [
       { key: 'express', label: 'Express Packages', data: expressPackages },
       { key: 'detail', label: 'Detail Packages', data: detailPackages },
     ];
+    const searchParams = useSearchParams();
     const [activeTab, setActiveTab] = useState('express');
+  
+    // Handle URL parameters for tab switching
+    useEffect(() => {
+      const tab = searchParams.get('tab');
+      if (tab === 'express' || tab === 'detail') {
+        setActiveTab(tab);
+      }
+    }, [searchParams]);
   
     return (
       <section id="packages" className="py-12 bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('car-wash-1.jpg')" }}>
@@ -255,7 +292,7 @@ const expressPackages = [
               onClick={() => setActiveTab(t.key)}
               className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-semibold ${
                 activeTab === t.key
-                  ? 'bg-gradient-to-r from-black to-purple-500bg-gradient-to-r from-black to-purple-500 text-white font-bold shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-purple-800 to-orange-400 text-white font-bold shadow-lg scale-105'
                   : 'bg-black/50 text-white hover:bg-black/70'
               }`}
             >
