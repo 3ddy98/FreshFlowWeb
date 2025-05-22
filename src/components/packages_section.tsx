@@ -16,7 +16,11 @@ const expressPackages = [
       title: 'Express Exterior',
       subtitle: 'Quick & Efficient',
       description: 'Protect your paint with a gentle hand wash.',
-      price: '$50*',
+      prices: {
+        compact: '$45*',
+        midsize: '$50*',
+        suv: '$60*'
+      },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
@@ -33,7 +37,11 @@ const expressPackages = [
       title: 'Express Interior',
       subtitle: 'Fresh & Clean',
       description: 'Keep your interior new and free of smells.',
-      price: '$50*',
+      prices: {
+        compact: '$45*',
+        midsize: '$50*',
+        suv: '$60*'
+      },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB',
       features_exterior: [],
       features_interior: [
@@ -49,10 +57,14 @@ const expressPackages = [
     },
     {
       id: 'full',
-      title: 'Express Full Service',
+      title: 'Express Detail',
       subtitle: 'Complete Care',
       description: "Want a detail but don't have time? This is for you!",
-      price: '$80*',
+      prices: {
+        compact: '$70*',
+        midsize: '$80*',
+        suv: '$95*'
+      },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/AG44KA3CIGXRHNVAWJRZW2TS',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
@@ -78,7 +90,11 @@ const expressPackages = [
       title: 'Stage 1 : Vehicle Reset',
       subtitle: 'Essential Care',
       description: 'Reset your vehicle\'s interior to its original condition!',
-      price: '$249*',
+      prices: {
+        compact: '$199*',
+        midsize: '$225*',
+        suv: '$249*'
+      },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
@@ -105,7 +121,11 @@ const expressPackages = [
       title: 'Stage 2: One Step Polish',
       subtitle: 'Premium Care',
       description: 'Eliminate those swirls and scratches with a single step polish and wax.',
-      price: '$449*',
+      prices: {
+        compact: '$299*',
+        midsize: '$325*',
+        suv: '$349*'
+      },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
@@ -133,7 +153,11 @@ const expressPackages = [
       title: 'Stage 3: Ceramic',
       subtitle: 'Ultimate Care',
       description: 'Mirror like shine and 9+ years of protection. You WILL turn heads.',
-      price: '$649*',
+      prices: {
+        compact: '$650*',
+        midsize: '$700*',
+        suv: '$750*'
+      },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
@@ -184,7 +208,7 @@ const expressPackages = [
     return (
       <div
         className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative cursor-pointer ${
-          open ? 'min-h-[55rem] md:min-h-[48rem]' : 'h-70'
+          open ? 'min-h-[60rem] md:min-h-[55rem]' : 'h-70'
         }`}
         style={{
           backgroundImage: !open ? `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${pkg.bgImage})` : undefined,
@@ -236,7 +260,11 @@ const expressPackages = [
               <div className="flex items-center justify-between">
                 <div className="flex flex-col">
                   <span className="text-sm opacity-80">Starting at</span>
-                  <p className="text-3xl font-bold text-white">{pkg.price}</p>
+                  <div className="space-y-1">
+                    <p className="text-lg font-bold text-white">Compact: {pkg.prices.compact}</p>
+                    <p className="text-lg font-bold text-white">Midsize: {pkg.prices.midsize}</p>
+                    <p className="text-lg font-bold text-white">SUV: {pkg.prices.suv}</p>
+                  </div>
                 </div>
                 <ConversionLinkButton url={pkg.url}>
                   <span className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 text-black rounded-full whitespace-nowrap text-xl font-bold hover:from-yellow-400 hover:to-yellow-300 transition-all duration-300 shadow-lg hover:shadow-yellow-500/25">Book Now!</span>
