@@ -17,9 +17,9 @@ const expressPackages = [
       subtitle: 'Quick & Efficient',
       description: 'Protect your paint with a gentle hand wash.',
       prices: {
-        compact: '$45*',
-        midsize: '$50*',
-        suv: '$60*'
+        compact: '$49*',
+        midsize: '$59*',
+        suv: '$69*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ',
       features_exterior: [
@@ -38,9 +38,9 @@ const expressPackages = [
       subtitle: 'Fresh & Clean',
       description: 'Keep your interior new and free of smells.',
       prices: {
-        compact: '$45*',
-        midsize: '$50*',
-        suv: '$60*'
+        compact: '$49*',
+        midsize: '$59*',
+        suv: '$69*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB',
       features_exterior: [],
@@ -61,9 +61,9 @@ const expressPackages = [
       subtitle: 'Complete Care',
       description: "Want a detail but don't have time? This is for you!",
       prices: {
-        compact: '$70*',
-        midsize: '$80*',
-        suv: '$95*'
+        compact: '$79*',
+        midsize: '$89*',
+        suv: '$99*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/AG44KA3CIGXRHNVAWJRZW2TS',
       features_exterior: [
@@ -92,8 +92,8 @@ const expressPackages = [
       description: 'Reset your vehicle\'s interior to its original condition!',
       prices: {
         compact: '$199*',
-        midsize: '$225*',
-        suv: '$249*'
+        midsize: '$249*',
+        suv: '$299*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
       features_exterior: [
@@ -120,11 +120,11 @@ const expressPackages = [
       id: 'stage2',
       title: 'Stage 2: One Step Polish',
       subtitle: 'Premium Care',
-      description: 'Eliminate those swirls and scratches with a single step polish and wax.',
+      description: 'Make your vehicle pop with a single step polish and wax.',
       prices: {
-        compact: '$299*',
-        midsize: '$325*',
-        suv: '$349*'
+        compact: '$349*',
+        midsize: '$449*',
+        suv: '$549*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT',
       features_exterior: [
@@ -150,13 +150,13 @@ const expressPackages = [
     },
     {
       id: 'stage3',
-      title: 'Stage 3: Ceramic',
-      subtitle: 'Ultimate Care',
-      description: 'Mirror like shine and 9+ years of protection. You WILL turn heads.',
+      title: 'Stage 3: Paint Correction',
+      subtitle: 'Back to New',
+      description: 'Relive the first day off the lot!',
       prices: {
-        compact: '$650*',
-        midsize: '$700*',
-        suv: '$750*'
+        compact: '$499*',
+        midsize: '$549*',
+        suv: '$649*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
       features_exterior: [
@@ -166,8 +166,7 @@ const expressPackages = [
         'Exterior Bug and Sap Elimination',
         'Engine Bay Cleaning',
         'Clay Exterior Decontamination',
-        'Two‑Step Polish',
-        '9+ Years Protection Advanced Ceramic',
+        'Two‑Step Polish Paint Correction',
       ],
       features_interior: [
         'Door Jam Cleaning',
