@@ -59,7 +59,7 @@ const expressPackages = [
       id: 'full',
       title: 'Express Exterior & Interior',
       subtitle: 'Complete Care',
-      description: "Want a detail but don't have time? This is for you!",
+      description: "Just want a quick refresh? This is for you!",
       prices: {
         compact: '$79*',
         midsize: '$89*',
@@ -71,6 +71,7 @@ const expressPackages = [
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
+        'Graphene Based Detail Spray Application'
       ],
       features_interior: [
         'Door Jam Cleaning',
