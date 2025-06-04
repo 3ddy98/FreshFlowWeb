@@ -87,7 +87,7 @@ const expressPackages = [
   const detailPackages = [
     {
       id: 'stage1',
-      title: 'Stage 1 : Vehicle Reset',
+      title: 'Stage 1 : Vehicle Refresh',
       subtitle: 'Essential Care',
       description: 'Reset your vehicle\'s interior to its original condition!',
       prices: {
@@ -118,7 +118,7 @@ const expressPackages = [
     },
     {
       id: 'stage2',
-      title: 'Stage 2: One Step Polish',
+      title: 'Stage 2: Sparkling Clean',
       subtitle: 'Premium Care',
       description: 'Make your vehicle pop with a single step polish and wax.',
       prices: {
@@ -150,7 +150,7 @@ const expressPackages = [
     },
     {
       id: 'stage3',
-      title: 'Stage 3: Paint Correction',
+      title: 'Stage 3: New Car',
       subtitle: 'Back to New',
       description: 'Relive the first day off the lot!',
       prices: {
