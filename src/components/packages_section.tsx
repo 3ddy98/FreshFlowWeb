@@ -57,7 +57,7 @@ const expressPackages = [
     },
     {
       id: 'full',
-      title: 'Express Detail',
+      title: 'Express Exterior & Interior',
       subtitle: 'Complete Care',
       description: "Want a detail but don't have time? This is for you!",
       prices: {
@@ -87,13 +87,13 @@ const expressPackages = [
   const detailPackages = [
     {
       id: 'stage1',
-      title: 'Stage 1 : Vehicle Refresh',
+      title: 'Stage 1 : Mini-Detail',
       subtitle: 'Essential Care',
       description: 'Reset your vehicle\'s interior to its original condition!',
       prices: {
-        compact: '$199*',
-        midsize: '$249*',
-        suv: '$299*'
+        compact: '$125*',
+        midsize: '$145*',
+        suv: '$165*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
       features_exterior: [
@@ -109,7 +109,7 @@ const expressPackages = [
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
         'Interior Plastic UV‑Protection Layer Application',
-        'Doors, Seat Rails, Console, Dash and Vent Cleaning',
+        'Doors, Console, Dash Wipe Down',
         'Long Lasting Interior Aroma Application',
         'Floor Matt Shampoo and Steam Clean',
       ],
@@ -118,13 +118,13 @@ const expressPackages = [
     },
     {
       id: 'stage2',
-      title: 'Stage 2: Sparkling Clean',
+      title: 'Stage 2: Standard Detail',
       subtitle: 'Premium Care',
       description: 'Make your vehicle pop with a single step polish and wax.',
       prices: {
-        compact: '$349*',
-        midsize: '$449*',
-        suv: '$549*'
+        compact: '$199*',
+        midsize: '$249*',
+        suv: '$299*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT',
       features_exterior: [
@@ -141,9 +141,9 @@ const expressPackages = [
         'Streak‑Free Window Cleaning',
         'Full Interior Vacuum',
         'Interior Plastic UV‑Protection Layer Application',
-        'Doors, Seat Rails, Console, Dash and Vent Cleaning',
+        'Doors, Seat Rails, Console, and Dash In-Detail Cleaning',
         'Long Lasting Interior Aroma Application',
-        'Carpet, Matt, and Seat Shampoo and Steam',
+        'Carpet, Floor Matts, and Seat Shampoo and Steam Clean',
       ],
       gradient: 'from-black to-cyan-500',
       bgImage: 'stage2-detail.jpg',
@@ -154,9 +154,9 @@ const expressPackages = [
       subtitle: 'Back to New',
       description: 'Relive the first day off the lot!',
       prices: {
-        compact: '$499*',
-        midsize: '$549*',
-        suv: '$649*'
+        compact: '$325*',
+        midsize: '$375*',
+        suv: '$425*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
       features_exterior: [
@@ -175,7 +175,7 @@ const expressPackages = [
         'Interior Plastic UV‑Protection Layer Application',
         'Doors, Seat Rails, Console, Dash and Vent Cleaning',
         'Long Lasting Interior Aroma Application',
-        'Carpet, Matt, and Seat Shampoo and Steam',
+        'Carpet,Floor Matts, and Seat Shampoo and Steam Clean',
       ],
       gradient: 'from-black to-purple-500',
       bgImage: 'stage3-detail.jpg',
@@ -261,7 +261,7 @@ const expressPackages = [
                   <span className="text-sm opacity-80">Starting at</span>
                   <div className="space-y-1">
                     <p className="text-lg font-bold text-white">Compact: {pkg.prices.compact}</p>
-                    <p className="text-lg font-bold text-white">Midsize: {pkg.prices.midsize}</p>
+                    <p className="text-lg font-bold text-white">Sedan: {pkg.prices.midsize}</p>
                     <p className="text-lg font-bold text-white">SUV: {pkg.prices.suv}</p>
                   </div>
                 </div>
