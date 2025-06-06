@@ -10,91 +10,161 @@ const bebasNeue = Bebas_Neue({
     variable: "--font-bebas-neue"
   });
 
-const expressPackages = [
+const individualServices = [
+  {
+    id: 'headlight',
+    title: 'Headlight Restoration',
+    subtitle: 'Clear Vision',
+    description: 'Restore cloudy headlights to like-new condition.',
+    prices: {
+      flat: '$50/headlight*'
+    },
+    url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+    features_exterior: [
+      'Headlight Sanding & Polishing',
+      'UV Protection Coating',
+      'Clear Coat Application',
+      'Final Polish & Buff'
+    ],
+    features_interior: [],
+    gradient: 'from-blue-900 to-blue-500',
+    bgImage: 'headlight-wash.jpg',
+  },
+  {
+    id: 'waterspot',
+    title: 'Water Spot Removal',
+    subtitle: 'Crystal Clear',
+    description: 'Eliminate stubborn water spots and mineral deposits.',
+    prices: {
+      flat: '$50*'
+    },
+    url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+    features_exterior: [
+      'Water Spot Assessment',
+      'Chemical Decontamination',
+      'Paint Polishing',
+      'Glass Treatment',
+      'Protective Coating Application'
+    ],
+    features_interior: [],
+    gradient: 'from-cyan-900 to-cyan-500',
+    bgImage: 'stage1-detail.jpg',
+  },
+  {
+    id: 'ceramic',
+    title: 'Ceramic Coating',
+    subtitle: 'Long-Lasting Protection',
+    description: 'Add a durable ceramic coating for superior protection and shine.',
+    prices: {
+      flat: '$399*'
+    },
+    url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+    features_exterior: [
+      'Paint Decontamination',
+      'Surface Preparation',
+      'Ceramic Coating Application',
+      'Curing Process',
+      'Final Inspection'
+    ],
+    features_interior: [],
+    gradient: 'from-purple-900 to-purple-500',
+    bgImage: 'stage2-detail.jpg',
+  },
+  {
+    id: 'paint-correction',
+    title: 'Paint Correction',
+    subtitle: 'Flawless Finish',
+    description: 'Remove scratches, swirls, and oxidation for a showroom finish.',
+    prices: {
+      flat: '$199*'
+    },
+    url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+    features_exterior: [
+      'Paint Assessment',
+      'Multi-Step Correction',
+      'Swirl Mark Removal',
+      'Scratch Reduction',
+      'Final Polish'
+    ],
+    features_interior: [],
+    gradient: 'from-red-900 to-red-500',
+    bgImage: 'stage3-detail.jpg',
+  },
+  {
+    id: 'pet-hair',
+    title: 'Pet Hair Removal',
+    subtitle: 'Fur-Free Interior',
+    description: 'Specialized removal of pet hair from all interior surfaces.',
+    prices: {
+      flat: '$50*'
+    },
+    url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+    features_exterior: [],
+    features_interior: [
+      'Specialized Pet Hair Tools',
+      'Upholstery Treatment',
+      'Carpet Cleaning',
+      'Air Vent Cleaning',
+      'Final Vacuum'
+    ],
+    gradient: 'from-yellow-900 to-yellow-500',
+    bgImage: 'mercedes-interior.jpg',
+  },
+  {
+    id: 'odor',
+    title: 'Odor Elimination',
+    subtitle: 'Fresh Interior',
+    description: 'Professional odor removal and air purification treatment.',
+    prices: {
+      flat: '$50*'
+    },
+    url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+    features_exterior: [],
+    features_interior: [
+      'Ozone Treatment',
+      'Air Vent Sanitization',
+      'Carpet Deodorizing',
+      'Upholstery Treatment',
+      'Long-Lasting Fresh Scent'
+    ],
+    gradient: 'from-teal-900 to-teal-500',
+    bgImage: 'mercedes-interior.jpg',
+  }
+];
+
+const detailPackages = [
     {
-      id: 'ext',
-      title: 'Express Exterior',
-      subtitle: 'Quick & Efficient',
-      description: 'Protect your paint with a gentle hand wash.',
+      id: 'basic',
+      title: 'Wash & Wax',
+      subtitle: 'Essential Clean',
+      description: 'Keep your vehicle looking fresh with our basic wash and wax service!',
       prices: {
-        compact: '$49*',
-        midsize: '$59*',
-        suv: '$69*'
+        compact: '$99*',
+        midsize: '$109*',
+        suv: '$119*'
       },
-      url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/NXZZR64TJ7YOSR7URBKKGZDJ',
+      url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
-        'Premium HVLP Spray On Tire Dressing',
-        'Exterior Bug and Sap Elimination',
-      ],
-      features_interior: [],
-      gradient: 'from-gray-900 to-white',
-      bgImage: 'headlight-wash.jpg',
-    },
-    {
-      id: 'int',
-      title: 'Express Interior',
-      subtitle: 'Fresh & Clean',
-      description: 'Keep your interior new and free of smells.',
-      prices: {
-        compact: '$49*',
-        midsize: '$59*',
-        suv: '$69*'
-      },
-      url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/D4GO7ZWEGLLFUDKPOZ5J5GUB',
-      features_exterior: [],
-      features_interior: [
-        'Door Jam Cleaning',
-        'Streak‑Free Window Cleaning',
-        'Full Interior Vacuum',
-        'Floor Matts Air Pressure Blow Down',
-        'Dash and Console Wipe Down',
-        'Aroma Application',
-      ],
-      gradient: 'from-black to-cyan-500',
-      bgImage: 'mercedes-interior.jpg',
-    },
-    {
-      id: 'full',
-      title: 'Express Exterior & Interior',
-      subtitle: 'Complete Care',
-      description: "Just want a quick refresh? This is for you!",
-      prices: {
-        compact: '$79*',
-        midsize: '$89*',
-        suv: '$99*'
-      },
-      url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/AG44KA3CIGXRHNVAWJRZW2TS',
-      features_exterior: [
-        'pH Neutral Soap Cannon Spray Down',
-        'Scratch‑Free Hand Wash',
-        'Premium HVLP Spray On Tire Dressing',
-        'Exterior Bug and Sap Elimination',
-        'Graphene Based Detail Spray Application'
+        'Basic Tire Dressing',
+        'Clay Bar Decontamination',
+        'Carnauba Wax Application',
       ],
       features_interior: [
-        'Door Jam Cleaning',
-        'Streak‑Free Window Cleaning',
-        'Full Interior Vacuum',
-        'Floor Matts Air Pressure Blow Down',
-        'Dash and Console Wipe Down',
       ],
-      gradient: 'from-black to-purple-500',
-      bgImage: 'vacuum-vehicle.jpg',
+      gradient: 'from-gray-800 to-gray-400',
+      bgImage: 'stage1-detail.jpg',
     },
-  ];
-  
-  const detailPackages = [
     {
       id: 'stage1',
-      title: 'Stage 1 : Mini-Detail',
+      title: 'Standard Protection',
       subtitle: 'Essential Care',
-      description: 'Reset your vehicle\'s interior to its original condition!',
+      description: 'Refreshed and ready for the road!',
       prices: {
-        compact: '$125*',
-        midsize: '$145*',
-        suv: '$165*'
+        compact: '$129*',
+        midsize: '$149*',
+        suv: '$169*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
       features_exterior: [
@@ -102,8 +172,7 @@ const expressPackages = [
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
-        'Clay Bar Decontamination',
-        'Carnauba Wax Application',
+        'Premium Spray On Wax',
       ],
       features_interior: [
         'Door Jam Cleaning',
@@ -112,14 +181,60 @@ const expressPackages = [
         'Interior Plastic UV‑Protection Layer Application',
         'Doors, Console, Dash Wipe Down',
         'Long Lasting Interior Aroma Application',
-        'Floor Matt Shampoo and Steam Clean',
       ],
       gradient: 'from-gray-900 to-white',
       bgImage: 'stage1-detail.jpg',
     },
     {
+      id: 'engine',
+      title: 'Engine Bay Cleaning',
+      subtitle: 'Spotless Engine',
+      description: 'Professional engine bay cleaning and detailing.',
+      prices: {
+        compact: '$119*',
+        midsize: '$139*',
+        suv: '$159*'
+      },
+      url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
+      features_exterior: [
+        'Engine Bay Degreasing',
+        'Safe Steam Cleaning',
+        'Plastic & Rubber Dressing',
+        'Final Inspection & Quality Check'
+      ],
+      features_interior: [],
+      gradient: 'from-orange-900 to-orange-500',
+      bgImage: 'stage2-detail.jpg',
+    },
+    {
+      id: 'interior-detail',
+      title: 'Interior Detail',
+      subtitle: 'Deep Interior Clean',
+      description: 'Transform your vehicle\'s interior with our comprehensive cleaning service!',
+      prices: {
+        compact: '$149*',
+        midsize: '$175*',
+        suv: '$199*'
+      },
+      url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/6IZHIK7MXKU2X5QXCLWOL2XB',
+      features_exterior: [],
+      features_interior: [
+        'Deep Carpet & Upholstery Cleaning',
+        'Leather Conditioning & Protection',
+        'Dashboard & Console Detail',
+        'Air Vent & Crevice Cleaning',
+        'Odor Elimination Treatment',
+        'UV Protection Application',
+        'Trunk Cleaning',
+        'Steam Cleaning of Hard Surfaces',
+        'Long Lasting Interior Aroma Application'
+      ],
+      gradient: 'from-green-800 to-green-400',
+      bgImage: 'mercedes-interior.jpg',
+    },
+    {
       id: 'stage2',
-      title: 'Stage 2: Standard Detail',
+      title: 'Performance Detail',
       subtitle: 'Premium Care',
       description: 'Make your vehicle pop with a single step polish and wax.',
       prices: {
@@ -151,13 +266,13 @@ const expressPackages = [
     },
     {
       id: 'stage3',
-      title: 'Stage 3: New Car',
+      title: 'Showroom Quality',
       subtitle: 'Back to New',
       description: 'Relive the first day off the lot!',
       prices: {
-        compact: '$325*',
-        midsize: '$375*',
-        suv: '$425*'
+        compact: '$399*',
+        midsize: '$449*',
+        suv: '$499*'
       },
       url: 'https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
       features_exterior: [
@@ -180,7 +295,7 @@ const expressPackages = [
       ],
       gradient: 'from-black to-purple-500',
       bgImage: 'stage3-detail.jpg',
-    },
+    }
   ];
   
   
@@ -261,9 +376,15 @@ const expressPackages = [
                 <div className="flex flex-col">
                   <span className="text-sm opacity-80">Starting at</span>
                   <div className="space-y-1">
-                    <p className="text-lg font-bold text-white">Compact: {pkg.prices.compact}</p>
-                    <p className="text-lg font-bold text-white">Sedan: {pkg.prices.midsize}</p>
-                    <p className="text-lg font-bold text-white">SUV: {pkg.prices.suv}</p>
+                    {pkg.prices.flat ? (
+                      <p className="text-lg font-bold text-white">{pkg.prices.flat}</p>
+                    ) : (
+                      <>
+                        <p className="text-lg font-bold text-white">Compact: {pkg.prices.compact}</p>
+                        <p className="text-lg font-bold text-white">Sedan: {pkg.prices.midsize}</p>
+                        <p className="text-lg font-bold text-white">SUV: {pkg.prices.suv}</p>
+                      </>
+                    )}
                   </div>
                 </div>
                 <ConversionLinkButton url={pkg.url}>
@@ -290,16 +411,16 @@ const expressPackages = [
   
   function PackagesSectionContent() {
     const tabs = [
-      { key: 'express', label: 'Express Packages', data: expressPackages },
       { key: 'detail', label: 'Detail Packages', data: detailPackages },
+      { key: 'individual', label: 'Add-On Services', data: individualServices },
     ];
     const searchParams = useSearchParams();
-    const [activeTab, setActiveTab] = useState('express');
+    const [activeTab, setActiveTab] = useState('detail');
   
     // Handle URL parameters for tab switching
     useEffect(() => {
       const tab = searchParams.get('tab');
-      if (tab === 'express' || tab === 'detail') {
+      if (tab === 'detail' || tab === 'individual') {
         setActiveTab(tab);
       }
     }, [searchParams]);
