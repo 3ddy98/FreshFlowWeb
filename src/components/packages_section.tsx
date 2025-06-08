@@ -93,35 +93,37 @@ const individualServices = [
 ];
 
 const detailPackages = [
-    {
-      id: 'wash-vac',
-      title: 'Wash & Vac',
-      subtitle: 'Basic Clean',
-      description: 'Keep your vehicle clean and fresh with our basic wash and vacuum service!',
-      prices: {
-        compact: '$69*',
-        midsize: '$79*',
-        suv: '$89*'
-      },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-      features_exterior: [
-        'pH Neutral Soap Cannon Spray Down',
-        'Scratch‑Free Hand Wash',
-        'Basic Tire Dressing',
-        'Window Cleaning'
-      ],
-      features_interior: [
-        'Full Interior Vacuum',
-        'Basic Interior Wipe Down',
-        'Door Jam Cleaning',
-        'Trash Removal'
-      ],
-      gradient: 'from-gray-700 to-gray-300',
-      bgImage: 'stage1-detail.jpg',
+  {
+    id: 'stage1',
+    title: 'Mobile Wash',
+    subtitle: 'Essential Care',
+    description: 'Refreshed and ready for the road!',
+    prices: {
+      compact: '$75*',
+      midsize: '$85*',
+      suv: '$95*'
     },
+    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+    features_exterior: [
+      'pH Neutral Soap Cannon Spray Down',
+      'Scratch‑Free Hand Wash',
+      'Premium HVLP Spray On Tire Dressing',
+      'Exterior Bug and Sap Elimination',
+      'Premium Spray On Wax',
+    ],
+    features_interior: [
+      'Door Jam Cleaning',
+      'Streak‑Free Window Cleaning',
+      'Interior Plastic UV‑Protection Layer Application',
+      'Doors, Console, Dash Wipe Down',
+      'Long Lasting Interior Aroma Application',
+    ],
+    gradient: 'from-gray-900 to-white',
+    bgImage: 'stage1-detail.jpg',
+  },
     {
       id: 'basic',
-      title: 'Wash & Wax',
+      title: 'Clay & Wax',
       subtitle: 'Essential Clean',
       description: 'Keep your vehicle looking fresh with our basic wash and wax service!',
       prices: {
@@ -135,51 +137,48 @@ const detailPackages = [
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
-        'Clay Bar Decontamination',
-        'Carnauba Wax Application',
+        '**Clay Bar Decontamination**',
+        '**Carnauba Wax Application**',
       ],
       features_interior: [],
       gradient: 'from-gray-800 to-gray-400',
       bgImage: 'stage1-detail.jpg',
     },
     {
-      id: 'stage1',
-      title: 'Standard Protection',
-      subtitle: 'Essential Care',
-      description: 'Refreshed and ready for the road!',
+      id: 'interior-detail',
+      title: 'Interior Detail',
+      subtitle: 'Deep Interior Clean',
+      description: 'Transform your vehicle\'s interior with our comprehensive cleaning service!',
       prices: {
-        compact: '$139*',
-        midsize: '$149*',
-        suv: '$169*'
+        compact: '$149*',
+        midsize: '$175*',
+        suv: '$199*'
       },
       url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-      features_exterior: [
-        'pH Neutral Soap Cannon Spray Down',
-        'Scratch‑Free Hand Wash',
-        'Premium HVLP Spray On Tire Dressing',
-        'Exterior Bug and Sap Elimination',
-        'Premium Spray On Wax',
-      ],
+      features_exterior: [],
       features_interior: [
-        'Door Jam Cleaning',
-        'Streak‑Free Window Cleaning',
-        'Full Interior Vacuum',
-        'Interior Plastic UV‑Protection Layer Application',
-        'Doors, Console, Dash Wipe Down',
-        'Long Lasting Interior Aroma Application',
+        '**Deep Carpet & Upholstery Cleaning**',
+        '**Leather Conditioning & Protection**',
+        '**Dashboard & Console Detail**',
+        '**Air Vent & Crevice Cleaning**',
+        '**Odor Elimination Treatment**',
+        '**UV Protection Application**',
+        '**Trunk Cleaning**',
+        '**Steam Cleaning of Hard Surfaces**',
+        'Long Lasting Interior Aroma Application'
       ],
-      gradient: 'from-gray-900 to-white',
-      bgImage: 'stage1-detail.jpg',
+      gradient: 'from-green-800 to-green-400',
+      bgImage: 'mercedes-interior.jpg',
     },
     {
-      id: 'stage2',
-      title: 'Performance Detail',
-      subtitle: 'Premium Care',
-      description: 'Make your vehicle pop with a single step polish and wax.',
+      id: 'premium-detail',
+      title: 'Premium Detail',
+      subtitle: 'Enhanced Care',
+      description: 'Comprehensive cleaning and protection for your vehicle.',
       prices: {
-        compact: '$229*',
-        midsize: '$269*',
-        suv: '$329*'
+        compact: '$199*',
+        midsize: '$249*',
+        suv: '$299*'
       },
       url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
       features_exterior: [
@@ -188,7 +187,38 @@ const detailPackages = [
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
         'Clay Bar Decontamination',
-        'Premium One‑Step Polish',
+        'Carnauba Wax Application',
+      ],
+      features_interior: [
+        'Door Jam Cleaning',
+        'Streak‑Free Window Cleaning',
+        'Full Interior Vacuum',
+        'Interior Plastic UV‑Protection Layer Application',
+        '**Doors, Seat Rails, Console, and Dash In-Detail Cleaning**',
+        'Long Lasting Interior Aroma Application',
+        '**Carpet, Floor Matts, and Seat Shampoo and Steam Clean**',
+      ],
+      gradient: 'from-black to-blue-500',
+      bgImage: 'stage2-detail.jpg',
+    },
+    {
+      id: 'stage2',
+      title: 'Performance Detail',
+      subtitle: 'Quality Care',
+      description: 'Make that factory paint pop!',
+      prices: {
+        compact: '$299*',
+        midsize: '$349*',
+        suv: '$399*'
+      },
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      features_exterior: [
+        'pH Neutral Soap Cannon Spray Down',
+        'Scratch‑Free Hand Wash',
+        'Premium HVLP Spray On Tire Dressing',
+        'Exterior Bug and Sap Elimination',
+        'Clay Bar Decontamination',
+        '**Premium One‑Step Polish**',
         'Carnauba Wax Application',
       ],
       features_interior: [
@@ -205,13 +235,13 @@ const detailPackages = [
     },
     {
       id: 'stage3',
-      title: 'Showroom Quality',
-      subtitle: 'Back to New',
-      description: 'Relive the first day off the lot!',
+      title: 'Showroom Detail',
+      subtitle: 'Turn Heads.',
+      description: 'Museum worthy.',
       prices: {
-        compact: '$499*',
-        midsize: '$549*',
-        suv: '$599*'
+        compact: '$599*',
+        midsize: '$649*',
+        suv: '$699*'
       },
       url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
       features_exterior: [
@@ -219,9 +249,9 @@ const detailPackages = [
         'Scratch‑Free Hand Wash',
         'Premium HVLP Spray On Tire Dressing',
         'Exterior Bug and Sap Elimination',
-        'Engine Bay Cleaning',
+        '**Engine Bay Cleaning**',
         'Clay Exterior Decontamination',
-        'Two‑Step Polish Paint Correction',
+        '**Two‑Step Polish Paint Correction**',
       ],
       features_interior: [
         'Door Jam Cleaning',
@@ -236,51 +266,55 @@ const detailPackages = [
       bgImage: 'stage3-detail.jpg',
     },
     {
-      id: 'interior-detail',
-      title: 'Interior Detail',
-      subtitle: 'Deep Interior Clean',
-      description: 'Transform your vehicle\'s interior with our comprehensive cleaning service!',
+      id: 'one-step',
+      title: 'One Step Polish',
+      subtitle: 'Quick Enhancement',
+      description: 'Light paint correction and enhancement in a single step.',
       prices: {
-        compact: '$149*',
-        midsize: '$175*',
-        suv: '$199*'
-      },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-      features_exterior: [],
-      features_interior: [
-        'Deep Carpet & Upholstery Cleaning',
-        'Leather Conditioning & Protection',
-        'Dashboard & Console Detail',
-        'Air Vent & Crevice Cleaning',
-        'Odor Elimination Treatment',
-        'UV Protection Application',
-        'Trunk Cleaning',
-        'Steam Cleaning of Hard Surfaces',
-        'Long Lasting Interior Aroma Application'
-      ],
-      gradient: 'from-green-800 to-green-400',
-      bgImage: 'mercedes-interior.jpg',
-    },
-    {
-      id: 'paint-correction',
-      title: 'Paint Correction',
-      subtitle: 'Flawless Finish',
-      description: 'Remove scratches, swirls, and oxidation for a showroom finish.',
-      prices: {
-        compact: '$299*',
-        midsize: '$349*',
-        suv: '$399*'
+        compact: '$199*',
+        midsize: '$249*',
+        suv: '$299*'
       },
       url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
       features_exterior: [
-        'Paint Assessment',
-        'Multi-Step Correction',
-        'Swirl Mark Removal',
-        'Scratch Reduction',
-        'Final Polish'
+        '**Paint Assessment**',
+        '**Light Scratch Removal**',
+        '**Swirl Mark Reduction**',
+        '**Single-Step Polish**',
+        '**Paint Enhancement**',
+        '**Final Inspection**',
+        'pH Neutral Soap Cannon Spray Down',
+        'Scratch‑Free Hand Wash',
+        'Clay Bar Decontamination',
+        'Carnauba Wax Application'
       ],
       features_interior: [],
-      gradient: 'from-red-900 to-red-500',
+      gradient: 'from-indigo-900 to-indigo-500',
+      bgImage: 'stage2-detail.jpg',
+    },
+    {
+      id: 'two-step',
+      title: 'Two Step Polish',
+      subtitle: 'Deep Correction',
+      description: 'Complete paint correction for maximum results.',
+      prices: {
+        compact: '$399*',
+        midsize: '$449*',
+        suv: '$499*'
+      },
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      features_exterior: [
+        '**Deep Scratch Removal**',
+        '**Complete Swirl Mark Elimination**',
+        '**Two-Step Correction Process**',
+        '**Final Inspection & Quality Check**',
+        'pH Neutral Soap Cannon Spray Down',
+        'Scratch‑Free Hand Wash',
+        'Clay Bar Decontamination',
+        'Carnauba Wax Application'
+      ],
+      features_interior: [],
+      gradient: 'from-violet-900 to-violet-500',
       bgImage: 'stage3-detail.jpg',
     },
     {
@@ -363,7 +397,9 @@ const detailPackages = [
                 <ul className="space-y-2 text-sm">
                   {pkg.features_exterior.map((f: string, i: number) => (
                     <li key={i} className="flex items-center">
-                      <span className="mr-2">✅</span> {f}
+                      <span className="mr-2">✅</span> {f.split('**').map((part, index) => 
+                        index % 2 === 1 ? <strong key={index} className="text-yellow-300">{part}</strong> : part
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -373,7 +409,9 @@ const detailPackages = [
                 <ul className="space-y-2 text-sm">
                   {pkg.features_interior.map((f: string, i: number) => (
                     <li key={i} className="flex items-center">
-                      <span className="mr-2">✅</span> {f}
+                      <span className="mr-2">✅</span> {f.split('**').map((part, index) => 
+                        index % 2 === 1 ? <strong key={index} className="text-yellow-300">{part}</strong> : part
+                      )}
                     </li>
                   ))}
                 </ul>
