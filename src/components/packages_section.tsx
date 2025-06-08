@@ -142,7 +142,7 @@ const detailPackages = [
       ],
       features_interior: [],
       gradient: 'from-gray-800 to-gray-400',
-      bgImage: 'stage1-detail.jpg',
+      bgImage: 'clay.png',
     },
     {
       id: 'interior-detail',
@@ -199,7 +199,7 @@ const detailPackages = [
         '**Carpet, Floor Matts, and Seat Shampoo and Steam Clean**',
       ],
       gradient: 'from-black to-blue-500',
-      bgImage: 'stage2-detail.jpg',
+      bgImage: 'premium.png',
     },
     {
       id: 'stage2',
@@ -263,7 +263,7 @@ const detailPackages = [
         'Carpet,Floor Matts, and Seat Shampoo and Steam Clean',
       ],
       gradient: 'from-black to-purple-500',
-      bgImage: 'stage3-detail.jpg',
+      bgImage: 'showroom.png',
     },
     {
       id: 'one-step',
@@ -290,7 +290,7 @@ const detailPackages = [
       ],
       features_interior: [],
       gradient: 'from-indigo-900 to-indigo-500',
-      bgImage: 'stage2-detail.jpg',
+      bgImage: 'onestep.png',
     },
     {
       id: 'two-step',
@@ -315,7 +315,7 @@ const detailPackages = [
       ],
       features_interior: [],
       gradient: 'from-violet-900 to-violet-500',
-      bgImage: 'stage3-detail.jpg',
+      bgImage: 'swirl.png',
     },
     {
       id: 'engine',
@@ -336,7 +336,7 @@ const detailPackages = [
       ],
       features_interior: [],
       gradient: 'from-orange-900 to-orange-500',
-      bgImage: 'stage2-detail.jpg',
+      bgImage: 'engine.png',
     }
   ];
   
