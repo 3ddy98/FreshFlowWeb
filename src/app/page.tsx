@@ -158,11 +158,11 @@ export default function Home() {
                 {/* Logo */}
                 <div className="mb-8 flex justify-center md:justify-start">
                   <Image 
-                    src="/boy.png" 
+                    src="/logo-t.png" 
                     alt="Fresh Flow Mobile Auto Spa Logo - Premium Mobile Car Detailing" 
-                    width={150} 
-                    height={150} 
-                    className="mb-6"
+                    width={400} 
+                    height={400} 
+                    className="mt-20"
                     priority
                     loading="eager"
                   />

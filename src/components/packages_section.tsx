@@ -103,7 +103,7 @@ const detailPackages = [
       midsize: '$85*',
       suv: '$95*'
     },
-    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JNGPBG3S4EMIYRIGK724237E',
     features_exterior: [
       'pH Neutral Soap Cannon Spray Down',
       'Scratch‑Free Hand Wash',
@@ -131,7 +131,7 @@ const detailPackages = [
         midsize: '$119*',
         suv: '$129*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/2SVSPDUF5SFK7VB5YB3BUR7Q',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
@@ -154,7 +154,7 @@ const detailPackages = [
         midsize: '$175*',
         suv: '$199*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/H52YPHICKR63YEXK5YBJXUDG',
       features_exterior: [],
       features_interior: [
         '**Deep Carpet & Upholstery Cleaning**',
@@ -180,7 +180,7 @@ const detailPackages = [
         midsize: '$249*',
         suv: '$299*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/EXTH47DWVQ3SJ3FD6N3CRR6V',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
@@ -211,7 +211,7 @@ const detailPackages = [
         midsize: '$349*',
         suv: '$399*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/YQK6Q3J5ZO5UJNKZ4PKQMOZT',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
@@ -243,7 +243,7 @@ const detailPackages = [
         midsize: '$649*',
         suv: '$699*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/26OZ5ZYNQTUG57BRSKQKEOGS',
       features_exterior: [
         'pH Neutral Soap Cannon Spray Down',
         'Scratch‑Free Hand Wash',
@@ -275,7 +275,7 @@ const detailPackages = [
         midsize: '$249*',
         suv: '$299*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/USLIPMXU2J5U35GAVU6K7X7U',
       features_exterior: [
         '**Paint Assessment**',
         '**Light Scratch Removal**',
@@ -302,7 +302,7 @@ const detailPackages = [
         midsize: '$449*',
         suv: '$499*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/5VJ7GI73H4WO6IFXEEMK3UCK',
       features_exterior: [
         '**Deep Scratch Removal**',
         '**Complete Swirl Mark Elimination**',
@@ -327,7 +327,7 @@ const detailPackages = [
         midsize: '$139*',
         suv: '$159*'
       },
-      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
+      url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/LDBLHODBA3FB7GOLKY3PFQCW',
       features_exterior: [
         'Engine Bay Degreasing',
         'Safe Steam Cleaning',
