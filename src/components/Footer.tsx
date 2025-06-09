@@ -14,7 +14,7 @@ export default function Footer() {
     <div className="grid min-h-50 w-full bg-black grid-cols-1 grid-rows-3 md:grid-cols-5 md:grid-rows-1 p-10">
         <div className="flex flex-col row-1 md:col-1 md:row-1 ">
             <div className="flex flex-col text-white m-auto h-full">
-                <img className="w-50 h-50 justify-center m-auto" src="boy.png"></img>
+                <img className="w-50 h-50 justify-center m-auto" src="logo-t.png"></img>
             </div>
         </div>
         
