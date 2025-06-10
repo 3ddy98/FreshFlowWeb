@@ -99,9 +99,9 @@ const detailPackages = [
     subtitle: 'Essential Care',
     description: 'Refreshed and ready for the road!',
     prices: {
-      compact: '$75*',
-      midsize: '$85*',
-      suv: '$95*'
+      compact: '$55*',
+      midsize: '$65*',
+      suv: '$75*'
     },
     url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JNGPBG3S4EMIYRIGK724237E',
     features_exterior: [
@@ -109,14 +109,13 @@ const detailPackages = [
       'Scratch‑Free Hand Wash',
       'Premium HVLP Spray On Tire Dressing',
       'Exterior Bug and Sap Elimination',
-      'Premium Spray On Wax',
     ],
     features_interior: [
       'Door Jam Cleaning',
       'Streak‑Free Window Cleaning',
-      'Interior Plastic UV‑Protection Layer Application',
-      'Doors, Console, Dash Wipe Down',
-      'Long Lasting Interior Aroma Application',
+      'Interior Vacuum'
+      'Interior Wipe-Down',
+      'Aroma Application',
     ],
     gradient: 'from-gray-900 to-white',
     bgImage: 'stage1-detail.jpg',
