@@ -113,7 +113,7 @@ const detailPackages = [
     features_interior: [
       'Door Jam Cleaning',
       'Streak‑Free Window Cleaning',
-      'Interior Vacuum'
+      'Interior Vacuum',
       'Interior Wipe-Down',
       'Aroma Application',
     ],
