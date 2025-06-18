@@ -10,98 +10,16 @@ const bebasNeue = Bebas_Neue({
     variable: "--font-bebas-neue"
   });
 
-const individualServices = [
-  {
-    id: 'headlight',
-    title: 'Headlight Restoration',
-    subtitle: 'Clear Vision',
-    description: 'Restore cloudy headlights to like-new condition.',
-    prices: {
-      flat: '$50/headlight*'
-    },
-    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-    features_exterior: [
-      'Headlight Sanding & Polishing',
-      'UV Protection Coating',
-      'Clear Coat Application',
-      'Final Polish & Buff'
-    ],
-    features_interior: [],
-    gradient: 'from-blue-900 to-blue-500',
-    bgImage: 'headlight-wash.jpg',
-  },
-  {
-    id: 'waterspot',
-    title: 'Water Spot Removal',
-    subtitle: 'Crystal Clear',
-    description: 'Eliminate stubborn water spots and mineral deposits.',
-    prices: {
-      flat: '$50*'
-    },
-    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-    features_exterior: [
-      'Water Spot Assessment',
-      'Chemical Decontamination',
-      'Paint Polishing',
-      'Glass Treatment',
-      'Protective Coating Application'
-    ],
-    features_interior: [],
-    gradient: 'from-cyan-900 to-cyan-500',
-    bgImage: 'stage1-detail.jpg',
-  },
-  {
-    id: 'pet-hair',
-    title: 'Pet Hair Removal',
-    subtitle: 'Fur-Free Interior',
-    description: 'Specialized removal of pet hair from all interior surfaces.',
-    prices: {
-      flat: '$50*'
-    },
-    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-    features_exterior: [],
-    features_interior: [
-      'Specialized Pet Hair Tools',
-      'Upholstery Treatment',
-      'Carpet Cleaning',
-      'Air Vent Cleaning',
-      'Final Vacuum'
-    ],
-    gradient: 'from-yellow-900 to-yellow-500',
-    bgImage: 'mercedes-interior.jpg',
-  },
-  {
-    id: 'odor',
-    title: 'Odor Elimination',
-    subtitle: 'Fresh Interior',
-    description: 'Professional odor removal and air purification treatment.',
-    prices: {
-      flat: '$50*'
-    },
-    url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services',
-    features_exterior: [],
-    features_interior: [
-      'Ozone Treatment',
-      'Air Vent Sanitization',
-      'Carpet Deodorizing',
-      'Upholstery Treatment',
-      'Long-Lasting Fresh Scent'
-    ],
-    gradient: 'from-teal-900 to-teal-500',
-    bgImage: 'mercedes-interior.jpg',
-  }
-];
-
 const detailPackages = [
   {
     id: 'stage1',
-    title: 'Mobile Wash',
+    title: 'Premium Mobile Wash',
     subtitle: 'Essential Care',
     description: 'Refreshed and ready for the road!',
     prices: {
-      compact: '$55*',
-      midsize: '$65*',
-      suv: '$75*'
+      compact: '$65*',
+      midsize: '$75*',
+      suv: '$85*'
     },
     url: 'https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JNGPBG3S4EMIYRIGK724237E',
     features_exterior: [
@@ -456,8 +374,7 @@ const detailPackages = [
   
   function PackagesSectionContent() {
     const tabs = [
-      { key: 'detail', label: 'Detail Packages', data: detailPackages },
-      { key: 'individual', label: 'Add-On Services', data: individualServices },
+      { key: 'detail', label: 'Packages', data: detailPackages }
     ];
     const searchParams = useSearchParams();
     const [activeTab, setActiveTab] = useState('detail');
@@ -465,7 +382,7 @@ const detailPackages = [
     // Handle URL parameters for tab switching
     useEffect(() => {
       const tab = searchParams.get('tab');
-      if (tab === 'detail' || tab === 'individual') {
+      if (tab === 'detail') {
         setActiveTab(tab);
       }
     }, [searchParams]);
@@ -474,30 +391,13 @@ const detailPackages = [
       <section id="packages" className="py-12 bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('car-wash-1.jpg')" }}>
         <div className="max-w-3xl mx-auto text-center mb-8">
           <h2 className={`${bebasNeue.className} text-6xl text-white bg-black/60 inline-block px-6 py-2 rounded-xl`}>
-            {tabs.find(t => t.key === activeTab)?.label ?? 'Packages'}
+          Services
           </h2>
-        </div>
-  
-        {/* Tabs */}
-        <div className="flex justify-center space-x-4 mb-8">
-          {tabs.map(t => (
-            <button
-              key={t.key}
-              onClick={() => setActiveTab(t.key)}
-              className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-semibold ${
-                activeTab === t.key
-                  ? 'bg-gradient-to-r from-purple-800 to-orange-400 text-white font-bold shadow-lg scale-105'
-                  : 'bg-black/50 text-white hover:bg-black/70'
-              }`}
-            >
-              {t.label}
-            </button>
-          ))}
         </div>
   
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto">
-          {tabs.find(t => t.key === activeTab)?.data.map(pkg => (
+          {detailPackages.map(pkg => (
             <CollapsibleCard key={pkg.id} pkg={pkg} />
           ))}
         </div>

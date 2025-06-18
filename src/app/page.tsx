@@ -497,15 +497,37 @@ export default function Home() {
 
               {/* Monthly Plan */}
               <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group shrink-0 snap-center w-full md:w-auto">
-                <div className="bg-gradient-to-b from-gray-900 to-white rounded-2xl shadow-xl flex flex-col relative mb-10 cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 w-full md:min-w-[400px] min-h-[400px] justify-center">
+                <div className="bg-gradient-to-b from-gray-900 to-white rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 pb-20 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-cyan-500 text-white px-6 py-2 rounded-full font-bold shadow-lg">
                     Save 10%
                   </div>
                   <h3 className={`${bebasNeue.className} text-4xl font-bold mb-2 text-center`}>Monthly</h3>
-                  <p className='text-center text-xl text-gray-600 mb-6'>1 Visit Per Month</p>
-                  <div className="text-4xl font-bold text-center mb-8">
-                    <span className="text-5xl">$72</span>
-                    <span className="text-xl text-gray-600">/mo</span>
+                  <p className='text-center text-xl text-white-600 mb-6'>1 Visit Per Month</p>
+                  <div className="space-y-4 mb-8">
+                    <div className="text-center">
+                      <p className="text-sm text-white-600">Compact</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$59</span>
+                        <span className="text-lg text-white-600">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $6</span>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-white-600">Sedan</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$68</span>
+                        <span className="text-lg text-white-600">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $7</span>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-white-600">SUV</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$77</span>
+                        <span className="text-lg text-white-600">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $8</span>
+                    </div>
                   </div>
                   <div className="text-center text-gray-600">
                     <p className="text-sm">Flexible scheduling</p>
@@ -517,15 +539,37 @@ export default function Home() {
 
               {/* Biweekly Plan */}
               <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center w-full md:w-auto">
-                <div className="bg-gradient-to-b to-cyan-500 from-black rounded-2xl shadow-xl flex flex-col relative mb-10 cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 w-full md:min-w-[400px] min-h-[400px] justify-center">
+                <div className="bg-gradient-to-b to-cyan-500 from-black rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 pb-20 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-6 py-2 rounded-full font-bold shadow-lg">
                     Save 15%
                   </div>
                   <h3 className={`${bebasNeue.className} text-4xl font-bold mb-2 text-center`}>Bi-weekly</h3>
                   <p className='text-center text-xl text-white/80 mb-6'>2 Visits Per Month</p>
-                  <div className="text-4xl font-bold text-center mb-8">
-                    <span className="text-5xl">$136</span>
-                    <span className="text-xl text-white/80">/mo</span>
+                  <div className="space-y-4 mb-8">
+                    <div className="text-center">
+                      <p className="text-sm text-white/80">Compact</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$111</span>
+                        <span className="text-lg text-white/80">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $19</span>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-white/80">Sedan</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$128</span>
+                        <span className="text-lg text-white/80">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $22</span>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-white/80">SUV</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$145</span>
+                        <span className="text-lg text-white/80">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $25</span>
+                    </div>
                   </div>
                   <div className="text-center text-white/80">
                     <p className="text-sm">Flexible scheduling</p>
@@ -537,15 +581,37 @@ export default function Home() {
 
               {/* Weekly Plan */}
               <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center w-full md:w-auto">
-                <div className="bg-gradient-to-b from-black to-purple-500 rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
+                <div className="bg-gradient-to-b from-black to-purple-500 rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 pb-20 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-purple-500 text-white px-6 py-2 rounded-full font-bold shadow-lg">
                     Save 25%
                   </div>
                   <h3 className={`${bebasNeue.className} text-4xl font-bold mb-2 text-center`}>Weekly</h3>
                   <p className='text-center text-xl text-white/80 mb-6'>4 Visits Per Month</p>
-                  <div className="text-4xl font-bold text-center mb-8">
-                    <span className="text-5xl">$224</span>
-                    <span className="text-xl text-white/80">/mo</span>
+                  <div className="space-y-4 mb-8">
+                    <div className="text-center">
+                      <p className="text-sm text-white/80">Compact</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$195</span>
+                        <span className="text-lg text-white/80">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $65</span>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-white/80">Sedan</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$225</span>
+                        <span className="text-lg text-white/80">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $75</span>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-sm text-white/80">SUV</p>
+                      <div className="text-3xl font-bold">
+                        <span className="text-4xl">$255</span>
+                        <span className="text-lg text-white/80">/mo</span>
+                      </div>
+                      <span className="text-sm text-green-400">Save $85</span>
+                    </div>
                   </div>
                   <div className="text-center text-white/80">
                     <p className="text-sm">Flexible scheduling</p>

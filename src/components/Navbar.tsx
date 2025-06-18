@@ -28,8 +28,8 @@ export default function Navbar() {
           ☰
         </button>
         <div className="hidden md:flex space-x-50 text-lg content-cente md:min-w-150">
-          <a href="/#packages" className="hover:text-purple-400 transition-colors m-auto">Packages</a>
-          <a href="/#plans" className="hover:text-purple-400 transition-colors m-auto">Plans</a>
+          <a href="/#packages" className="hover:text-purple-400 transition-colors m-auto">Services</a>
+          <a href="/#plans" className="hover:text-purple-400 transition-colors m-auto">Maintenance</a>
           <a href="/#contact" className="hover:text-purple-400 transition-colors m-auto">Contact</a>
           <a
             href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start"
