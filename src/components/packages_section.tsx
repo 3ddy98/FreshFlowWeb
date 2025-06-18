@@ -274,11 +274,6 @@ const detailPackages = [
       return () => window.removeEventListener('resize', checkDesktop);
     }, []);
 
-    // Set initial state based on screen size
-    useEffect(() => {
-      setOpen(isDesktop);
-    }, [isDesktop]);
-
     return (
       <div
         className={`w-full max-w-sm mx-auto bg-gradient-to-b ${pkg.gradient} text-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 relative cursor-pointer ${
