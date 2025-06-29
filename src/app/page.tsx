@@ -221,6 +221,7 @@ export default function Home() {
                 {/* Primary CTA */}
                 <ConversionLinkButton
                   url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
+                  value={75}
                   className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 p-6 text-3xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl shadow-lg text-center block`}
                   aria-label="Book your car detailing service now"
                 >
@@ -375,6 +376,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <ConversionLinkButton
                 url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
+                value={75}
                 className={`${bebasNeue.className} inline-block bg-gradient-to-b from-purple-800 to-orange-400 px-8 py-4 text-2xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl shadow-lg`}
               >
                 Book Your Detail Now!
@@ -496,7 +498,7 @@ export default function Home() {
               </div>
 
               {/* Monthly Plan */}
-              <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" className="flex group shrink-0 snap-center w-full md:w-auto">
+              <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/ITZ4FRFUK7RYO5ZDIZFY3TAV" value={68} className="flex group shrink-0 snap-center w-full md:w-auto">
                 <div className="bg-gradient-to-b from-gray-900 to-white rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 pb-20 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-cyan-500 text-white px-6 py-2 rounded-full font-bold shadow-lg">
                     Save 10%
@@ -538,7 +540,7 @@ export default function Home() {
               </ConversionLinkButton>
 
               {/* Biweekly Plan */}
-              <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" className="flex group shrink-0 snap-center w-full md:w-auto">
+              <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/OZME3WZ2SQIO3CHDQ6HO6V4I" value={128} className="flex group shrink-0 snap-center w-full md:w-auto">
                 <div className="bg-gradient-to-b to-cyan-500 from-black rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 pb-20 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-6 py-2 rounded-full font-bold shadow-lg">
                     Save 15%
@@ -580,7 +582,7 @@ export default function Home() {
               </ConversionLinkButton>
 
               {/* Weekly Plan */}
-              <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" className="flex group shrink-0 snap-center w-full md:w-auto">
+              <ConversionLinkButton url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services/JDN2HNJXZAHAKVGCSVYAZKP3" value={225} className="flex group shrink-0 snap-center w-full md:w-auto">
                 <div className="bg-gradient-to-b from-black to-purple-500 rounded-2xl shadow-xl flex flex-col relative cursor-pointer transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl p-8 pt-16 pb-20 w-full md:min-w-[400px] min-h-[400px] content-center justify-center">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-purple-500 text-white px-6 py-2 rounded-full font-bold shadow-lg">
                     Save 25%
@@ -707,6 +709,7 @@ export default function Home() {
         <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 block md:hidden h-20 text-center bg-gradient-to-r from-black to-purple-500 text-white text-2xl px-6 py-3 shadow-lg m-auto justify-center w-full">
           <ConversionLinkButton
             url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
+            value={75}
             className="flex h-20 text-center bg-gradient-to-r from-black to-purple-500 text-white text-2xl px-6 py-3 shadow-lg m-auto justify-center"
           >
             Book Now

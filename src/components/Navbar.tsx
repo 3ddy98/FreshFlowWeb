@@ -29,6 +29,7 @@ export default function Navbar() {
         </button>
         <div className="hidden md:flex space-x-50 text-lg content-cente md:min-w-150">
           <a href="/#packages" className="hover:text-purple-400 transition-colors m-auto">Services</a>
+          <a href="/ceramic-studio" className="hover:text-purple-400 transition-colors m-auto">Ceramic Studio</a>
           <a href="/#plans" className="hover:text-purple-400 transition-colors m-auto">Maintenance</a>
           <a href="/#contact" className="hover:text-purple-400 transition-colors m-auto">Contact</a>
           <a
@@ -43,8 +44,8 @@ export default function Navbar() {
       </div>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-4 px-6 pb-4">
-          <a href="/#packages" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Packages</a>
-          <a href="/#plans" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Plans</a>
+          <a href="/#packages" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Services</a>
+          <a href="/#plans" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Maintenance</a>
           <a href="/#contact" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a>
           <a
             href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start"

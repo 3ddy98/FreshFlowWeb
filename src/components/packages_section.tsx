@@ -345,7 +345,7 @@ const detailPackages = [
                     )}
                   </div>
                 </div>
-                <ConversionLinkButton url={pkg.url}>
+                <ConversionLinkButton url={pkg.url} value={parseFloat(pkg.prices.midsize.replace('$', '').replace('*', ''))}>
                   <span className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 text-black rounded-full whitespace-nowrap text-xl font-bold hover:from-yellow-400 hover:to-yellow-300 transition-all duration-300 shadow-lg hover:shadow-yellow-500/25">Book Now!</span>
                 </ConversionLinkButton>
               </div>
