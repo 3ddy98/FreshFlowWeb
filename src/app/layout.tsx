@@ -54,12 +54,54 @@ export default function RootLayout({
         {/* Preload hero image for FCP */}
         <link rel="preload" as="image" href="/img/car-gallery.jpg" />
       </Head>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased w-full`}
       >
+        {/* MailerLite Universal Script */}
+        <Script
+          id="mailerlite-universal"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+              .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+              n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+              (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+            `
+          }}
+        />
+        
+        {/* MailerLite Account Setup and Popup Trigger */}
+        <Script
+          id="mailerlite-setup"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Wait for MailerLite to be available
+              function setupMailerLite() {
+                if (typeof ml !== 'undefined') {
+                  ml('account', '1635202');
+                  
+                  // Show popup after a delay
+                  setTimeout(function() {
+                    ml('show', 'RFPFOU');
+                  }, 2000);
+                } else {
+                  setTimeout(setupMailerLite, 500);
+                }
+              }
+              
+              // Start setup process
+              setupMailerLite();
+            `
+          }}
+        />
+        
         {children}
         <Footer/>
       </body>
     </html>
   );
 }
+

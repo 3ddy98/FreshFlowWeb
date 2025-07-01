@@ -689,7 +689,7 @@ export default function Home() {
                      className="bg-gradient-to-br from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 p-3 rounded-full transition-colors group">
                     <FontAwesomeIcon icon={faInstagramSquare} className="text-2xl text-white group-hover:scale-110 transition-transform" />
                   </a>
-                  <a href="https://www.facebook.com/freshflowmobileautospa" 
+                  <a href="https://www.facebook.com/freshflowautospa" 
                      target="_blank" 
                      rel="noopener noreferrer"
                      className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors group">
