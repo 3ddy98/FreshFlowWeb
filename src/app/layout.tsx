@@ -48,6 +48,11 @@ export default function RootLayout({
         <meta property="og:image" content="/og-image.jpg" />
         <meta property="og:url" content="https://freshflowautospa.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Preload main fonts for FCP */}
+        <link rel="preload" as="font" href="/fonts/geist-sans.woff2" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" as="font" href="/fonts/montserrat.woff2" type="font/woff2" crossOrigin="anonymous" />
+        {/* Preload hero image for FCP */}
+        <link rel="preload" as="image" href="/img/car-gallery.jpg" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased w-full`}

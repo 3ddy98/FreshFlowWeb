@@ -50,7 +50,7 @@ export default function PrivacyLayout(){
             "name": "Fresh Flow Mobile Auto Spa",
             "image": "https://www.freshflowmobilewash.com/boy.png",
             "url": "https://www.freshflowmobilewash.com",
-            "telephone": "+1-626-391-2351",
+            "telephone": "+1-909-766-0042",
             "email": "freshflowautospa@gmail.com",
             "address": {
               "@type": "PostalAddress",
@@ -131,7 +131,7 @@ If you have any questions about this Privacy Policy, please contact us at:<br></
 
 Fresh Flow Mobile Auto Spa<br></br>
 Email: freshflowmobileautospa@gmail.com<br></br>
-Phone: (626)391-2351<br></br>
+Phone: (909)766-0042<br></br>
             </p>
           </div>
         </div>

@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="flex flex-col text-white m-auto h-full m-auto">
                 <h1 className={`${bebasNeue.className} text-4xl mb-5 text-center`}>Contact Us</h1>
                 <ul>
-                    <li><a href="tel:+16263912351">(626) 391-2351</a></li>
+                    <li><a href="tel:+19097660042">(909) 766-0042</a></li>
                     <li><a href="mailto:freshflowmobileautospa@gmail.com">freshflowmobileautospa@gmail.com</a></li>
                 </ul>
             </div>

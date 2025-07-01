@@ -91,7 +91,7 @@ export default function Home() {
             "name": "Fresh Flow Mobile Auto Spa",
             "image": "https://www.freshflowmobilewash.com/boy.png",
             "url": "https://www.freshflowmobilewash.com",
-            "telephone": "+1-626-391-2351",
+            "telephone": "+1-909-766-0042",
             "email": "freshflowautospa@gmail.com",
             "address": {
               "@type": "PostalAddress",
@@ -230,11 +230,11 @@ export default function Home() {
 
                 {/* Secondary CTA */}
                 <a 
-                  href="tel:+16263912351" 
+                  href="tel:+19097660042" 
                   className={`${bebasNeue.className} w-full bg-white/10 backdrop-blur-sm p-6 text-2xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl border border-white/20 text-center block`}
                   aria-label="Call Fresh Flow Mobile Auto Spa"
                 >
-                  Text or Call: (626) 391-2351 
+                  Text or Call: (909) 766-0042 
                 </a>
 
                 {/* Service Area */}
@@ -660,7 +660,7 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a href="tel:+16263912351" 
+                <a href="tel:+19097660042" 
                    className="flex items-center gap-3 bg-white/10 hover:bg-white/20 transition-colors p-4 rounded-xl group">
                   <div className="bg-green-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -669,7 +669,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-white/70">Call or Text</p>
-                    <p className="text-white font-medium">(626) 391-2351</p>
+                    <p className="text-white font-medium">(909) 766-0042</p>
                   </div>
                 </a>
               </div>
