@@ -325,7 +325,7 @@ export default function Home() {
               {/* Gallery Item 3 */}
               <div className="relative rounded-xl aspect-square">
                 <Image
-                  src="/gallery/3.jpg"
+                  src="/gallery/bmw-x.jpg"
                   alt="Paint correction and polishing - Fresh Flow Mobile Auto Spa"
                   fill
                   className="object-cover"
@@ -336,7 +336,7 @@ export default function Home() {
               {/* Gallery Item 4 */}
               <div className="relative rounded-xl aspect-square">
                 <Image
-                  src="/gallery/4.jpg"
+                  src="/gallery/g-wagon.jpg"
                   alt="Wheel and tire detailing - Fresh Flow Mobile Auto Spa"
                   fill
                   className="object-cover"
@@ -347,7 +347,7 @@ export default function Home() {
               {/* Gallery Item 5 */}
               <div className="relative rounded-xl aspect-square">
                 <Image
-                  src="/gallery/5.jpg"
+                  src="/gallery/g-wagon-int.jpg"
                   alt="Headlight restoration - Fresh Flow Mobile Auto Spa"
                   fill
                   className="object-cover"
@@ -358,7 +358,7 @@ export default function Home() {
               {/* Gallery Item 6 */}
               <div className="relative rounded-xl aspect-square">
                 <Image
-                  src="/gallery/6.jpg"
+                  src="/gallery/bmw-sedan.jpg"
                   alt="Ceramic coating application - Fresh Flow Mobile Auto Spa"
                   fill
                   className="object-cover"
