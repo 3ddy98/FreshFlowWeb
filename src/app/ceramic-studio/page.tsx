@@ -39,15 +39,36 @@ export default function CeramicStudio() {
         
         {/* Floating Particles Effect */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(20)].map((_, i) => (
+          {[
+            { left: '10%', top: '20%', delay: '0s', duration: '4s' },
+            { left: '20%', top: '80%', delay: '1s', duration: '5s' },
+            { left: '30%', top: '40%', delay: '2s', duration: '3s' },
+            { left: '40%', top: '60%', delay: '0.5s', duration: '6s' },
+            { left: '50%', top: '10%', delay: '1.5s', duration: '4s' },
+            { left: '60%', top: '70%', delay: '0.8s', duration: '5s' },
+            { left: '70%', top: '30%', delay: '2.5s', duration: '3s' },
+            { left: '80%', top: '90%', delay: '1.2s', duration: '4s' },
+            { left: '90%', top: '50%', delay: '0.3s', duration: '6s' },
+            { left: '15%', top: '85%', delay: '1.8s', duration: '5s' },
+            { left: '25%', top: '15%', delay: '0.7s', duration: '4s' },
+            { left: '35%', top: '75%', delay: '2.2s', duration: '3s' },
+            { left: '45%', top: '25%', delay: '1.1s', duration: '6s' },
+            { left: '55%', top: '65%', delay: '0.4s', duration: '5s' },
+            { left: '65%', top: '35%', delay: '1.9s', duration: '4s' },
+            { left: '75%', top: '95%', delay: '0.6s', duration: '3s' },
+            { left: '85%', top: '5%', delay: '2.1s', duration: '6s' },
+            { left: '95%', top: '45%', delay: '1.3s', duration: '5s' },
+            { left: '5%', top: '55%', delay: '0.9s', duration: '4s' },
+            { left: '12%', top: '95%', delay: '2.3s', duration: '3s' }
+          ].map((particle, i) => (
             <div
               key={i}
               className="absolute w-2 h-2 bg-white/30 rounded-full animate-float"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${3 + Math.random() * 4}s`
+                left: particle.left,
+                top: particle.top,
+                animationDelay: particle.delay,
+                animationDuration: particle.duration
               }}
             />
           ))}
@@ -197,8 +218,6 @@ export default function CeramicStudio() {
         </div>
       </section>
 
-      <Footer />
-      
       {/* Custom CSS for animations */}
       <style jsx>{`
         @keyframes float {
