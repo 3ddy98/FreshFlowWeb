@@ -208,7 +208,7 @@ export default function Home() {
               <div className="space-y-8">
                 {/* Primary CTA */}
                 <ConversionLinkButton
-                  url="https://book.squareup.com/appointments/0kjif6lij1e6j4/location/LEEDGNVTD70K2/services"
+                  url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services"
                   value={75}
                   className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 p-6 text-3xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl shadow-lg text-center block`}
                   aria-label="Book your car detailing service now"
