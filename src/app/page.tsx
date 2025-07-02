@@ -155,18 +155,6 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Column - Main Content */}
               <div className="text-white space-y-8">
-                {/* Logo */}
-                <div className="mb-8 flex justify-center md:justify-start">
-                  <Image 
-                    src="/logo-t.png" 
-                    alt="Fresh Flow Mobile Auto Spa Logo - Premium Mobile Car Detailing" 
-                    width={400} 
-                    height={400} 
-                    className="mt-20"
-                    priority
-                    loading="eager"
-                  />
-                </div>
 
                 {/* Main Heading */}
                 <h2 className={`${bebasNeue.className} text-4xl md:text-5xl lg:text-7xl leading-tight`}>
@@ -225,17 +213,24 @@ export default function Home() {
                   className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 p-6 text-3xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl shadow-lg text-center block`}
                   aria-label="Book your car detailing service now"
                 >
-                  Book Your Detail Now!
+                  CLick Here to Book Your Detail Now!
                 </ConversionLinkButton>
 
                 {/* Secondary CTA */}
                 <a 
                   href="tel:+19097660042" 
-                  className={`${bebasNeue.className} w-full bg-white/10 backdrop-blur-sm p-6 text-2xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl border border-white/20 text-center block`}
+                  className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 backdrop-blur-sm p-6 text-2xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl border border-white/20 text-center block`}
                   aria-label="Call Fresh Flow Mobile Auto Spa"
                 >
-                  Text or Call: (909) 766-0042 
+                  Click Here to Text or Call: (909) 766-0042 
                 </a>
+
+                {/* Schedule Box - styled to match the button */}
+                <div className="w-full bg-white/10 backdrop-blur-sm p-6 text-xl text-white rounded-xl border border-white/20 text-center block font-semibold">
+                  <div className="text-lg font-bold tracking-wide mb-1">Schedule & Hours</div>
+                  <div className="text-base font-mono">Wednesday–Sunday</div>
+                  <div className="text-base font-bold">6:00am – 4:00pm</div>
+                </div>
 
                 {/* Service Area */}
                 <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
