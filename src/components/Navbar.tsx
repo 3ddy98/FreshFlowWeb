@@ -19,7 +19,7 @@ export default function Navbar() {
           href="/#home"
           className={`${bebasNeue.className} text-3xl md:text-4xl hover:text-purple-400 transition-colors`}
         >
-          Fresh Flow Mobile Auto Spa
+          Fresh Flow Auto Spa
         </a>
         <button
           className="md:hidden text-white text-2xl"

@@ -27,13 +27,14 @@ const detailPackages = [
       'Scratch‑Free Hand Wash',
       'Premium HVLP Spray On Tire Dressing',
       'Exterior Bug and Sap Elimination',
+      'Spray-On Protector Wax'
     ],
     features_interior: [
       'Door Jam Cleaning',
       'Streak‑Free Window Cleaning',
       'Interior Vacuum',
-      'Interior Wipe-Down',
-      'Aroma Application',
+      'Interior Console,Dash,Door, and Seat Wipe-Down',
+      'Aroma Application (Optional)',
     ],
     gradient: 'from-gray-900 to-white',
     bgImage: 'stage1-detail.jpg',
