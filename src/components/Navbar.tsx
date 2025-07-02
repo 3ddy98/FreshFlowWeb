@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { Bebas_Neue } from "next/font/google";
 
 const bebasNeue = Bebas_Neue({
@@ -11,6 +11,7 @@ const bebasNeue = Bebas_Neue({
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   return (
     <nav className="fixed top-0 left-0 w-full backdrop-blur-sm bg-black/60 bg-opacity-90 text-white z-50 shadow-lg">
@@ -23,7 +24,7 @@ export default function Navbar() {
         </a>
         <button
           className="md:hidden text-white text-2xl"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => startTransition(() => setIsMenuOpen(!isMenuOpen))}
         >
           ☰
         </button>
@@ -44,9 +45,9 @@ export default function Navbar() {
       </div>
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-4 px-6 pb-4">
-          <a href="/#packages" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Services</a>
-          <a href="/#plans" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Maintenance</a>
-          <a href="/#contact" className="hover:text-purple-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a>
+          <a href="/#packages" className="hover:text-purple-400 transition-colors" onClick={() => startTransition(() => setIsMenuOpen(false))}>Services</a>
+          <a href="/#plans" className="hover:text-purple-400 transition-colors" onClick={() => startTransition(() => setIsMenuOpen(false))}>Maintenance</a>
+          <a href="/#contact" className="hover:text-purple-400 transition-colors" onClick={() => startTransition(() => setIsMenuOpen(false))}>Contact</a>
           <a
             href="https://app.squareup.com/appointments/book/huuxb13bg1wbt4/LEEDGNVTD70K2/start"
             target="_blank"

@@ -1,5 +1,5 @@
 'use client'
-import { use, useState, useEffect, Suspense } from 'react';
+import { use, useState, useEffect, Suspense, useTransition } from 'react';
 import { Bebas_Neue } from "next/font/google";
 import ConversionLinkButton from './conversion_button';
 import { useSearchParams } from 'next/navigation';
@@ -262,6 +262,7 @@ const detailPackages = [
   function CollapsibleCard({ pkg }: { pkg: any }) {
     const [open, setOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
+    const [isPending, startTransition] = useTransition();
 
     // Check if we're on desktop on mount and when window resizes
     useEffect(() => {
@@ -285,7 +286,7 @@ const detailPackages = [
           backgroundSize: !open ? 'cover' : undefined,
           backgroundPosition: !open ? 'center' : undefined,
         }}
-        onClick={() => setOpen(!open)}
+        onClick={() => startTransition(() => setOpen(!open))}
       >
         <div
           className="flex justify-between items-center px-6 py-4"

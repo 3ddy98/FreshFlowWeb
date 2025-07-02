@@ -20,10 +20,11 @@ export default function ConversionLinkButton({ url, value, children, className }
       });
     }
 
-    // Use setTimeout to ensure the tracking event has time to fire
-    // before navigation occurs
+    // Use requestAnimationFrame to ensure paint before navigation
     setTimeout(() => {
-      window.location.href = url;
+      window.requestAnimationFrame(() => {
+        window.location.href = url;
+      });
     }, 100);
   };
 
