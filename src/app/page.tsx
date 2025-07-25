@@ -22,19 +22,31 @@ import PackagesSection from '@/components/packages_section';
 
 export const metadata: Metadata = {
   title: 'Fresh Flow Mobile Auto Spa | Premium Mobile Car Detailing in Inland Empire',
-  description: 'Professional mobile car detailing services in Orange County, Riverside County, and San Bernardino County. Book your premium car wash and detailing service today!',
-  keywords: 'mobile car detailing, car wash, auto detailing, mobile car wash, Inland Empire, Orange County, Riverside County, San Bernardino County',
+  description: 'Professional mobile car detailing services in Orange County, Riverside County, and San Bernardino County. Book your premium car wash and detailing service today! 5-star rated, mobile convenience.',
+  keywords: 'mobile car detailing, car wash, auto detailing, mobile car wash, Inland Empire, Orange County, Riverside County, San Bernardino County, Jurupa Valley, Corona, Ontario, Chino, ceramic coating, paint correction, interior detailing',
+  authors: [{ name: 'Fresh Flow Mobile Auto Spa' }],
+  creator: 'Fresh Flow Mobile Auto Spa',
+  publisher: 'Fresh Flow Mobile Auto Spa',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://www.freshflowmobilewash.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Fresh Flow Mobile Auto Spa | Premium Mobile Car Detailing',
-    description: 'Professional mobile car detailing services in Orange County, Riverside County, and San Bernardino County. Book your premium car wash and detailing service today!',
+    description: 'Professional mobile car detailing services in Orange County, Riverside County, and San Bernardino County. Book your premium car wash and detailing service today! 5-star rated, mobile convenience.',
     url: 'https://www.freshflowmobilewash.com',
     siteName: 'Fresh Flow Mobile Auto Spa',
     images: [
       {
-        url: 'https://www.freshflowmobilewash.com/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Fresh Flow Mobile Auto Spa - Premium Mobile Car Detailing',
+        alt: 'Fresh Flow Mobile Auto Spa - Premium Mobile Detailing Services',
       },
     ],
     locale: 'en_US',
@@ -44,7 +56,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Fresh Flow Mobile Auto Spa | Premium Mobile Car Detailing',
     description: 'Professional mobile car detailing services in Orange County, Riverside County, and San Bernardino County.',
-    images: ['https://www.freshflowmobilewash.com/og-image.jpg'],
+    images: ['/og-image.jpg'],
+    creator: '@freshflowautospa',
   },
   robots: {
     index: true,
@@ -59,7 +72,11 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-site-verification',
+    yandex: 'your-yandex-verification',
+    yahoo: 'your-yahoo-verification',
   },
+  category: 'Automotive Services',
+  classification: 'Mobile Car Detailing',
 };
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
@@ -71,25 +88,19 @@ const bebasNeue = Bebas_Neue({
 export default function Home() {
   return (
     <>
-      <Head>
-        <link rel="canonical" href="https://www.freshflowmobilewash.com/" />
-        <meta property="og:title" content="Fresh Flow Mobile Auto Spa" />
-        <meta property="og:description" content="Premium mobile car detailing in Jurupa Valley and beyond." />
-        <meta property="og:image" content="https://www.freshflowmobilewash.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.freshflowmobilewash.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-      </Head>
+
       <Analytics/>
       <SpeedInsights/>
       <Script id="ld-json" type="application/ld+json" strategy="worker">
         {`
           {
             "@context": "https://schema.org",
-            "@type": "AutoRepair",
+            "@type": "LocalBusiness",
             "name": "Fresh Flow Mobile Auto Spa",
-            "image": "https://www.freshflowmobilewash.com/boy.png",
+            "image": [
+              "https://www.freshflowmobilewash.com/boy.png",
+              "https://www.freshflowmobilewash.com/car-wash-1.jpg"
+            ],
             "url": "https://www.freshflowmobilewash.com",
             "telephone": "+1-909-766-0042",
             "email": "freshflowautospa@gmail.com",
@@ -99,13 +110,44 @@ export default function Home() {
               "addressRegion": "CA",
               "addressCountry": "US"
             },
-            "areaServed": {
-              "@type": "Place",
-              "name": "Orange County, Riverside County, San Bernardino County, and surrounding areas"
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "33.9803",
+              "longitude": "-117.4853"
             },
-            "description": "Premium mobile auto detailing and car buffing services in the Inland Empire. Professional car wash and detailing at your location.",
+            "areaServed": [
+              {
+                "@type": "Place",
+                "name": "Orange County"
+              },
+              {
+                "@type": "Place", 
+                "name": "Riverside County"
+              },
+              {
+                "@type": "Place",
+                "name": "San Bernardino County"
+              },
+              {
+                "@type": "Place",
+                "name": "Jurupa Valley"
+              },
+              {
+                "@type": "Place",
+                "name": "Corona"
+              },
+              {
+                "@type": "Place",
+                "name": "Ontario"
+              },
+              {
+                "@type": "Place",
+                "name": "Chino"
+              }
+            ],
+            "description": "Premium mobile auto detailing and car buffing services in the Inland Empire. Professional car wash and detailing at your location with 5-star rated service.",
             "priceRange": "$$",
-            "openingHours": "Mo-Su 08:00-18:00",
+            "openingHours": "Mo-Su 06:00-18:00",
             "sameAs": [
               "https://www.yelp.com/biz/fresh-flow-mobile-auto-spa-mira-loma-3",
               "https://www.instagram.com/freshflowmobileautospa/",
@@ -113,18 +155,51 @@ export default function Home() {
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5",
+              "ratingValue": "5.0",
               "reviewCount": "50",
               "bestRating": "5",
               "worstRating": "1"
             },
-            "offers": {
-              "@type": "Offer",
-              "availability": "https://schema.org/InStock",
-              "price": "72",
-              "priceCurrency": "USD",
-              "url": "https://www.freshflowmobilewash.com"
-            }
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Car Detailing Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Premium Mobile Wash",
+                    "description": "Essential car wash and detailing service"
+                  },
+                  "price": "75",
+                  "priceCurrency": "USD"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Premium Detail",
+                    "description": "Comprehensive cleaning and protection service"
+                  },
+                  "price": "299",
+                  "priceCurrency": "USD"
+                }
+              ]
+            },
+            "serviceType": [
+              "Mobile Car Detailing",
+              "Car Wash",
+              "Interior Detailing",
+              "Exterior Detailing",
+              "Paint Correction",
+              "Ceramic Coating"
+            ],
+            "paymentAccepted": [
+              "Cash",
+              "Credit Card",
+              "Debit Card"
+            ],
+            "currenciesAccepted": "USD"
           }
         `}
       </Script>
@@ -141,9 +216,77 @@ export default function Home() {
         `}
       </Script>
       <Script async src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
-      <main className="flex flex-col">
-        <Navbar />
-        <h1 className="sr-only">Fresh Flow Mobile Auto Spa – Premium Mobile Car Detailing Services in Inland Empire</h1>
+      
+      {/* FAQ Structured Data */}
+      <Script id="faq-ld-json" type="application/ld+json" strategy="worker">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What areas do you serve for mobile car detailing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We serve Orange County, Riverside County, San Bernardino County, including Jurupa Valley, Corona, Ontario, Chino, and surrounding areas."
+                }
+              },
+              {
+                "@type": "Question", 
+                "name": "How much does mobile car detailing cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our services start at $65 for a basic wash and range up to $699 for our premium showroom detail. Prices vary based on vehicle size and service level."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer ceramic coating services?",
+                "acceptedAnswer": {
+                  "@type": "Answer", 
+                  "text": "Yes, we offer ceramic coating as part of our premium detailing packages to provide long-lasting protection for your vehicle's paint."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a mobile detailing service take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Service times vary from 1-2 hours for basic washes to 6-8 hours for comprehensive showroom details, depending on the package selected."
+                }
+              }
+            ]
+          }
+        `}
+      </Script>
+
+      {/* Breadcrumb Structured Data */}
+      <Script id="breadcrumb-ld-json" type="application/ld+json" strategy="worker">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.freshflowmobilewash.com"
+              },
+              {
+                "@type": "ListItem", 
+                "position": 2,
+                "name": "Mobile Car Detailing Services",
+                "item": "https://www.freshflowmobilewash.com#packages"
+              }
+            ]
+          }
+        `}
+      </Script>
+              <main className="flex flex-col">
+          <Navbar />
+          <h1 className="sr-only">Fresh Flow Mobile Auto Spa – Premium Mobile Car Detailing Services in Inland Empire, Orange County, Riverside County, San Bernardino County</h1>
         <section id="home" className="relative w-full min-h-[120vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-0" aria-label="Hero Section">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 bg-[url(./img/m.jpg)] bg-cover bg-center" role="presentation">
@@ -154,43 +297,27 @@ export default function Home() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 py-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Column - Main Content */}
-              <div className="text-white space-y-8">
+              <div className="text-white space-y-6">
+                {/* Urgency Badge */}
+                <div className="inline-flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
+                  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                  Use Code SUMMERFLOW25 to Save 10%
+                </div>
 
                 {/* Main Heading */}
                 <h2 className={`${bebasNeue.className} text-4xl md:text-5xl lg:text-7xl leading-tight`}>
-                  Premium Mobile Detailing at Your Doorstep
+                 Best Mobile Detailing in the Inland Empire
                 </h2>
 
-                {/* Benefits */}
-                <div className="space-y-4" role="list" aria-label="Service Benefits">
-                  <div className="flex items-center gap-3 text-xl" role="listitem">
-                    <div className="bg-cyan-500/20 p-2 rounded-lg" aria-hidden="true">
-                      <svg className="h-6 w-6 text-cyan-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span>Professional Service</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-xl" role="listitem">
-                    <div className="bg-cyan-500/20 p-2 rounded-lg" aria-hidden="true">
-                      <svg className="h-6 w-6 text-cyan-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span>Convenient Mobile</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-xl" role="listitem">
-                    <div className="bg-cyan-500/20 p-2 rounded-lg" aria-hidden="true">
-                      <svg className="h-6 w-6 text-cyan-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span>5-Star Rated</span>
-                  </div>
-                </div>
+                {/* Subheading with Value Proposition */}
+                <p className="text-xl md:text-2xl text-white/90 font-medium">
+                  Professional mobile car detailing that comes to you. Save time, protect your investment, and enjoy a showroom-worthy finish.
+                </p>
 
-                {/* Trust Indicators */}
-                <div className="flex items-center gap-4 pt-4">
+                {/* Trust Indicators - Moved up for credibility */}
+                <div className="flex items-center gap-4 pt-2">
                   <Image 
                     src="/yelp-stars.png" 
                     alt="Yelp 5 Star Rating - Fresh Flow Mobile Auto Spa" 
@@ -200,43 +327,93 @@ export default function Home() {
                     quality={100}
                     priority
                   />
-                  <span className="text-lg text-white/90">Perfect 5-Star Rating on Yelp</span>
+                  <span className="text-lg text-white/90 font-semibold">Perfect 5-Star Rating on Yelp</span>
+                </div>
+
+                {/* Benefits - Streamlined */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4" role="list" aria-label="Service Benefits">
+                  <div className="flex items-center gap-3 text-lg" role="listitem">
+                    <div className="bg-cyan-500/20 p-2 rounded-lg" aria-hidden="true">
+                      <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="font-medium">Professional Service</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-lg" role="listitem">
+                    <div className="bg-cyan-500/20 p-2 rounded-lg" aria-hidden="true">
+                      <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="font-medium">Satisfaction Guaranteed</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-lg" role="listitem">
+                    <div className="bg-cyan-500/20 p-2 rounded-lg" aria-hidden="true">
+                      <svg className="h-5 w-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="font-medium">We Come to You</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Right Column - CTAs */}
-              <div className="space-y-8">
-                {/* Primary CTA */}
-                <ConversionLinkButton
-                  url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services"
-                  value={75}
-                  className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 p-6 text-3xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl shadow-lg text-center block`}
-                  aria-label="Book your car detailing service now"
-                >
-                  CLick Here to Book Your Detail Now!
-                </ConversionLinkButton>
-
-                {/* Secondary CTA */}
-                <a 
-                  href="tel:+19097660042" 
-                  className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 backdrop-blur-sm p-6 text-2xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl border border-white/20 text-center block`}
-                  aria-label="Call Fresh Flow Mobile Auto Spa"
-                >
-                  Click Here to Text or Call: (909) 766-0042 
-                </a>
-
-                {/* Schedule Box - styled to match the button */}
-                <div className="w-full bg-white/10 backdrop-blur-sm p-6 text-xl text-white rounded-xl border border-white/20 text-center block font-semibold">
-                  <div className="text-lg font-bold tracking-wide mb-1">Schedule & Hours</div>
-                  <div className="text-base font-mono">Wednesday–Sunday</div>
-                  <div className="text-base font-bold">6:00am – 4:00pm</div>
+              {/* Right Column - CTAs - Enhanced for Conversion */}
+              <div className="space-y-6">
+                {/* Primary CTA - More Prominent */}
+                <div className="relative">
+                  <ConversionLinkButton
+                    url="https://book.squareup.com/appointments/huuxb13bg1wbt4/location/LEEDGNVTD70K2/services"
+                    value={75}
+                    className={`${bebasNeue.className} w-full bg-gradient-to-b from-purple-800 to-orange-400 p-8 text-3xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl shadow-2xl text-center block border-2 border-white/20 hover:border-white/40`}
+                    aria-label="Book your car detailing service now"
+                  >
+                    BOOK YOUR DETAIL NOW!
+                  </ConversionLinkButton>
+                  <div className="absolute -top-3 -right-3 bg-red-500 text-white text-sm px-3 py-1 rounded-full font-bold animate-bounce">
+                    Limited Time Offer!
+                  </div>
                 </div>
 
-                {/* Service Area */}
-                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-                  <h3 className="text-xl font-semibold text-white mb-3">Service Areas</h3>
-                  <p className="text-white/90">
-                    Orange County, Riverside County, San Bernardino County, and surrounding areas!
+                {/* Secondary CTA - Phone */}
+                <a 
+                  href="tel:+19097660042" 
+                  className={`${bebasNeue.className} w-full bg-gradient-to-b from-green-600 to-green-700 backdrop-blur-sm p-6 text-2xl text-white cursor-pointer transition duration-300 hover:scale-105 rounded-xl border border-white/20 text-center block shadow-lg hover:shadow-xl`}
+                  aria-label="Call Fresh Flow Mobile Auto Spa"
+                >
+                  📞 CALL NOW: (909) 766-0042
+                </a>
+
+                {/* Social Proof */}
+                <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <div className="flex -space-x-2">
+                      <div className="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm font-bold">5</div>
+                      <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">★</div>
+                      <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-sm font-bold">50+</div>
+                    </div>
+                  </div>
+                  <p className="text-center text-white/90 text-sm font-medium">50+ Happy Customers This Month</p>
+                </div>
+
+                {/* Schedule Box */}
+                <div className="w-full bg-white/10 backdrop-blur-sm p-4 text-white rounded-xl border border-white/20 text-center">
+                  <div className="text-lg font-bold tracking-wide mb-1">Available Today</div>
+                  <div className="text-base font-mono">Monday-Sunday</div>
+                  <div className="text-base font-bold text-cyan-400">6:00am – 6:00pm</div>
+                </div>
+
+                {/* Service Area - More Prominent */}
+                <div className="bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-sm p-4 rounded-xl border border-cyan-500/30">
+                  <h3 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
+                    <svg className="h-5 w-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                    Service Areas
+                  </h3>
+                  <p className="text-white/90 text-sm">
+                    Jurupa Valley, Riverside, San Bernardino, Ontario, Chino, Chino Hills, Corona, Norco and surrounding areas!
                   </p>
                 </div>
               </div>

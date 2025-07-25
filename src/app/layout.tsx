@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react"
 import { Main, NextScript } from "next/document";
 import Script from "next/script";
 import {GoogleAnalytics} from '@next/third-parties/google'
-import Head from 'next/head';
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -25,8 +24,45 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fresh Flow Mobile Auto Spa",
-  description: "Mobile Auto Detailing Servicing Jurupa Valley and Surrounding Areas",
+  title: {
+    default: "Fresh Flow Mobile Auto Spa | Premium Mobile Car Detailing",
+    template: "%s | Fresh Flow Mobile Auto Spa"
+  },
+  description: "Professional mobile car detailing services in the Inland Empire. 5-star rated mobile car wash and detailing at your location.",
+  keywords: "mobile car detailing, car wash, auto detailing, Inland Empire, Jurupa Valley, Corona, Ontario, Chino",
+  authors: [{ name: "Fresh Flow Mobile Auto Spa" }],
+  creator: "Fresh Flow Mobile Auto Spa",
+  publisher: "Fresh Flow Mobile Auto Spa",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://www.freshflowmobilewash.com'),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-site-verification',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.freshflowmobilewash.com',
+    siteName: 'Fresh Flow Mobile Auto Spa',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@freshflowautospa',
+  },
 };
 
 export default function RootLayout({
@@ -36,24 +72,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <title>Fresh Flow Mobile Auto Spa</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <Head>
-        <title>Fresh Flow Auto Spa | Mobile Car Detailing in Jurupa Valley</title>
-        <meta name="description" content="Get your car looking brand new with Fresh Flow Auto Spa. Mobile detailing services in Jurupa Valley, Corona, Riverside & more." />
-        <meta name="keywords" content="car detailing, mobile car wash, Jurupa Valley, auto spa, ceramic coating, interior cleaning" />
-        <meta name="author" content="Fresh Flow Auto Spa" />
-        <meta property="og:title" content="Fresh Flow Auto Spa | Mobile Car Detailing" />
-        <meta property="og:description" content="Top-tier mobile car detailing in Jurupa Valley and nearby cities. Book online today!" />
-        <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:url" content="https://freshflowautospa.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Preload main fonts for FCP */}
-        <link rel="preload" as="font" href="/fonts/geist-sans.woff2" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" as="font" href="/fonts/montserrat.woff2" type="font/woff2" crossOrigin="anonymous" />
-        {/* Preload hero image for FCP */}
-        <link rel="preload" as="image" href="/img/car-gallery.jpg" />
-      </Head>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        
+        {/* Preload critical resources */}
+        <link rel="preload" as="image" href="/img/m.jpg" />
+        <link rel="preload" as="image" href="/car-wash-1.jpg" />
+        
+        {/* DNS Prefetch for external domains */}
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.instagram.com" />
+        <link rel="dns-prefetch" href="//assets.mailerlite.com" />
+      </head>
       
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased w-full`}
